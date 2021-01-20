@@ -1,0 +1,14 @@
+{
+    "type": "Ext.app.ViewModel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "tabappbti",
+        "designer|userClassName": "flat.tabAppBtiViewModel"
+    },
+    "name": "MyPanel2ViewModel",
+    "designerId": "c02bcaca-50ee-41f5-9b85-d71bb11145b1"
+}

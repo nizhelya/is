@@ -1,0 +1,60 @@
+/**
+         * grid
+ */
+ .appartment .x-grid3-cell-inner, .x-grid3-hd-inner {
+  white-space: normal; /* changed from nowrap */
+}
+ 
+.appartment .x-grid-body .x-grid-cell {
+	/* background: url(images/panel/SP_BellaCollection_Paper_CloudCards.jpg) 0 0 ; */
+		
+        }
+.appartment .x-grid-row-over  { 
+    
+    background-color: red;/* #E8F4FA; */
+    border-bottom-color: #999; 
+    border-bottom-style: dashed; 
+    border-top-color: #999; 
+    border-top-style: dashed; 
+} 
+
+
+/**
+         * forma
+*/
+.appartment .x-fieldset {     
+  background: url(images/panel/SP_BellaCollection_Paper_CloudCards.jpg) no-repeat; 
+  box-shadow:0 0 10px 0 #555555;
+  -webkit-box-shadow:0 0 10px 0 #555555;
+  -moz-box-shadow:0 0 10px 0 #555555;
+}
+ .appartment .x-form-display-field {
+           color: #2F642D;
+	    padding:0 0 0 8px;
+		  text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
+		  0px -5px 35px rgba(255,255,255,0.3);
+		  font-size: 12pt;    
+		 box-shadow:0 0 10px 0 #555555;
+		-webkit-box-shadow:0 0 10px 0 #555555;
+		-moz-box-shadow:0 0 10px 0 #555555;
+            
+        }
+ .appartment .x-form-field {
+    background: url(images/panel/SP_BellaCollection_Paper_CloudCards.jpg) no-repeat;
+           color: #2F642D;
+	    padding:0 0 0 8px;
+		  text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
+		  0px -5px 35px rgba(255,255,255,0.3);
+		  font-size: 12pt;    
+		 box-shadow:0 0 10px 0 #555555;
+  -webkit-box-shadow:0 0 10px 0 #555555;
+  -moz-box-shadow:0 0 10px 0 #555555;
+            
+        }
+.appartment .x-form-item-label {
+		  color: rgba(0,0,0,0.6);
+		  text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
+		  0px -5px 35px rgba(255,255,255,0.3);
+		  font-size: 11pt;
+    
+        }

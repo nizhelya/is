@@ -1,0 +1,13 @@
+{
+    "type": "Ext.app.ViewController",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "winIpay",
+        "designer|userClassName": "flat.WinIpayViewController"
+    },
+    "designerId": "17e3c82e-f96b-4df1-9524-fc419af67065"
+}

@@ -1,0 +1,34 @@
+{
+    "type": "arraystore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "autoSync": null,
+        "data": [
+            " [{address:\"Добавить квартиру\"}]"
+        ],
+        "designer|userAlias": "stAddMyFlat",
+        "designer|userClassName": "StAddMyFlat",
+        "storeId": "stAddMyFlat"
+    },
+    "designerId": "a24804f3-0ec1-4e7f-a383-06b09f53c087",
+    "cn": [
+        {
+            "type": "Ext.data.field.String",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "address"
+            },
+            "name": "MyString82",
+            "designerId": "40425552-bb57-414d-beca-e210e1d0a880"
+        }
+    ]
+}

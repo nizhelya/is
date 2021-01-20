@@ -1,0 +1,28 @@
+{
+    "type": "Ext.form.field.Number",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoStripChars": true,
+        "decimalSeparator": ".",
+        "designer|userAlias": "nFNach",
+        "designer|userClassName": "NFNach",
+        "fieldLabel": null,
+        "fieldStyle": "background-color:#F0F8FF;font-size:11pt;text-align:right;",
+        "hideLabel": true,
+        "hideTrigger": true,
+        "value": [
+            "0"
+        ],
+        "width": 85
+    },
+    "configAlternates": {
+        "scrollable": "boolean"
+    },
+    "designerId": "622aa585-f536-43aa-8ab4-918337c4d889",
+    "viewControllerInstanceId": "f4b19c9b-abee-4164-a121-4e6305d183dd",
+    "viewModelInstanceId": "556f59af-08f1-4339-b00f-cc12b1d393e1"
+}

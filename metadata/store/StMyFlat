@@ -1,0 +1,53 @@
+{
+    "type": "directstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "stMyFlat",
+        "designer|userClassName": "StMyFlat",
+        "model": "MdMyFlat",
+        "storeId": "stMyFlat"
+    },
+    "designerId": "7b3c54ee-b7d7-421c-b78a-097a23b9bf33",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Direct",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "api": [
+                    "{",
+                    "create:\"QueryMyFlat.createRecord\",",
+                    "read:\"QueryMyFlat.getResults\",",
+                    "update:\"QueryMyFlat.updateRecords\",",
+                    "destroy:\"QueryMyFlat.destroyRecord\"",
+                    "}"
+                ],
+                "directFn": null
+            },
+            "name": "MyDirectProxy14",
+            "designerId": "b4712bdc-656a-4f70-9235-f9109872ac5d",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "rootProperty": "results"
+                    },
+                    "name": "MyJsonReader14",
+                    "designerId": "635a8b47-2681-4281-920b-0f668018581b"
+                }
+            ]
+        }
+    ]
+}

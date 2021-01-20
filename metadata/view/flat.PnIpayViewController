@@ -1,0 +1,13 @@
+{
+    "type": "Ext.app.ViewController",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "pnIpay",
+        "designer|userClassName": "flat.PnIpayViewController"
+    },
+    "designerId": "bd12a272-7a05-46ae-bf93-c1af88c03de4"
+}

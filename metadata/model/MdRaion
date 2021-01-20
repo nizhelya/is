@@ -1,0 +1,41 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "mdRaion",
+        "designer|userClassName": "MdRaion"
+    },
+    "designerId": "14d2f419-0e81-48bf-a1cd-7ce760fe8126",
+    "cn": [
+        {
+            "type": "Ext.data.field.Integer",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "raion_id"
+            },
+            "name": "MyInteger76",
+            "designerId": "1997b125-1202-49a0-8daf-ef7c9d380e5d"
+        },
+        {
+            "type": "Ext.data.field.String",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "raion"
+            },
+            "name": "MyString88",
+            "designerId": "5f59a3c9-d38c-44a3-9be9-cfabb13b993a"
+        }
+    ]
+}

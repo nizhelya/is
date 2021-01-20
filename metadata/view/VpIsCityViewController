@@ -1,0 +1,13 @@
+{
+    "type": "Ext.app.ViewController",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "vpIsCity",
+        "designer|userClassName": "VpIsCityViewController"
+    },
+    "designerId": "226ed3a2-5e6b-4e55-883f-2bd1f9da824a"
+}

@@ -1,0 +1,13 @@
+{
+    "type": "Ext.app.ViewController",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "tabReport",
+        "designer|userClassName": "user.TabReportViewController"
+    },
+    "designerId": "43d92e86-0e43-4d23-b2db-95b141b456ef"
+}

@@ -1,0 +1,59 @@
+{
+    "type": "directstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "stAddress",
+        "designer|userClassName": "StAddress",
+        "model": "MdAddress",
+        "storeId": "stAddress"
+    },
+    "designerId": "54c8a8d3-ea60-48d1-8dbd-3c93d61b97c1",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Direct",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "api": null,
+                "directFn": "QueryAddress.getResults"
+            },
+            "name": "MyDirectProxy15",
+            "designerId": "545a5fd7-81ab-4629-b2ad-e05533ed5323",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "rootProperty": "data"
+                    },
+                    "name": "MyJsonReader15",
+                    "designerId": "5787bb41-bcf1-4b9e-953e-ac9af75c1b60"
+                }
+            ]
+        },
+        {
+            "type": "Ext.util.Sorter",
+            "reference": {
+                "name": "sorters",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "property": "appartment"
+            },
+            "name": "MySorter",
+            "designerId": "26a2eec0-4531-4788-902f-2b4a4d05109d"
+        }
+    ]
+}

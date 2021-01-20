@@ -1,0 +1,24 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "closable": true,
+        "designer|userAlias": "pnIpay",
+        "designer|userClassName": "flat.PnIpay",
+        "height": 250,
+        "id": "pnIpay",
+        "layout": "fit",
+        "title": "My Panel",
+        "width": 400
+    },
+    "configAlternates": {
+        "scrollable": "boolean"
+    },
+    "designerId": "b8cc80a0-1ad9-436b-b836-b23d68a64d6c",
+    "viewControllerInstanceId": "bd12a272-7a05-46ae-bf93-c1af88c03de4",
+    "viewModelInstanceId": "62f509bb-b717-474c-bb7e-f74422c00bce"
+}

@@ -1,0 +1,29 @@
+{
+    "type": "Ext.form.field.Number",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "allowDecimals": false,
+        "autoStripChars": true,
+        "decimalPrecision": 0,
+        "designer|userAlias": "nFVodomer",
+        "designer|userClassName": "NFVodomer",
+        "fieldLabel": null,
+        "fieldStyle": "background-color:#F0F8FF;font-size:11pt;text-align:right;",
+        "hideTrigger": true,
+        "labelAlign": "top",
+        "value": [
+            "0"
+        ],
+        "width": 85
+    },
+    "configAlternates": {
+        "scrollable": "boolean"
+    },
+    "designerId": "c30b4bce-0fb1-463e-8c1c-1bb04b53d359",
+    "viewControllerInstanceId": "1f5a2fe5-a721-4261-99f3-dd3dd98c8791",
+    "viewModelInstanceId": "8febc256-0f0d-46bb-936a-643e1be082a8"
+}

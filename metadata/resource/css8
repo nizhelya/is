@@ -1,0 +1,13 @@
+{
+    "type": "cssresource",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "css8",
+        "url": "resources/css/reports.css"
+    },
+    "designerId": "456a2db2-db32-441d-bcde-a3d6f7a65805"
+}

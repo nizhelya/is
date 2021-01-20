@@ -1,0 +1,47 @@
+{
+    "type": "directstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": false,
+        "designer|userAlias": "stHouses",
+        "designer|userClassName": "StHouses",
+        "model": "MdHouses",
+        "pageSize": 200,
+        "storeId": "stHouses"
+    },
+    "designerId": "eed0ae54-2eda-4719-9dd9-1b1da9d3c32a",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Direct",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "directFn": "QueryAddress.getResults"
+            },
+            "name": "MyDirectProxy18",
+            "designerId": "598dc475-32e1-4690-8416-7cc4c7b513a1",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "rootProperty": "data"
+                    },
+                    "name": "MyJsonReader18",
+                    "designerId": "103b4a85-a167-40ef-a009-f14562c646d2"
+                }
+            ]
+        }
+    ]
+}

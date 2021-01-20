@@ -1,0 +1,45 @@
+{
+    "type": "directstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "stVodomerKassa",
+        "designer|userClassName": "StVodomerKassa",
+        "model": "MdPriborUcheta",
+        "storeId": "stVodomerKassa"
+    },
+    "designerId": "44819ffe-4d4d-4d97-bb44-794994475b89",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Direct",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "directFn": "QueryTekNach.getResults"
+            },
+            "name": "MyDirectProxy2",
+            "designerId": "1e9b29a9-ad4e-4de6-93cf-c19f1ae92a23",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "rootProperty": "data"
+                    },
+                    "name": "MyJsonReader2",
+                    "designerId": "a8f748b6-5531-4e2c-8a4d-f505e3ad9ca3"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "type": "cssresource",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "css9",
+        "url": "resources/css/appartment.css"
+    },
+    "designerId": "418669bd-59b6-43be-8521-a14b20219bff"
+}

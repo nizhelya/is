@@ -1,0 +1,13 @@
+{
+    "type": "Ext.app.ViewController",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "nFNach",
+        "designer|userClassName": "NFNachViewController"
+    },
+    "designerId": "f4b19c9b-abee-4164-a121-4e6305d183dd"
+}

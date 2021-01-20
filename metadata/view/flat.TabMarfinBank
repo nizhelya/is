@@ -1,0 +1,2679 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "border": false,
+        "closable": null,
+        "closeAction": "hide",
+        "designer|userAlias": "tabMarfinBank",
+        "designer|userClassName": "flat.TabMarfinBank",
+        "height": 800,
+        "hidden": null,
+        "icon": "resources/css/images/btn64/mtb16.png",
+        "iconCls": "",
+        "id": "tabMarfinBank",
+        "itemId": null,
+        "overlapHeader": null,
+        "scrollable": true,
+        "title": "МТБ БАНК",
+        "titleAlign": null,
+        "width": 939
+    },
+    "configAlternates": {
+        "scrollable": "boolean"
+    },
+    "designerId": "1387db77-d112-4cff-9b05-258ce5fe965a",
+    "viewControllerInstanceId": "d14ed6ae-f963-45f1-ab98-098248a4da42",
+    "viewModelInstanceId": "0d443ec5-233f-42f6-b259-24893885096a",
+    "cn": [
+        {
+            "type": "Ext.container.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "border": false,
+                "container|align": "stretch",
+                "container|padding": 10,
+                "height": 661,
+                "layout": "hbox",
+                "width": 853
+            },
+            "name": "MyContainer2",
+            "configAlternates": {
+                "scrollable": "boolean"
+            },
+            "designerId": "829c50ac-181d-470f-b06e-cca3ded4b3b6",
+            "cn": [
+                {
+                    "type": "Ext.form.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "bodyBorder": true,
+                        "bodyPadding": null,
+                        "bodyStyle": null,
+                        "border": false,
+                        "container|align": "stretch",
+                        "height": 667,
+                        "id": "fmTekNachMarfin",
+                        "itemId": null,
+                        "layout": "vbox",
+                        "margin": null,
+                        "title": "",
+                        "width": 437
+                    },
+                    "name": "MyForm17",
+                    "configAlternates": {
+                        "bodyStyle": "string",
+                        "scrollable": "boolean"
+                    },
+                    "designerId": "0700bc60-44b3-40a7-b3e2-b09dfa56517c",
+                    "cn": [
+                        {
+                            "type": "Ext.form.FieldSet",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|snapToGrid": 5,
+                                "height": 75,
+                                "layout": "absolute",
+                                "layout|flex": null,
+                                "padding": null,
+                                "style": "background-color: #f1eeee;",
+                                "title": "Задолженность  на текущий момент  по всем коммунальным услугам",
+                                "width": 450
+                            },
+                            "name": "MyFieldSet53",
+                            "configAlternates": {
+                                "style": "string",
+                                "scrollable": "boolean"
+                            },
+                            "designerId": "127e6ed4-ce0b-49c7-b3bf-e2760e80c664",
+                            "cn": [
+                                {
+                                    "type": "Ext.form.field.Checkbox",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "boxLabel": "оплатить все услуги",
+                                        "disabled": true,
+                                        "fieldLabel": null,
+                                        "fieldStyle": null,
+                                        "id": null,
+                                        "inputValue": "1",
+                                        "itemId": null,
+                                        "labelAlign": null,
+                                        "labelStyle": null,
+                                        "labelWidth": null,
+                                        "layout|x": 210,
+                                        "layout|y": null,
+                                        "name": "cbNext",
+                                        "width": 170
+                                    },
+                                    "name": "MyCheckbox26",
+                                    "configAlternates": {
+                                        "style": "string",
+                                        "scrollable": "boolean"
+                                    },
+                                    "designerId": "e2f2e36b-21c7-4b3d-bbec-202a1fd6707e",
+                                    "cn": [
+                                        {
+                                            "type": "basiceventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onCheckboxfieldChange",
+                                                "implHandler": [
+                                                    "var form = field.findParentByType('form');",
+                                                    "var dolg1 = form.getForm().findField('dolg1').getValue();",
+                                                    "var dolg2 = form.getForm().findField('dolg2').getValue();",
+                                                    "var dolg3 = form.getForm().findField('dolg3').getValue();",
+                                                    "var dolg4 = form.getForm().findField('dolg4').getValue();",
+                                                    "var dolg5 = form.getForm().findField('dolg5').getValue();",
+                                                    "var dolg6 = form.getForm().findField('dolg6').getValue();",
+                                                    "var dolg7 = form.getForm().findField('dolg7').getValue();",
+                                                    "",
+                                                    "",
+                                                    "var dolg11 = 0 ;",
+                                                    "var dolg22 = 0 ;",
+                                                    "var dolg33 = 0 ;",
+                                                    "var dolg44 = 0 ;",
+                                                    "var dolg55 = 0 ;",
+                                                    "var dolg66 = 0 ;",
+                                                    "var dolg77 = 0 ;",
+                                                    "",
+                                                    "",
+                                                    "form.getForm().findField('cbNext8').setValue(true);",
+                                                    "",
+                                                    "if (newValue) {",
+                                                    "",
+                                                    "    if(dolg1 > 0){",
+                                                    "        form.getForm().findField('cbNext1').setValue(true);",
+                                                    "        form.getForm().findField('oplata1').setValue(dolg1);",
+                                                    "        form.getForm().findField('oplata1').setFieldStyle('background-color: #FAFAD2; background-image: none;');",
+                                                    "        dolg11 = dolg1;",
+                                                    "",
+                                                    "    } else {",
+                                                    "        form.getForm().findField('cbNext1').setValue(false);",
+                                                    "        form.getForm().findField('oplata1').setValue(0);",
+                                                    "        form.getForm().findField('cbNext1').setDisabled(true);",
+                                                    "        form.getForm().findField('oplata1').setFieldStyle('background-color: #fff; background-image: none;');",
+                                                    "    }",
+                                                    "    if(dolg2 > 0){",
+                                                    "        form.getForm().findField('cbNext2').setValue(true);",
+                                                    "        form.getForm().findField('oplata2').setValue(dolg2);",
+                                                    "        form.getForm().findField('oplata2').setFieldStyle('background-color: #FAFAD2; background-image: none;');",
+                                                    "        dolg22 = dolg2;",
+                                                    "",
+                                                    "    } else {",
+                                                    "        form.getForm().findField('cbNext2').setValue(false);",
+                                                    "        form.getForm().findField('oplata2').setValue(0);",
+                                                    "        form.getForm().findField('cbNext2').setDisabled(true);",
+                                                    "        form.getForm().findField('oplata2').setFieldStyle('background-color: #fff; background-image: none;');",
+                                                    "    }",
+                                                    "    if(dolg3 > 0){",
+                                                    "        form.getForm().findField('cbNext3').setValue(true);",
+                                                    "        form.getForm().findField('oplata3').setValue(dolg3);",
+                                                    "        form.getForm().findField('oplata3').setFieldStyle('background-color: #FAFAD2; background-image: none;');",
+                                                    "        dolg33 = dolg3;",
+                                                    "",
+                                                    "    } else {",
+                                                    "        form.getForm().findField('cbNext3').setValue(false);",
+                                                    "        form.getForm().findField('oplata3').setValue(0);",
+                                                    "        form.getForm().findField('cbNext3').setDisabled(true);",
+                                                    "        form.getForm().findField('oplata3').setFieldStyle('background-color: #fff; background-image: none;');",
+                                                    "    }",
+                                                    "    if(dolg4 > 0){",
+                                                    "        form.getForm().findField('cbNext4').setValue(true);",
+                                                    "        form.getForm().findField('oplata4').setValue(dolg4);",
+                                                    "        form.getForm().findField('oplata4').setFieldStyle('background-color: #FAFAD2; background-image: none;');",
+                                                    "        dolg44 = dolg4;",
+                                                    "",
+                                                    "    } else {",
+                                                    "        form.getForm().findField('cbNext4').setValue(false);",
+                                                    "        form.getForm().findField('oplata4').setValue(0);",
+                                                    "        form.getForm().findField('cbNext4').setDisabled(true);",
+                                                    "        form.getForm().findField('oplata4').setFieldStyle('background-color: #fff; background-image: none;');",
+                                                    "    }",
+                                                    "    if(dolg5 > 0){",
+                                                    "        form.getForm().findField('cbNext5').setValue(true);",
+                                                    "        form.getForm().findField('oplata5').setValue(dolg5);",
+                                                    "        form.getForm().findField('oplata5').setFieldStyle('background-color: #FAFAD2; background-image: none;');",
+                                                    "        dolg55 = dolg5;",
+                                                    "",
+                                                    "    } else {",
+                                                    "        form.getForm().findField('cbNext5').setValue(false);",
+                                                    "        form.getForm().findField('oplata5').setValue(0);",
+                                                    "        form.getForm().findField('cbNext5').setDisabled(true);",
+                                                    "        form.getForm().findField('oplata5').setFieldStyle('background-color: #fff; background-image: none;');",
+                                                    "    }",
+                                                    "    if(dolg6 > 0){",
+                                                    "        form.getForm().findField('cbNext6').setValue(true);",
+                                                    "        form.getForm().findField('oplata6').setValue(dolg6);",
+                                                    "        form.getForm().findField('oplata6').setFieldStyle('background-color: #FAFAD2; background-image: none;');",
+                                                    "        dolg66 = dolg6;",
+                                                    "",
+                                                    "    } else {",
+                                                    "        form.getForm().findField('cbNext6').setValue(false);",
+                                                    "        form.getForm().findField('oplata6').setValue(0);",
+                                                    "        form.getForm().findField('cbNext6').setDisabled(true);",
+                                                    "        form.getForm().findField('oplata6').setFieldStyle('background-color: #fff; background-image: none;');",
+                                                    "    }",
+                                                    "",
+                                                    "      if(dolg7 > 0){",
+                                                    "        form.getForm().findField('cbNext7').setValue(true);",
+                                                    "        form.getForm().findField('oplata7').setValue(dolg7);",
+                                                    "        form.getForm().findField('oplata7').setFieldStyle('background-color: #FAFAD2; background-image: none;');",
+                                                    "        dolg77 = dolg7;",
+                                                    "",
+                                                    "    } else {",
+                                                    "        form.getForm().findField('cbNext7').setValue(false);",
+                                                    "        form.getForm().findField('oplata7').setValue(0);",
+                                                    "        form.getForm().findField('cbNext7').setDisabled(true);",
+                                                    "        form.getForm().findField('oplata7').setFieldStyle('background-color: #fff; background-image: none;');",
+                                                    "    }",
+                                                    "    var dolg  = dolg11 + dolg22 + dolg33 + dolg44 + dolg55 + dolg66 + dolg77  ;",
+                                                    "",
+                                                    "    if(dolg > 0){",
+                                                    "        form.getForm().findField('newOplata').setValue(dolg);",
+                                                    "        form.getForm().findField('dolg').setFieldStyle('background-color: #FAFAD2; background-image: none;');",
+                                                    "        form.getForm().findField('newOplata').setFieldStyle('background-color: #FAFAD2; background-image: none;');",
+                                                    "    } else {",
+                                                    "        form.getForm().findField('cbNext').setValue(false);",
+                                                    "        form.getForm().findField('newOplata').setValue(0);",
+                                                    "        form.getForm().findField('cbNext').setDisabled(true);",
+                                                    "        form.getForm().findField('newOplata').setFieldStyle('background-color: #fff; background-image: none;');",
+                                                    "        form.getForm().findField('dolg').setFieldStyle('background-color: #fff; background-image: none;');",
+                                                    "    }",
+                                                    "",
+                                                    "}else {",
+                                                    "    form.getForm().findField('cbNext').setValue(false);",
+                                                    "    form.getForm().findField('cbNext1').setValue(false);",
+                                                    "    form.getForm().findField('cbNext2').setValue(false);",
+                                                    "    form.getForm().findField('cbNext3').setValue(false);",
+                                                    "    form.getForm().findField('cbNext4').setValue(false);",
+                                                    "    form.getForm().findField('cbNext5').setValue(false);",
+                                                    "    form.getForm().findField('cbNext6').setValue(false);",
+                                                    "    form.getForm().findField('cbNext7').setValue(false);",
+                                                    "",
+                                                    "    form.getForm().findField('newOplata').setValue(0);",
+                                                    "",
+                                                    "}",
+                                                    "",
+                                                    "",
+                                                    "//form.down('#checkOplata').setDisabled(false);",
+                                                    ""
+                                                ],
+                                                "name": "change",
+                                                "scope": "me"
+                                            },
+                                            "name": "onCheckboxfieldChange",
+                                            "designerId": "8e7b07da-7fd7-48ad-b23b-528de9feece4"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.form.field.Text",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fieldLabel": "Всего",
+                                        "fieldStyle": "font-size:12pt;font-weight:bold;text-align:right;",
+                                        "hideTrigger": true,
+                                        "inputType": null,
+                                        "labelStyle": "font-size:12pt;font-weight:bold;",
+                                        "layout|x": 5,
+                                        "layout|y": null,
+                                        "name": "dolg",
+                                        "readOnly": true,
+                                        "value": [
+                                            "0"
+                                        ],
+                                        "width": 200
+                                    },
+                                    "name": "MyTextField81",
+                                    "configAlternates": {
+                                        "scrollable": "boolean",
+                                        "style": "string"
+                                    },
+                                    "designerId": "d0540f1c-a60e-4a3f-8220-8bc329430592"
+                                },
+                                {
+                                    "type": "Ext.form.field.Hidden",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fieldLabel": null,
+                                        "fieldStyle": null,
+                                        "labelStyle": null,
+                                        "layout|x": null,
+                                        "layout|y": null,
+                                        "name": "rko",
+                                        "value": null,
+                                        "width": null
+                                    },
+                                    "name": "MyHiddenField12",
+                                    "configAlternates": {
+                                        "scrollable": "boolean"
+                                    },
+                                    "designerId": "517b1da0-812b-4bd0-b326-d7b29b6f3a6f"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.form.FieldSet",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|snapToGrid": 5,
+                                "height": 110,
+                                "layout": "absolute",
+                                "padding": null,
+                                "style": "background-color: #f1eeee;",
+                                "title": "КП Водоснабжение и канализация",
+                                "width": 400
+                            },
+                            "name": "MyFieldSet54",
+                            "configAlternates": {
+                                "style": "string",
+                                "scrollable": "boolean"
+                            },
+                            "designerId": "bb6273ba-1497-4305-adb0-d11916ed8594",
+                            "cn": [
+                                {
+                                    "type": "Ext.form.field.Number",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "autoStripChars": true,
+                                        "border": null,
+                                        "decimalSeparator": ".",
+                                        "fieldLabel": "Вода",
+                                        "fieldStyle": "font-size:12pt;font-weight:bold;text-align:right;",
+                                        "labelStyle": "font-size:12pt;font-weight:bold;",
+                                        "layout|x": 5,
+                                        "layout|y": null,
+                                        "name": "dolg1",
+                                        "readOnly": true,
+                                        "value": [
+                                            "0"
+                                        ],
+                                        "width": 200
+                                    },
+                                    "name": "MyNumberField53",
+                                    "configAlternates": {
+                                        "scrollable": "boolean"
+                                    },
+                                    "designerId": "e3fa7055-b6a8-4471-9291-a1c2b572beae"
+                                },
+                                {
+                                    "type": "Ext.form.field.Number",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "autoStripChars": true,
+                                        "decimalSeparator": ".",
+                                        "fieldLabel": "Стоки",
+                                        "fieldStyle": "font-size:12pt;font-weight:bold;text-align:right;",
+                                        "labelStyle": "font-size:12pt;font-weight:bold;",
+                                        "layout|x": 5,
+                                        "layout|y": 30,
+                                        "name": "dolg2",
+                                        "readOnly": true,
+                                        "value": [
+                                            "0"
+                                        ],
+                                        "width": 200
+                                    },
+                                    "name": "MyNumberField54",
+                                    "configAlternates": {
+                                        "scrollable": "boolean"
+                                    },
+                                    "designerId": "7e102357-4da6-4a5e-840f-b8b2ef778ac6"
+                                },
+                                {
+                                    "type": "Ext.form.field.Checkbox",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "boxLabel": "к оплате",
+                                        "disabled": true,
+                                        "fieldLabel": null,
+                                        "fieldStyle": null,
+                                        "id": null,
+                                        "inputValue": "1",
+                                        "itemId": null,
+                                        "labelAlign": null,
+                                        "labelStyle": null,
+                                        "labelWidth": null,
+                                        "layout|x": 210,
+                                        "layout|y": null,
+                                        "name": "cbNext1",
+                                        "width": 80
+                                    },
+                                    "name": "MyCheckbox27",
+                                    "configAlternates": {
+                                        "style": "string",
+                                        "scrollable": "boolean"
+                                    },
+                                    "designerId": "784208ee-e6a6-40c7-98f7-8df0ba5404ed",
+                                    "cn": [
+                                        {
+                                            "type": "basiceventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onCheckboxfieldChange1",
+                                                "implHandler": [
+                                                    "var form = field.findParentByType('form');",
+                                                    "var dolg = form.getForm().findField('dolg1').getValue();",
+                                                    "var value = form.getForm().findField('newOplata').getValue();",
+                                                    "var oplata = form.getForm().findField('oplata1').getValue();",
+                                                    "",
+                                                    "form.getForm().findField('cbNext8').setValue(true);",
+                                                    "",
+                                                    "if (form.getForm().findField('cbNext1').getValue() === true){",
+                                                    "    form.getForm().findField('oplata1').setDisabled(false);",
+                                                    "} else {",
+                                                    "    form.getForm().findField('oplata1').setDisabled(true);",
+                                                    "}",
+                                                    "",
+                                                    "if (newValue) {",
+                                                    "    //console.log(newValue);",
+                                                    "    if(dolg > 0) {",
+                                                    "        form.getForm().findField('oplata1').setValue(dolg);",
+                                                    "        form.getForm().findField('newOplata').setValue(value+dolg-oplata);",
+                                                    "        form.getForm().findField('newOplata').setFieldStyle('background-color: #FAFAD2; background-image: none;');",
+                                                    "        form.getForm().findField('oplata1').setFieldStyle('background-color: #FAFAD2; background-image: none;');",
+                                                    "    }else {",
+                                                    "        form.getForm().findField('oplata1').setValue(0);",
+                                                    "        form.getForm().findField('cbNext1').setValue(false);",
+                                                    "        form.getForm().findField('cbNext1').setDisabled(true);",
+                                                    "        form.getForm().findField('oplata1').setFieldStyle('background-color: #fff; background-image: none;');",
+                                                    "        form.getForm().findField('dolg1').setFieldStyle('background-color: #fff; background-image: none;');",
+                                                    "    }",
+                                                    "}else {",
+                                                    "    form.getForm().findField('oplata1').setValue(0);",
+                                                    "    form.getForm().findField('newOplata').setValue(value-oplata);",
+                                                    "    form.getForm().findField('oplata1').setFieldStyle('background-color: #fff; background-image: none;');",
+                                                    "    form.getForm().findField('dolg1').setFieldStyle('background-color: #fff; background-image: none;');",
+                                                    "",
+                                                    "}"
+                                                ],
+                                                "name": "change",
+                                                "scope": "me"
+                                            },
+                                            "name": "onCheckboxfieldChange1",
+                                            "designerId": "0bd865f9-823f-4ae9-bd30-2547afea4d27"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.form.field.Checkbox",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "boxLabel": "к оплате",
+                                        "disabled": true,
+                                        "fieldLabel": null,
+                                        "id": null,
+                                        "inputValue": "1",
+                                        "itemId": null,
+                                        "labelAlign": null,
+                                        "labelStyle": "font-weight:bold;",
+                                        "labelWidth": null,
+                                        "layout|x": 210,
+                                        "layout|y": 30,
+                                        "name": "cbNext2",
+                                        "width": 80
+                                    },
+                                    "name": "MyCheckbox28",
+                                    "configAlternates": {
+                                        "scrollable": "boolean"
+                                    },
+                                    "designerId": "844d84d3-169f-4074-8ea6-feae7e632aeb",
+                                    "cn": [
+                                        {
+                                            "type": "basiceventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onCheckboxfieldChange2",
+                                                "implHandler": [
+                                                    "var form = field.findParentByType('form');",
+                                                    "var dolg = form.getForm().findField('dolg2').getValue();",
+                                                    "var value = form.getForm().findField('newOplata').getValue();",
+                                                    "var oplata = form.getForm().findField('oplata2').getValue();",
+                                                    "",
+                                                    "form.getForm().findField('cbNext8').setValue(true);",
+                                                    "if (form.getForm().findField('cbNext2').getValue() === true){",
+                                                    "    form.getForm().findField('oplata2').setDisabled(false);",
+                                                    "} else {",
+                                                    "    form.getForm().findField('oplata2').setDisabled(true);",
+                                                    "}",
+                                                    "if (newValue) {",
+                                                    "    //   console.log(newValue);",
+                                                    "    if(dolg > 0) {",
+                                                    "        form.getForm().findField('oplata2').setValue(dolg);",
+                                                    "        form.getForm().findField('newOplata').setValue(value+dolg-oplata);",
+                                                    "        form.getForm().findField('newOplata').setFieldStyle('background-color: #FAFAD2; background-image: none;');",
+                                                    "        form.getForm().findField('oplata2').setFieldStyle('background-color: #FAFAD2; background-image: none;');",
+                                                    "    }else {",
+                                                    "        form.getForm().findField('oplata2').setValue(0);",
+                                                    "        form.getForm().findField('cbNext2').setValue(false);",
+                                                    "        form.getForm().findField('cbNext2').setDisabled(true);",
+                                                    "        form.getForm().findField('oplata2').setFieldStyle('background-color: #fff; background-image: none;');",
+                                                    "        form.getForm().findField('dolg2').setFieldStyle('background-color: #fff; background-image: none;');",
+                                                    "    }",
+                                                    "}else {",
+                                                    "    form.getForm().findField('oplata2').setValue(0);",
+                                                    "    form.getForm().findField('newOplata').setValue(value-oplata);",
+                                                    "    form.getForm().findField('oplata2').setFieldStyle('background-color: #fff; background-image: none;');",
+                                                    "    form.getForm().findField('dolg2').setFieldStyle('background-color: #fff; background-image: none;');",
+                                                    "",
+                                                    "}"
+                                                ],
+                                                "name": "change",
+                                                "scope": "me"
+                                            },
+                                            "name": "onCheckboxfieldChange2",
+                                            "designerId": "6baf6c33-b336-4b95-b455-a5498c2fd7c8"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.form.field.Number",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "allowBlank": false,
+                                        "autoStripChars": true,
+                                        "decimalSeparator": ".",
+                                        "disabled": true,
+                                        "fieldLabel": "",
+                                        "fieldStyle": "font-size:12pt;font-weight:bold;text-align:right;",
+                                        "hideTrigger": true,
+                                        "inputType": null,
+                                        "itemId": null,
+                                        "layout|x": 300,
+                                        "layout|y": null,
+                                        "name": "oplata1",
+                                        "value": [
+                                            "0"
+                                        ],
+                                        "vtype": null,
+                                        "vtypeText": "Ошибка, сумма меньше нуля",
+                                        "width": 110
+                                    },
+                                    "name": "MyNumberField61",
+                                    "configAlternates": {
+                                        "scrollable": "boolean"
+                                    },
+                                    "designerId": "5261fbf7-b107-4325-8e89-e489a9b65a00",
+                                    "viewControllerInstanceId": "2c433286-f3f0-4059-829b-09fd2ca91aee",
+                                    "viewModelInstanceId": "dfea0de6-d57e-4a08-b9c6-135a424807a0",
+                                    "cn": [
+                                        {
+                                            "type": "basiceventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onNumberfieldChange1",
+                                                "implHandler": [
+                                                    "  if (newValue !== oldValue){",
+                                                    "            //  console.log(newValue);",
+                                                    "            var form = field.findParentByType('form');",
+                                                    "            var oplata = 0;",
+                                                    "            var oplata2 = form.getForm().findField('oplata2').getValue();",
+                                                    "            var oplata3 = form.getForm().findField('oplata3').getValue();",
+                                                    "            var oplata4 = form.getForm().findField('oplata4').getValue();",
+                                                    "            var oplata5 = form.getForm().findField('oplata5').getValue();",
+                                                    "            var oplata6 = form.getForm().findField('oplata6').getValue();",
+                                                    "            var oplata7 = form.getForm().findField('oplata7').getValue();",
+                                                    "",
+                                                    "",
+                                                    "            form.getForm().findField('oplata1').setFieldStyle('background-color: #FAFAD2; background-image: none;');",
+                                                    "            form.getForm().findField('dolg1').setFieldStyle('background-color: #fff; background-image: none;');",
+                                                    "            form.getForm().findField('dolg').setFieldStyle('background-color: #fff; background-image: none;');",
+                                                    "         //   form.down('#checkOplata').setDisabled(false);",
+                                                    "",
+                                                    "",
+                                                    "            oplata = newValue + oplata2 + oplata3 + oplata4 + oplata5 + oplata6 + oplata7;",
+                                                    "            var newOplata = form.getForm().findField('newOplata').setValue(oplata);",
+                                                    "",
+                                                    "        }"
+                                                ],
+                                                "name": "change",
+                                                "scope": "me"
+                                            },
+                                            "name": "onNumberfieldChange1",
+                                            "designerId": "308529bf-607c-4454-b50e-d551f2d5ea84"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.form.field.Number",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "autoStripChars": true,
+                                        "decimalSeparator": ".",
+                                        "disabled": true,
+                                        "fieldLabel": "",
+                                        "fieldStyle": "font-size:12pt;font-weight:bold;text-align:right;",
+                                        "hideTrigger": true,
+                                        "inputType": null,
+                                        "layout|x": 300,
+                                        "layout|y": 30,
+                                        "name": "oplata2",
+                                        "value": [
+                                            "0"
+                                        ],
+                                        "vtype": null,
+                                        "vtypeText": null,
+                                        "width": 110
+                                    },
+                                    "name": "MyNumberField62",
+                                    "configAlternates": {
+                                        "scrollable": "boolean"
+                                    },
+                                    "designerId": "840c21ed-1059-4de5-a2e5-42ac7ce70602",
+                                    "viewControllerInstanceId": "2c433286-f3f0-4059-829b-09fd2ca91aee",
+                                    "viewModelInstanceId": "dfea0de6-d57e-4a08-b9c6-135a424807a0",
+                                    "cn": [
+                                        {
+                                            "type": "basiceventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onNumberfieldChange2",
+                                                "implHandler": [
+                                                    " if (newValue !== oldValue){",
+                                                    "     var form = field.findParentByType('form');",
+                                                    "",
+                                                    "     var oplata = 0;",
+                                                    "     var oplata1 = form.getForm().findField('oplata1').getValue();",
+                                                    "     var oplata3 = form.getForm().findField('oplata3').getValue();",
+                                                    "     var oplata4 = form.getForm().findField('oplata4').getValue();",
+                                                    "     var oplata5 = form.getForm().findField('oplata5').getValue();",
+                                                    "     var oplata6 = form.getForm().findField('oplata6').getValue();",
+                                                    "     var oplata7 = form.getForm().findField('oplata7').getValue();",
+                                                    "",
+                                                    "     form.getForm().findField('oplata2').setFieldStyle('background-color: #FAFAD2; background-image: none;');",
+                                                    "     form.getForm().findField('dolg2').setFieldStyle('background-color: #fff; background-image: none;');",
+                                                    "     form.getForm().findField('dolg').setFieldStyle('background-color: #fff; background-image: none;');",
+                                                    "     oplata = newValue + oplata1 + oplata3 + oplata4 + oplata5 + oplata6 + oplata7;",
+                                                    "     form.getForm().findField('newOplata').setValue(oplata);",
+                                                    "",
+                                                    " }"
+                                                ],
+                                                "name": "change",
+                                                "scope": "me"
+                                            },
+                                            "name": "onNumberfieldChange2",
+                                            "designerId": "9d581317-e422-4056-b476-14b459288cdb"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.form.FieldSet",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|snapToGrid": 5,
+                                "height": 135,
+                                "layout": "absolute",
+                                "layout|flex": null,
+                                "padding": null,
+                                "style": "background-color: #f1eeee;",
+                                "title": "КП тс Южтеплокоммунэнерго"
+                            },
+                            "name": "MyFieldSet55",
+                            "configAlternates": {
+                                "style": "string",
+                                "scrollable": "boolean"
+                            },
+                            "designerId": "c029e367-5aa1-461b-8652-00a6589b119b",
+                            "cn": [
+                                {
+                                    "type": "Ext.form.field.Checkbox",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "boxLabel": "к оплате",
+                                        "disabled": true,
+                                        "fieldLabel": null,
+                                        "id": null,
+                                        "inputValue": "1",
+                                        "itemId": null,
+                                        "labelStyle": "font-weight:bold;",
+                                        "labelWidth": null,
+                                        "layout|x": 210,
+                                        "layout|y": null,
+                                        "name": "cbNext3",
+                                        "width": 80
+                                    },
+                                    "name": "MyCheckbox29",
+                                    "configAlternates": {
+                                        "scrollable": "boolean"
+                                    },
+                                    "designerId": "5e6a1e45-3bdb-409f-91d4-49dec69ef9bc",
+                                    "cn": [
+                                        {
+                                            "type": "basiceventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onCheckboxfieldChange3",
+                                                "implHandler": [
+                                                    "var form = field.findParentByType('form');",
+                                                    "var dolg = form.getForm().findField('dolg3').getValue();",
+                                                    "var value = form.getForm().findField('newOplata').getValue();",
+                                                    "var oplata = form.getForm().findField('oplata3').getValue();",
+                                                    "",
+                                                    "form.getForm().findField('cbNext8').setValue(true);",
+                                                    "if (form.getForm().findField('cbNext3').getValue() === true){",
+                                                    "    form.getForm().findField('oplata3').setDisabled(false);",
+                                                    "} else {",
+                                                    "    form.getForm().findField('oplata3').setDisabled(true);",
+                                                    "}",
+                                                    "if (newValue) {",
+                                                    "    if(dolg > 0) {",
+                                                    "",
+                                                    "        form.getForm().findField('oplata3').setValue(dolg);",
+                                                    "        form.getForm().findField('newOplata').setValue(value+dolg-oplata);",
+                                                    "        form.getForm().findField('newOplata').setFieldStyle('background-color: #FAFAD2; background-image: none;');",
+                                                    "        form.getForm().findField('oplata3').setFieldStyle('background-color: #FAFAD2; background-image: none;');",
+                                                    "    }else {",
+                                                    "",
+                                                    "        form.getForm().findField('oplata3').setValue(0);",
+                                                    "        form.getForm().findField('cbNext3').setValue(false);",
+                                                    "        form.getForm().findField('cbNext3').setDisabled(true);",
+                                                    "        form.getForm().findField('oplata3').setFieldStyle('background-color: #fff; background-image: none;');",
+                                                    "        form.getForm().findField('dolg3').setFieldStyle('background-color: #fff; background-image: none;');",
+                                                    "    }",
+                                                    "}else {",
+                                                    "",
+                                                    "    form.getForm().findField('oplata3').setValue(0);",
+                                                    "    form.getForm().findField('newOplata').setValue(value-oplata);",
+                                                    "    form.getForm().findField('oplata3').setFieldStyle('background-color: #fff; background-image: none;');",
+                                                    "    form.getForm().findField('dolg3').setFieldStyle('background-color: #fff; background-image: none;');",
+                                                    "",
+                                                    "}"
+                                                ],
+                                                "name": "change",
+                                                "scope": "me"
+                                            },
+                                            "name": "onCheckboxfieldChange3",
+                                            "designerId": "f0b6d1c1-e19a-403b-99ac-a1bfb5e14b31"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.form.field.Checkbox",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "boxLabel": "к оплате",
+                                        "disabled": true,
+                                        "fieldLabel": null,
+                                        "id": null,
+                                        "inputValue": "1",
+                                        "itemId": null,
+                                        "labelStyle": "font-weight:bold;",
+                                        "labelWidth": 65,
+                                        "layout|x": 210,
+                                        "layout|y": 30,
+                                        "name": "cbNext4"
+                                    },
+                                    "name": "MyCheckbox30",
+                                    "configAlternates": {
+                                        "scrollable": "boolean"
+                                    },
+                                    "designerId": "3bdf331f-608e-4461-a741-b66dbfba0fa3",
+                                    "cn": [
+                                        {
+                                            "type": "basiceventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onCheckboxfieldChange4",
+                                                "implHandler": [
+                                                    "var form = field.findParentByType('form');",
+                                                    "var dolg = form.getForm().findField('dolg4').getValue();",
+                                                    "var value = form.getForm().findField('newOplata').getValue();",
+                                                    "var oplata = form.getForm().findField('oplata4').getValue();",
+                                                    "",
+                                                    "form.getForm().findField('cbNext8').setValue(true);",
+                                                    "if (form.getForm().findField('cbNext4').getValue() === true){",
+                                                    "    form.getForm().findField('oplata4').setDisabled(false);",
+                                                    "} else {",
+                                                    "    form.getForm().findField('oplata4').setDisabled(true);",
+                                                    "}",
+                                                    "if (newValue) {",
+                                                    "    //   console.log(newValue);",
+                                                    "    if(dolg > 0) {",
+                                                    "        form.getForm().findField('oplata4').setValue(dolg);",
+                                                    "        form.getForm().findField('newOplata').setValue(value+dolg-oplata);",
+                                                    "        form.getForm().findField('newOplata').setFieldStyle('background-color: #FAFAD2; background-image: none;');",
+                                                    "        form.getForm().findField('oplata4').setFieldStyle('background-color: #FAFAD2; background-image: none;');",
+                                                    "    }else {",
+                                                    "        form.getForm().findField('oplata4').setValue(0);",
+                                                    "        form.getForm().findField('cbNext4').setValue(false);",
+                                                    "        form.getForm().findField('cbNext4').setDisabled(true);",
+                                                    "        form.getForm().findField('oplata4').setFieldStyle('background-color: #fff; background-image: none;');",
+                                                    "        form.getForm().findField('dolg4').setFieldStyle('background-color: #fff; background-image: none;');",
+                                                    "    }",
+                                                    "}else {",
+                                                    "    form.getForm().findField('oplata4').setValue(0);",
+                                                    "    form.getForm().findField('newOplata').setValue(value-oplata);",
+                                                    "    form.getForm().findField('oplata4').setFieldStyle('background-color: #fff; background-image: none;');",
+                                                    "    form.getForm().findField('dolg4').setFieldStyle('background-color: #fff; background-image: none;');",
+                                                    "",
+                                                    "}"
+                                                ],
+                                                "name": "change",
+                                                "scope": "me"
+                                            },
+                                            "name": "onCheckboxfieldChange4",
+                                            "designerId": "5744ba60-c865-4c44-9afc-720b998b8b1e"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.form.field.Checkbox",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "boxLabel": "к оплате",
+                                        "disabled": true,
+                                        "fieldLabel": null,
+                                        "id": null,
+                                        "inputValue": "1",
+                                        "itemId": null,
+                                        "labelStyle": "font-weight:bold;",
+                                        "labelWidth": 65,
+                                        "layout|x": 210,
+                                        "layout|y": 60,
+                                        "name": "cbNext7"
+                                    },
+                                    "name": "MyCheckbox24",
+                                    "configAlternates": {
+                                        "scrollable": "boolean"
+                                    },
+                                    "designerId": "9855cb3a-ea81-4b94-9fc9-912a0003454b",
+                                    "cn": [
+                                        {
+                                            "type": "basiceventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onCheckboxfieldChange7",
+                                                "implHandler": [
+                                                    "var form = field.findParentByType('form');",
+                                                    "var dolg = form.getForm().findField('dolg7').getValue();",
+                                                    "var value = form.getForm().findField('newOplata').getValue();",
+                                                    "var oplata = form.getForm().findField('oplata7').getValue();",
+                                                    "",
+                                                    "form.getForm().findField('cbNext8').setValue(true);",
+                                                    "if (form.getForm().findField('cbNext7').getValue() === true){",
+                                                    "    form.getForm().findField('oplata7').setDisabled(false);",
+                                                    "} else {",
+                                                    "    form.getForm().findField('oplata7').setDisabled(true);",
+                                                    "}",
+                                                    "if (newValue) {",
+                                                    "    //   console.log(newValue);",
+                                                    "    if(dolg > 0) {",
+                                                    "        form.getForm().findField('oplata7').setValue(dolg);",
+                                                    "        form.getForm().findField('newOplata').setValue(value+dolg-oplata);",
+                                                    "        form.getForm().findField('newOplata').setFieldStyle('background-color: #FAFAD2; background-image: none;');",
+                                                    "        form.getForm().findField('oplata7').setFieldStyle('background-color: #FAFAD2; background-image: none;');",
+                                                    "    }else {",
+                                                    "        form.getForm().findField('oplata7').setValue(0);",
+                                                    "        form.getForm().findField('cbNext7').setValue(false);",
+                                                    "        form.getForm().findField('cbNext7').setDisabled(true);",
+                                                    "        form.getForm().findField('oplata7').setFieldStyle('background-color: #fff; background-image: none;');",
+                                                    "        form.getForm().findField('dolg7').setFieldStyle('background-color: #fff; background-image: none;');",
+                                                    "    }",
+                                                    "}else {",
+                                                    "    form.getForm().findField('oplata7').setValue(0);",
+                                                    "    form.getForm().findField('newOplata').setValue(value-oplata);",
+                                                    "    form.getForm().findField('oplata7').setFieldStyle('background-color: #fff; background-image: none;');",
+                                                    "    form.getForm().findField('dolg7').setFieldStyle('background-color: #fff; background-image: none;');",
+                                                    "",
+                                                    "}"
+                                                ],
+                                                "name": "change",
+                                                "scope": "me"
+                                            },
+                                            "name": "onCheckboxfieldChange7",
+                                            "designerId": "add95a6b-e60d-4643-99c7-cf7fcae186e2"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.form.field.Number",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "decimalSeparator": ".",
+                                        "disabled": true,
+                                        "fieldLabel": "",
+                                        "fieldStyle": "font-size:12pt;font-weight:bold;text-align:right;",
+                                        "hideTrigger": true,
+                                        "layout|x": 300,
+                                        "layout|y": null,
+                                        "minValue": 0,
+                                        "name": "oplata3",
+                                        "negativeText": "Ошибка, сумма меньше нуля",
+                                        "value": [
+                                            "0"
+                                        ],
+                                        "vtype": null,
+                                        "vtypeText": null,
+                                        "width": 110
+                                    },
+                                    "name": "MyNumberField67",
+                                    "configAlternates": {
+                                        "scrollable": "boolean"
+                                    },
+                                    "designerId": "e26bf85e-03d2-4719-8c78-f58fe57ee342",
+                                    "viewControllerInstanceId": "2c433286-f3f0-4059-829b-09fd2ca91aee",
+                                    "viewModelInstanceId": "dfea0de6-d57e-4a08-b9c6-135a424807a0",
+                                    "cn": [
+                                        {
+                                            "type": "basiceventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onNumberfieldChange3",
+                                                "implHandler": [
+                                                    " if (newValue !== oldValue){",
+                                                    "     var form = field.findParentByType('form');",
+                                                    "     var oplata = 0;",
+                                                    "     var oplata1 = form.getForm().findField('oplata1').getValue();",
+                                                    "     var oplata2 = form.getForm().findField('oplata2').getValue();",
+                                                    "     var oplata4 = form.getForm().findField('oplata4').getValue();",
+                                                    "     var oplata5 = form.getForm().findField('oplata5').getValue();",
+                                                    "     var oplata6 = form.getForm().findField('oplata6').getValue();",
+                                                    "     var oplata7 = form.getForm().findField('oplata7').getValue();",
+                                                    "",
+                                                    "     form.getForm().findField('oplata3').setFieldStyle('background-color: #FAFAD2; background-image: none;');",
+                                                    "     form.getForm().findField('dolg3').setFieldStyle('background-color: #fff; background-image: none;');",
+                                                    "     form.getForm().findField('dolg').setFieldStyle('background-color: #fff; background-image: none;');",
+                                                    "     oplata = newValue + oplata1 + oplata2 + oplata4 + oplata5 + oplata6 + oplata7 ;",
+                                                    "     var newOplata = form.getForm().findField('newOplata').setValue(oplata);",
+                                                    "",
+                                                    " }"
+                                                ],
+                                                "name": "change",
+                                                "scope": "me"
+                                            },
+                                            "name": "onNumberfieldChange3",
+                                            "designerId": "f3c3318b-d4e7-4a10-b7d1-4f9b3ef2ea3a"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.form.field.Number",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "decimalSeparator": ".",
+                                        "disabled": true,
+                                        "fieldLabel": "",
+                                        "fieldStyle": "font-size:12pt;font-weight:bold;text-align:right;",
+                                        "hideTrigger": true,
+                                        "layout|x": 300,
+                                        "layout|y": 30,
+                                        "minValue": 0,
+                                        "name": "oplata4",
+                                        "negativeText": "Ошибка, сумма меньше нуля",
+                                        "value": [
+                                            "0"
+                                        ],
+                                        "vtype": null,
+                                        "vtypeText": null,
+                                        "width": 110
+                                    },
+                                    "name": "MyNumberField68",
+                                    "configAlternates": {
+                                        "scrollable": "boolean"
+                                    },
+                                    "designerId": "d0c887d9-5200-438f-82f2-d46a7d750799",
+                                    "viewControllerInstanceId": "2c433286-f3f0-4059-829b-09fd2ca91aee",
+                                    "viewModelInstanceId": "dfea0de6-d57e-4a08-b9c6-135a424807a0",
+                                    "cn": [
+                                        {
+                                            "type": "basiceventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onNumberfieldChange4",
+                                                "implHandler": [
+                                                    "   if (newValue !== oldValue){",
+                                                    "       //  console.log(newValue);",
+                                                    "       var form = field.findParentByType('form');",
+                                                    "       var oplata = 0;",
+                                                    "       var oplata1 = form.getForm().findField('oplata1').getValue();",
+                                                    "       var oplata2 = form.getForm().findField('oplata2').getValue();",
+                                                    "       var oplata3 = form.getForm().findField('oplata3').getValue();",
+                                                    "       var oplata5 = form.getForm().findField('oplata5').getValue();",
+                                                    "       var oplata6 = form.getForm().findField('oplata6').getValue();",
+                                                    "       var oplata7 = form.getForm().findField('oplata7').getValue();",
+                                                    "",
+                                                    "       form.getForm().findField('oplata4').setFieldStyle('background-color: #FAFAD2; background-image: none;');",
+                                                    "       form.getForm().findField('dolg4').setFieldStyle('background-color: #fff; background-image: none;');",
+                                                    "       form.getForm().findField('dolg').setFieldStyle('background-color: #fff; background-image: none;');",
+                                                    "       oplata = newValue + oplata1 + oplata2 + oplata3 + oplata5 + oplata6 + oplata7;",
+                                                    "       var newOplata = form.getForm().findField('newOplata').setValue(oplata);",
+                                                    "",
+                                                    "",
+                                                    "   }"
+                                                ],
+                                                "name": "change",
+                                                "scope": "me"
+                                            },
+                                            "name": "onNumberfieldChange4",
+                                            "designerId": "2fae9a76-3297-4a31-bef0-bd675dfbf38e"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.form.field.Number",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "decimalSeparator": ".",
+                                        "disabled": true,
+                                        "fieldLabel": "",
+                                        "fieldStyle": "font-size:12pt;font-weight:bold;text-align:right;",
+                                        "hideTrigger": true,
+                                        "layout|x": 300,
+                                        "layout|y": 60,
+                                        "minValue": 0,
+                                        "name": "oplata7",
+                                        "negativeText": "Ошибка, сумма меньше нуля",
+                                        "value": [
+                                            "0"
+                                        ],
+                                        "vtype": null,
+                                        "vtypeText": null,
+                                        "width": 110
+                                    },
+                                    "name": "MyNumberField51",
+                                    "configAlternates": {
+                                        "scrollable": "boolean"
+                                    },
+                                    "designerId": "89416353-7374-4d4f-a346-4c7c291dfe4a",
+                                    "viewControllerInstanceId": "2c433286-f3f0-4059-829b-09fd2ca91aee",
+                                    "viewModelInstanceId": "dfea0de6-d57e-4a08-b9c6-135a424807a0",
+                                    "cn": [
+                                        {
+                                            "type": "basiceventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onNumberfieldChange7",
+                                                "implHandler": [
+                                                    "   if (newValue !== oldValue){",
+                                                    "       var form = field.findParentByType('form');",
+                                                    "       var oplata = 0;",
+                                                    "       var oplata1 = form.getForm().findField('oplata1').getValue();",
+                                                    "       var oplata2 = form.getForm().findField('oplata2').getValue();",
+                                                    "       var oplata3 = form.getForm().findField('oplata3').getValue();",
+                                                    "       var oplata4 = form.getForm().findField('oplata4').getValue();",
+                                                    "       var oplata5 = form.getForm().findField('oplata5').getValue();",
+                                                    "       var oplata6 = form.getForm().findField('oplata6').getValue();",
+                                                    "       form.getForm().findField('oplata7').setFieldStyle('background-color: #FAFAD2; background-image: none;');",
+                                                    "       form.getForm().findField('dolg7').setFieldStyle('background-color: #fff; background-image: none;');",
+                                                    "       form.getForm().findField('dolg').setFieldStyle('background-color: #fff; background-image: none;');",
+                                                    "       oplata = newValue + oplata1 + oplata2 + oplata3 + oplata4 + oplata5 + oplata6;",
+                                                    "       var newOplata = form.getForm().findField('newOplata').setValue(oplata);",
+                                                    "",
+                                                    "",
+                                                    "   }"
+                                                ],
+                                                "name": "change",
+                                                "scope": "me"
+                                            },
+                                            "name": "onNumberfieldChange7",
+                                            "designerId": "4ff90cb7-4936-4def-bdc3-9de7231d841a"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.form.field.Number",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "autoStripChars": true,
+                                        "decimalSeparator": ".",
+                                        "fieldLabel": "Подогрев",
+                                        "fieldStyle": "font-size:12pt;font-weight:bold;text-align:right;",
+                                        "labelStyle": "font-size:12pt;font-weight:bold;",
+                                        "layout|x": 5,
+                                        "layout|y": null,
+                                        "name": "dolg3",
+                                        "readOnly": true,
+                                        "value": [
+                                            "0"
+                                        ],
+                                        "width": 200
+                                    },
+                                    "name": "MyNumberField55",
+                                    "configAlternates": {
+                                        "scrollable": "boolean"
+                                    },
+                                    "designerId": "20117731-b2d9-40b6-adca-e2cf0baf9b75"
+                                },
+                                {
+                                    "type": "Ext.form.field.Number",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "decimalSeparator": ".",
+                                        "fieldLabel": "Отопление",
+                                        "fieldStyle": "font-size:12pt;font-weight:bold;text-align:right;",
+                                        "labelStyle": "font-size:12pt;font-weight:bold;",
+                                        "layout|x": 5,
+                                        "layout|y": 30,
+                                        "name": "dolg4",
+                                        "readOnly": true,
+                                        "value": [
+                                            "0"
+                                        ],
+                                        "width": 200
+                                    },
+                                    "name": "MyNumberField56",
+                                    "configAlternates": {
+                                        "scrollable": "boolean"
+                                    },
+                                    "designerId": "f5a655a0-72d5-4ca8-945d-437aa810cbe1"
+                                },
+                                {
+                                    "type": "Ext.form.field.Number",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "decimalSeparator": ".",
+                                        "fieldLabel": "ПТН",
+                                        "fieldStyle": "font-size:12pt;font-weight:bold;text-align:right;",
+                                        "labelStyle": "font-size:12pt;font-weight:bold;",
+                                        "layout|x": 5,
+                                        "layout|y": 60,
+                                        "name": "dolg7",
+                                        "readOnly": true,
+                                        "value": [
+                                            "0"
+                                        ],
+                                        "width": 200
+                                    },
+                                    "name": "MyNumberField50",
+                                    "configAlternates": {
+                                        "scrollable": "boolean"
+                                    },
+                                    "designerId": "4115180d-74fb-4646-a02b-aafd0e28da8f"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.form.FieldSet",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|snapToGrid": 5,
+                                "height": 75,
+                                "id": "fsKvartplata",
+                                "layout": "absolute",
+                                "layout|flex": null,
+                                "padding": null,
+                                "style": "background-color: #f1eeee;",
+                                "title": "ОСМД"
+                            },
+                            "name": "MyFieldSet56",
+                            "configAlternates": {
+                                "style": "string",
+                                "scrollable": "boolean"
+                            },
+                            "designerId": "20dcad73-6aa3-4ac3-87c0-2c57c19f549c",
+                            "cn": [
+                                {
+                                    "type": "Ext.form.field.Checkbox",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "boxLabel": "к оплате",
+                                        "disabled": true,
+                                        "fieldLabel": null,
+                                        "id": null,
+                                        "inputValue": "1",
+                                        "itemId": null,
+                                        "labelStyle": "font-weight:bold;",
+                                        "labelWidth": null,
+                                        "layout|x": 210,
+                                        "layout|y": null,
+                                        "name": "cbNext5",
+                                        "width": 80
+                                    },
+                                    "name": "MyCheckbox31",
+                                    "configAlternates": {
+                                        "scrollable": "boolean"
+                                    },
+                                    "designerId": "48f5b9a3-5e3f-426c-8be1-80e7d139181c",
+                                    "cn": [
+                                        {
+                                            "type": "basiceventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onCheckboxfieldChange5",
+                                                "implHandler": [
+                                                    "var form = field.findParentByType('form');",
+                                                    "var dolg = form.getForm().findField('dolg5').getValue();",
+                                                    "var value = form.getForm().findField('newOplata').getValue();",
+                                                    "var oplata = form.getForm().findField('oplata5').getValue();",
+                                                    "",
+                                                    "form.getForm().findField('cbNext8').setValue(true);",
+                                                    "if (form.getForm().findField('cbNext5').getValue() === true){",
+                                                    "    form.getForm().findField('oplata5').setDisabled(false);",
+                                                    "} else {",
+                                                    "    form.getForm().findField('oplata5').setDisabled(true);",
+                                                    "}",
+                                                    "if (newValue) {",
+                                                    "       ",
+                                                    "    if(dolg > 0) {",
+                                                    "        form.getForm().findField('oplata5').setValue(dolg);",
+                                                    "        form.getForm().findField('newOplata').setValue(value+dolg-oplata);",
+                                                    "        form.getForm().findField('newOplata').setFieldStyle('background-color: #FAFAD2; background-image: none;');",
+                                                    "        form.getForm().findField('oplata5').setFieldStyle('background-color: #FAFAD2; background-image: none;');",
+                                                    "    }else {",
+                                                    "        form.getForm().findField('oplata5').setValue(0);",
+                                                    "        form.getForm().findField('cbNext5').setValue(false);",
+                                                    "        form.getForm().findField('cbNext5').setDisabled(true);",
+                                                    "        form.getForm().findField('oplata5').setFieldStyle('background-color: #fff; background-image: none;');",
+                                                    "        form.getForm().findField('dolg5').setFieldStyle('background-color: #fff; background-image: none;');",
+                                                    "    }",
+                                                    "}else {",
+                                                    "    form.getForm().findField('oplata5').setValue(0);",
+                                                    "    form.getForm().findField('newOplata').setValue(value-oplata);",
+                                                    "    form.getForm().findField('oplata5').setFieldStyle('background-color: #fff; background-image: none;');",
+                                                    "    form.getForm().findField('dolg5').setFieldStyle('background-color: #fff; background-image: none;');",
+                                                    "",
+                                                    "}"
+                                                ],
+                                                "name": "change",
+                                                "scope": "me"
+                                            },
+                                            "name": "onCheckboxfieldChange5",
+                                            "designerId": "2ffdde61-2b18-4ca5-8edc-a8438eb6e8c7"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.form.field.Number",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "autoStripChars": true,
+                                        "decimalSeparator": ".",
+                                        "disabled": true,
+                                        "fieldLabel": "",
+                                        "fieldStyle": "font-size:12pt;font-weight:bold;text-align:right;",
+                                        "hideTrigger": true,
+                                        "layout|x": 300,
+                                        "layout|y": null,
+                                        "minValue": 0,
+                                        "name": "oplata5",
+                                        "negativeText": "Ошибка, сумма меньше нуля",
+                                        "value": [
+                                            "0"
+                                        ],
+                                        "vtype": null,
+                                        "vtypeText": null,
+                                        "width": 110
+                                    },
+                                    "name": "MyNumberField69",
+                                    "configAlternates": {
+                                        "scrollable": "boolean"
+                                    },
+                                    "designerId": "3fc4b5bb-4791-44b6-ba2e-58caf8337273",
+                                    "viewControllerInstanceId": "2c433286-f3f0-4059-829b-09fd2ca91aee",
+                                    "viewModelInstanceId": "dfea0de6-d57e-4a08-b9c6-135a424807a0",
+                                    "cn": [
+                                        {
+                                            "type": "basiceventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onNumberfieldChange5",
+                                                "implHandler": [
+                                                    " if (newValue !== oldValue){",
+                                                    "     var form = field.findParentByType('form');",
+                                                    "     var oplata = 0;",
+                                                    "     var oplata1 = form.getForm().findField('oplata1').getValue();",
+                                                    "     var oplata2 = form.getForm().findField('oplata2').getValue();",
+                                                    "     var oplata4 = form.getForm().findField('oplata4').getValue();",
+                                                    "     var oplata3 = form.getForm().findField('oplata3').getValue();",
+                                                    "     var oplata6 = form.getForm().findField('oplata6').getValue();",
+                                                    "     var oplata7 = form.getForm().findField('oplata7').getValue();",
+                                                    "",
+                                                    "     form.getForm().findField('oplata5').setFieldStyle('background-color: #FAFAD2; background-image: none;');",
+                                                    "     form.getForm().findField('dolg5').setFieldStyle('background-color: #fff; background-image: none;');",
+                                                    "     form.getForm().findField('dolg').setFieldStyle('background-color: #fff; background-image: none;');",
+                                                    "     oplata = newValue + oplata1 + oplata2 + oplata4 + oplata3 + oplata6 + oplata7;",
+                                                    "     var newOplata = form.getForm().findField('newOplata').setValue(oplata);",
+                                                    " }"
+                                                ],
+                                                "name": "change",
+                                                "scope": "me"
+                                            },
+                                            "name": "onNumberfieldChange5",
+                                            "designerId": "3907ec09-49ca-43d8-8ff7-b9afda4adced"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.form.field.Number",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "decimalSeparator": ".",
+                                        "fieldLabel": "Квартплата",
+                                        "fieldStyle": "font-size:12pt;font-weight:bold;text-align:right;",
+                                        "labelStyle": "font-size:12pt;font-weight:bold;",
+                                        "layout|x": 5,
+                                        "layout|y": null,
+                                        "name": "dolg5",
+                                        "readOnly": true,
+                                        "value": [
+                                            "0"
+                                        ],
+                                        "width": 200
+                                    },
+                                    "name": "MyNumberField57",
+                                    "configAlternates": {
+                                        "scrollable": "boolean"
+                                    },
+                                    "designerId": "32219d4a-f3dc-4a80-a419-98c422162137"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.form.FieldSet",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|snapToGrid": 5,
+                                "height": 90,
+                                "layout": "absolute",
+                                "layout|flex": null,
+                                "padding": null,
+                                "style": "background-color: #f1eeee;",
+                                "title": "КП ЮЖТРАНС"
+                            },
+                            "name": "MyFieldSet57",
+                            "configAlternates": {
+                                "style": "string",
+                                "scrollable": "boolean"
+                            },
+                            "designerId": "807dbaa9-255a-4600-a265-1f1cd8948763",
+                            "cn": [
+                                {
+                                    "type": "Ext.form.field.Checkbox",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "boxLabel": "к оплате",
+                                        "disabled": true,
+                                        "fieldLabel": null,
+                                        "id": null,
+                                        "inputValue": "1",
+                                        "itemId": null,
+                                        "labelStyle": "font-weight:bold;",
+                                        "labelWidth": null,
+                                        "layout|x": 210,
+                                        "layout|y": null,
+                                        "name": "cbNext6",
+                                        "width": 80
+                                    },
+                                    "name": "MyCheckbox32",
+                                    "configAlternates": {
+                                        "scrollable": "boolean"
+                                    },
+                                    "designerId": "fdbce654-619f-415f-9a56-ec29077789f1",
+                                    "cn": [
+                                        {
+                                            "type": "basiceventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onCheckboxfieldChange6",
+                                                "implHandler": [
+                                                    "var form = field.findParentByType('form');",
+                                                    "var dolg = form.getForm().findField('dolg6').getValue();",
+                                                    "var value = form.getForm().findField('newOplata').getValue();",
+                                                    "var oplata = form.getForm().findField('oplata6').getValue();",
+                                                    "",
+                                                    "form.getForm().findField('cbNext8').setValue(true);",
+                                                    "if (form.getForm().findField('cbNext6').getValue() === true){",
+                                                    "    form.getForm().findField('oplata6').setDisabled(false);",
+                                                    "} else {",
+                                                    "    form.getForm().findField('oplata6').setDisabled(true);",
+                                                    "}",
+                                                    "if (newValue) {",
+                                                    "    if(dolg > 0) {",
+                                                    "        form.getForm().findField('oplata6').setValue(dolg);",
+                                                    "        form.getForm().findField('newOplata').setValue(value+dolg-oplata);",
+                                                    "        form.getForm().findField('newOplata').setFieldStyle('background-color: #FAFAD2; background-image: none;');",
+                                                    "        form.getForm().findField('oplata6').setFieldStyle('background-color: #FAFAD2; background-image: none;');",
+                                                    "    }else {",
+                                                    "        form.getForm().findField('oplata6').setValue(0);",
+                                                    "        form.getForm().findField('cbNext6').setValue(false);",
+                                                    "        form.getForm().findField('cbNext6').setDisabled(true);",
+                                                    "        form.getForm().findField('oplata6').setFieldStyle('background-color: #fff; background-image: none;');",
+                                                    "        form.getForm().findField('dolg6').setFieldStyle('background-color: #fff; background-image: none;');",
+                                                    "    }",
+                                                    "}else {",
+                                                    "    form.getForm().findField('oplata6').setValue(0);",
+                                                    "    form.getForm().findField('newOplata').setValue(value-oplata);",
+                                                    "    form.getForm().findField('oplata6').setFieldStyle('background-color: #fff; background-image: none;');",
+                                                    "    form.getForm().findField('dolg6').setFieldStyle('background-color: #fff; background-image: none;');",
+                                                    "",
+                                                    "}"
+                                                ],
+                                                "name": "change",
+                                                "scope": "me"
+                                            },
+                                            "name": "onCheckboxfieldChange6",
+                                            "designerId": "cf05667b-8f19-4e93-a86e-f912afe9ed35"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.form.field.Number",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "decimalSeparator": ".",
+                                        "disabled": true,
+                                        "fieldLabel": "",
+                                        "fieldStyle": "font-size:12pt;font-weight:bold;text-align:right;",
+                                        "hideTrigger": true,
+                                        "layout|x": 300,
+                                        "layout|y": null,
+                                        "minValue": 0,
+                                        "name": "oplata6",
+                                        "negativeText": "Ошибка, сумма меньше нуля",
+                                        "value": [
+                                            "0"
+                                        ],
+                                        "vtype": null,
+                                        "vtypeText": null,
+                                        "width": 110
+                                    },
+                                    "name": "MyNumberField70",
+                                    "configAlternates": {
+                                        "scrollable": "boolean"
+                                    },
+                                    "designerId": "4437e83a-8827-4f49-9926-6598a1c5cda6",
+                                    "viewControllerInstanceId": "2c433286-f3f0-4059-829b-09fd2ca91aee",
+                                    "viewModelInstanceId": "dfea0de6-d57e-4a08-b9c6-135a424807a0",
+                                    "cn": [
+                                        {
+                                            "type": "basiceventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onNumberfieldChange6",
+                                                "implHandler": [
+                                                    " if (newValue !== oldValue){",
+                                                    "     var form = field.findParentByType('form');",
+                                                    "     var oplata = 0;",
+                                                    "     var oplata1 = form.getForm().findField('oplata1').getValue();",
+                                                    "     var oplata2 = form.getForm().findField('oplata2').getValue();",
+                                                    "     var oplata4 = form.getForm().findField('oplata4').getValue();",
+                                                    "     var oplata5 = form.getForm().findField('oplata5').getValue();",
+                                                    "     var oplata3 = form.getForm().findField('oplata3').getValue();",
+                                                    "     var oplata7 = form.getForm().findField('oplata7').getValue();",
+                                                    "",
+                                                    "     form.getForm().findField('oplata6').setFieldStyle('background-color: #FAFAD2; background-image: none;');",
+                                                    "     form.getForm().findField('dolg6').setFieldStyle('background-color: #fff; background-image: none;');",
+                                                    "     form.getForm().findField('dolg').setFieldStyle('background-color: #fff; background-image: none;');",
+                                                    "     oplata = newValue + oplata1 + oplata2 + oplata4 + oplata5 + oplata3 + oplata7;",
+                                                    "     var newOplata = form.getForm().findField('newOplata').setValue(oplata);",
+                                                    " }"
+                                                ],
+                                                "name": "change",
+                                                "scope": "me"
+                                            },
+                                            "name": "onNumberfieldChange6",
+                                            "designerId": "3136bb13-b016-4ca5-be21-e0af006c8f99"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.form.field.Number",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "decimalSeparator": ".",
+                                        "fieldLabel": "Вывоз ТБО",
+                                        "fieldStyle": "font-size:12pt;font-weight:bold;text-align:right;",
+                                        "labelStyle": "font-size:12pt;font-weight:bold;",
+                                        "layout|x": 5,
+                                        "layout|y": null,
+                                        "name": "dolg6",
+                                        "readOnly": true,
+                                        "value": [
+                                            "0"
+                                        ],
+                                        "width": 200
+                                    },
+                                    "name": "MyNumberField58",
+                                    "configAlternates": {
+                                        "scrollable": "boolean"
+                                    },
+                                    "designerId": "d5f16e66-bafd-48a1-b57a-41f875580270"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.form.FieldSet",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|snapToGrid": 5,
+                                "height": 97,
+                                "layout": "absolute",
+                                "layout|flex": null,
+                                "padding": null,
+                                "style": "background-color: #f1eeee;",
+                                "title": "",
+                                "width": 474
+                            },
+                            "name": "MyFieldSet58",
+                            "configAlternates": {
+                                "style": "string",
+                                "scrollable": "boolean"
+                            },
+                            "designerId": "29acfdda-5682-4f75-b7bc-312837cde51b",
+                            "cn": [
+                                {
+                                    "type": "Ext.form.field.Number",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "allowBlank": null,
+                                        "decimalSeparator": ".",
+                                        "fieldLabel": "К оплате",
+                                        "fieldStyle": "color:red;font-size:12pt;font-weight:bold;text-align:right;background-color: #FAFAD2;",
+                                        "hideTrigger": true,
+                                        "id": null,
+                                        "labelStyle": "font-size:12pt;font-weight:bold;",
+                                        "labelWidth": 80,
+                                        "layout|x": 220,
+                                        "layout|y": 40,
+                                        "name": "newOplata",
+                                        "readOnly": true,
+                                        "validateOnChange": null,
+                                        "value": [
+                                            "0"
+                                        ],
+                                        "width": 190
+                                    },
+                                    "name": "MyNumberField63",
+                                    "configAlternates": {
+                                        "scrollable": "boolean"
+                                    },
+                                    "designerId": "9458ced6-da36-438e-ac49-2248edbbf0b4",
+                                    "viewControllerInstanceId": "2c433286-f3f0-4059-829b-09fd2ca91aee",
+                                    "viewModelInstanceId": "dfea0de6-d57e-4a08-b9c6-135a424807a0"
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "border": "2px",
+                                        "disabled": true,
+                                        "formBind": true,
+                                        "height": null,
+                                        "icon": "resources/css/images/btn64/mtb16.png",
+                                        "id": "insOplataMarfinBank",
+                                        "itemId": null,
+                                        "layout|x": 10,
+                                        "layout|y": 40,
+                                        "margin": null,
+                                        "padding": null,
+                                        "scale": null,
+                                        "shadowOffset": 2,
+                                        "text": "Сформировать платеж",
+                                        "width": 190
+                                    },
+                                    "name": "MyButton8",
+                                    "configAlternates": {
+                                        "scrollable": "boolean"
+                                    },
+                                    "designerId": "297cc209-3d23-439b-9560-a3790b626794"
+                                },
+                                {
+                                    "type": "Ext.form.field.Checkbox",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "boxLabel": "согласен",
+                                        "checked": true,
+                                        "fieldLabel": "комиссия за инфоуслуги",
+                                        "fieldStyle": null,
+                                        "id": null,
+                                        "inputValue": "1",
+                                        "itemId": null,
+                                        "labelStyle": null,
+                                        "labelWidth": 200,
+                                        "layout|x": 10,
+                                        "layout|y": 5,
+                                        "name": "cbNext8",
+                                        "width": 320
+                                    },
+                                    "name": "MyCheckbox33",
+                                    "configAlternates": {
+                                        "style": "string",
+                                        "scrollable": "boolean"
+                                    },
+                                    "designerId": "0e38250b-ccca-4b24-8854-3b3352aad72a",
+                                    "cn": [
+                                        {
+                                            "type": "basiceventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onCheckboxfieldChange8",
+                                                "implHandler": [
+                                                    "var form = field.findParentByType('form');",
+                                                    "",
+                                                    "if (newValue) {",
+                                                    "    form.getForm().findField('commission').setValue(3);",
+                                                    "    form.getForm().findField('commission').setFieldStyle('background-color: #FAFAD2; background-image: none;');",
+                                                    "    field.setBoxLabel('согласен');",
+                                                    "",
+                                                    "",
+                                                    "}else {",
+                                                    "    form.getForm().findField('commission').setValue(0);",
+                                                    "    form.getForm().findField('commission').setFieldStyle('background-color: #fff; background-image: none;');",
+                                                    "    field.setBoxLabel('без комиссии');",
+                                                    "",
+                                                    "",
+                                                    "}"
+                                                ],
+                                                "name": "change",
+                                                "scope": "me"
+                                            },
+                                            "name": "onCheckboxfieldChange8",
+                                            "designerId": "020baf0b-0117-476c-81b7-be743208bb23"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "linkedinstance",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fieldStyle": "background-color: #FAFAD2; background-image: none;font-size:10pt;font-weight:bold;text-align:right;",
+                                        "layout|x": 345,
+                                        "layout|y": 5,
+                                        "maxValue": 3,
+                                        "minValue": 0,
+                                        "name": "commission",
+                                        "value": [
+                                            "3"
+                                        ],
+                                        "width": 65
+                                    },
+                                    "name": "numberfielddolg17",
+                                    "configAlternates": {
+                                        "scrollable": "boolean"
+                                    },
+                                    "designerId": "5a46178f-27f8-4041-9e68-e229ad2ad31e",
+                                    "masterInstanceId": "b87ce198-0025-4a42-9775-7440a200e180"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.container.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": "stretch",
+                        "height": 589,
+                        "layout": "vbox",
+                        "layout|flex": null,
+                        "width": 393
+                    },
+                    "name": "MyContainer3",
+                    "configAlternates": {
+                        "scrollable": "boolean"
+                    },
+                    "designerId": "c901d555-8a3a-4e05-8ba6-949d49d0d8b3",
+                    "cn": [
+                        {
+                            "type": "Ext.container.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "border": false,
+                                "height": 428,
+                                "html": "<h3 class=\"mtb\"><span><font style=\"color:red;text-align:justify;\">Внимание !!!</font> Выберите коммунальные услуги для оплаты с помощью чекбоксов \"оплатить все услуги\" или \"к оплате\" или введя непосредственно сумму в поле \"к оплате\" услуги. Будет сформирована сумма к оплате. К этой сумме будет добавлена комиссия за информационные услуги в размере  3 грн. Вы можете отказаться от комиссии сняв галочку с чекбокса \"согласен\". Сформировав платёж, Вы получите идентификатор и сумма платежа. Перейдите на <a href=\"https://i.mtb.ua/web_banking\" target=\"_blank\" >СЭП \"Интернет-Банкинг\" МТБ БАНКА </a> для оплаты ,введите полученный идентификатор и сумму платежа. После завершения всех операций в СЭП «Интернет-Банкинг» вернитесь на сайт и обновите данные о задолженности. Если от банка уже был получен ответ об успешном завершении Платежа, то в таблице \"Платежи через СЭП «Интернет-Банкинг» МТБ БАНКА\" статус \"в обработке\" поменяется на \"оплачено\", рядом появится значок принтера и Вы сможете распечатать платеж. Ответ из банка может быть получен в течении суток.</span></h3>",
+                                "layout": "fit",
+                                "layout|flex": null,
+                                "width": 357
+                            },
+                            "name": "MyContainer4",
+                            "configAlternates": {
+                                "html": "string",
+                                "scrollable": "boolean"
+                            },
+                            "designerId": "0b2bbf9d-0631-4be9-ba3d-cf8104cd291f"
+                        },
+                        {
+                            "type": "Ext.container.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "height": 59,
+                                "layout": "anchor",
+                                "layout|flex": null
+                            },
+                            "name": "MyContainer5",
+                            "configAlternates": {
+                                "scrollable": "boolean"
+                            },
+                            "designerId": "7f2554c9-8b45-4937-b0a8-6e7b67d8fef8",
+                            "cn": [
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "height": null,
+                                        "icon": "resources/css/images/ico/refresh.png",
+                                        "id": "checkOplata",
+                                        "itemId": null,
+                                        "layout|anchor": "100%",
+                                        "margin": "0 30 0 30",
+                                        "scale": "medium",
+                                        "text": "Обновить данные по задолженности",
+                                        "textAlign": "left",
+                                        "tooltip": "Обновить данные по задолженности",
+                                        "width": null
+                                    },
+                                    "name": "MyButton9",
+                                    "configAlternates": {
+                                        "tooltip": "string",
+                                        "scrollable": "boolean"
+                                    },
+                                    "designerId": "037afee8-796c-4768-b770-d5084bcc89dd"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.form.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "bodyPadding": 5,
+                                "designer|snapToGrid": 5,
+                                "height": 67,
+                                "id": "fmParamsPay",
+                                "layout": "absolute",
+                                "layout|flex": null,
+                                "style": "background-color: #C2D9C9;",
+                                "title": "",
+                                "width": 354
+                            },
+                            "name": "MyForm18",
+                            "configAlternates": {
+                                "style": "string",
+                                "scrollable": "boolean"
+                            },
+                            "designerId": "207f433f-c399-478c-b693-9daf3dfbde34",
+                            "cn": [
+                                {
+                                    "type": "Ext.form.field.Number",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "allowBlank": false,
+                                        "decimalPrecision": 0,
+                                        "decimalSeparator": ".",
+                                        "fieldLabel": "Идентификатор платежа",
+                                        "fieldStyle": "background-color:#F0F8FF;font-size:14pt;font-weight:bold;text-align:left;color:red;",
+                                        "hideTrigger": true,
+                                        "inputType": null,
+                                        "labelAlign": "top",
+                                        "layout|x": 20,
+                                        "layout|y": 0,
+                                        "margin": null,
+                                        "name": "payment_id",
+                                        "readOnly": true,
+                                        "width": 160
+                                    },
+                                    "name": "MyNumberField59",
+                                    "configAlternates": {
+                                        "scrollable": "boolean"
+                                    },
+                                    "designerId": "0b5c194b-a0ae-472b-8af9-ed58052dee21"
+                                },
+                                {
+                                    "type": "Ext.form.field.Number",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "allowBlank": false,
+                                        "decimalSeparator": ".",
+                                        "fieldLabel": "Сумма платежа",
+                                        "fieldStyle": "background-color:#F0F8FF;font-size:14pt;font-weight:bold;text-align:left;color:red;",
+                                        "hideTrigger": true,
+                                        "inputType": null,
+                                        "labelAlign": "top",
+                                        "layout|x": 210,
+                                        "layout|y": 0,
+                                        "margin": null,
+                                        "minValue": 0.01,
+                                        "name": "summa",
+                                        "readOnly": true,
+                                        "width": 130
+                                    },
+                                    "name": "MyNumberField60",
+                                    "configAlternates": {
+                                        "scrollable": "boolean"
+                                    },
+                                    "designerId": "3a8b8bfe-1a59-4472-903c-c480d97f7f49"
+                                },
+                                {
+                                    "type": "Ext.form.field.Text",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fieldLabel": "sign",
+                                        "fieldStyle": "background-color:#F0F8FF;font-size:13pt;font-weight:bold;text-align:left;color:red;",
+                                        "hidden": true,
+                                        "labelAlign": "top",
+                                        "layout|x": 0,
+                                        "layout|y": 40,
+                                        "margin": 20,
+                                        "name": "sign",
+                                        "width": 335
+                                    },
+                                    "name": "MyTextField70",
+                                    "configAlternates": {
+                                        "scrollable": "boolean"
+                                    },
+                                    "designerId": "26937054-033b-4832-936e-ee2ba27eac52"
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "formBind": true,
+                                        "height": 35,
+                                        "hidden": true,
+                                        "href": "marfin/pay.php",
+                                        "icon": "resources/css/images/ico/door_in.png",
+                                        "id": "checkOplataTest",
+                                        "itemId": null,
+                                        "layout|x": 40,
+                                        "layout|y": 240,
+                                        "margin": null,
+                                        "scale": "medium",
+                                        "text": "СЭП «Интернет-Банкинг»  имитация",
+                                        "textAlign": "left",
+                                        "tooltip": "Очистить все выбранное",
+                                        "width": 310
+                                    },
+                                    "name": "MyButton10",
+                                    "configAlternates": {
+                                        "tooltip": "string",
+                                        "scrollable": "boolean"
+                                    },
+                                    "designerId": "b611e5fa-9c78-408c-a6d5-740279a157b0",
+                                    "cn": [
+                                        {
+                                            "type": "fixedfunction",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|params": [
+                                                    "button",
+                                                    "e"
+                                                ],
+                                                "fn": "handler",
+                                                "implHandler": [
+                                                    "var form = button.findParentByType('form');",
+                                                    "var pay_id  = form.getForm().findField('payment_id').getValue();",
+                                                    "var summa  = form.getForm().findField('summa').getValue();",
+                                                    "var sign  = form.getForm().findField('sign').getValue();",
+                                                    "var xml  = form.getForm().findField('xml').getValue();",
+                                                    "//console.log(form);",
+                                                    "button.setParams({pay_id:pay_id,summa:summa,sign:sign,xml:xml});"
+                                                ]
+                                            },
+                                            "name": "handler",
+                                            "designerId": "f7eb9734-30e7-4b9e-ab85-11fd9964a30c"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.form.field.TextArea",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fieldLabel": "",
+                                        "height": 108,
+                                        "hidden": true,
+                                        "layout|x": 20,
+                                        "layout|y": 120,
+                                        "name": "xml",
+                                        "width": 345
+                                    },
+                                    "name": "MyTextArea2",
+                                    "configAlternates": {
+                                        "scrollable": "boolean"
+                                    },
+                                    "designerId": "59912878-8843-44eb-9c4a-10aa8cd272e7"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.container.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "height": 39,
+                                "html": "<h3 class=\"mtb\"><span><font style=\"text-align:justify;\"><a href=\"https://i.mtb.ua/web/\" target=\"_blank\" >Перейти на сайт Интернет-Банкинга для оплаты</a></span></h3>",
+                                "layout|flex": 1
+                            },
+                            "name": "MyContainer6",
+                            "configAlternates": {
+                                "scrollable": "boolean",
+                                "html": "string"
+                            },
+                            "designerId": "246856b3-b135-45e8-a46b-99aef458beb9"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.grid.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "emptyText": "нет данных по платежам",
+                "height": 193,
+                "id": "grPayment",
+                "store": "StPayment",
+                "title": "Платежи через СЭП «Интернет-Банкинг» МарфинБанка",
+                "titleAlign": "center",
+                "width": 898
+            },
+            "name": "MyGridPanel26",
+            "configAlternates": {
+                "scrollable": "boolean"
+            },
+            "designerId": "3b8e4d1d-d292-4a66-813f-e4daaf2eb61e",
+            "cn": [
+                {
+                    "type": "Ext.view.Table",
+                    "reference": {
+                        "name": "viewConfig",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "name": "MyGridView27",
+                    "configAlternates": {
+                        "scrollable": "boolean"
+                    },
+                    "designerId": "024e1950-4db3-4aa0-904a-6942adabfac0"
+                },
+                {
+                    "type": "Ext.grid.column.Number",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "address_id",
+                        "hidden": true,
+                        "text": "Address_id"
+                    },
+                    "name": "MyNumberColumn117",
+                    "configAlternates": {
+                        "scrollable": "boolean"
+                    },
+                    "designerId": "d6d05fd5-df27-450a-97eb-f28eec52b543"
+                },
+                {
+                    "type": "Ext.grid.column.Date",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "data",
+                        "format": "d-m-y",
+                        "hidden": null,
+                        "menuDisabled": true,
+                        "text": "Дата",
+                        "width": 75
+                    },
+                    "name": "MyDateColumn36",
+                    "configAlternates": {
+                        "scrollable": "boolean"
+                    },
+                    "designerId": "618a89a3-adf0-42da-b25d-8ef9acbf5e25"
+                },
+                {
+                    "type": "Ext.grid.column.Number",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "payment_id",
+                        "format": "0",
+                        "hidden": null,
+                        "menuDisabled": true,
+                        "text": "Ид",
+                        "width": 60
+                    },
+                    "name": "MyNumberColumn118",
+                    "configAlternates": {
+                        "scrollable": "boolean"
+                    },
+                    "designerId": "bed7c91c-9b59-426f-81c6-2544060770bc"
+                },
+                {
+                    "type": "Ext.grid.column.Number",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "kvartplata",
+                        "hidden": null,
+                        "menuDisabled": true,
+                        "text": "Кварт",
+                        "width": 75
+                    },
+                    "name": "MyNumberColumn119",
+                    "configAlternates": {
+                        "scrollable": "boolean"
+                    },
+                    "designerId": "53d404ad-c3d9-4308-8fb5-d9c1b6fab19d"
+                },
+                {
+                    "type": "Ext.grid.column.Number",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "otoplenie",
+                        "hidden": null,
+                        "menuDisabled": true,
+                        "text": "Отопл",
+                        "width": 75
+                    },
+                    "name": "MyNumberColumn120",
+                    "configAlternates": {
+                        "scrollable": "boolean"
+                    },
+                    "designerId": "4f04955c-efda-4aa8-b4ab-3fead79064f9"
+                },
+                {
+                    "type": "Ext.grid.column.Number",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "ptn",
+                        "hidden": null,
+                        "menuDisabled": true,
+                        "text": "ПТН",
+                        "width": 75
+                    },
+                    "name": "MyNumberColumn127",
+                    "configAlternates": {
+                        "scrollable": "boolean"
+                    },
+                    "designerId": "8a8efc05-d514-451b-a4b7-bd02078227a1"
+                },
+                {
+                    "type": "Ext.grid.column.Number",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "podogrev",
+                        "hidden": null,
+                        "menuDisabled": true,
+                        "text": "Подог",
+                        "width": 70
+                    },
+                    "name": "MyNumberColumn121",
+                    "configAlternates": {
+                        "scrollable": "boolean"
+                    },
+                    "designerId": "6159375f-1385-4af7-9598-073cce73f740"
+                },
+                {
+                    "type": "Ext.grid.column.Number",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "voda",
+                        "hidden": null,
+                        "menuDisabled": true,
+                        "text": "Вода",
+                        "width": 75
+                    },
+                    "name": "MyNumberColumn122",
+                    "configAlternates": {
+                        "scrollable": "boolean"
+                    },
+                    "designerId": "2a2d4f72-9d71-4db7-942b-04e255df917e"
+                },
+                {
+                    "type": "Ext.grid.column.Number",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "stoki",
+                        "hidden": null,
+                        "menuDisabled": true,
+                        "text": "Стоки",
+                        "width": 70
+                    },
+                    "name": "MyNumberColumn123",
+                    "configAlternates": {
+                        "scrollable": "boolean"
+                    },
+                    "designerId": "88325020-c794-4677-b73d-62765b598364"
+                },
+                {
+                    "type": "Ext.grid.column.Number",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "tbo",
+                        "hidden": null,
+                        "menuDisabled": true,
+                        "text": "ТБО",
+                        "width": 55
+                    },
+                    "name": "MyNumberColumn124",
+                    "configAlternates": {
+                        "scrollable": "boolean"
+                    },
+                    "designerId": "a8cda705-cee3-4bf4-bc4f-bcdf566cd66b"
+                },
+                {
+                    "type": "Ext.grid.column.Number",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "summa",
+                        "hidden": null,
+                        "menuDisabled": true,
+                        "text": "Сумма",
+                        "width": 80
+                    },
+                    "name": "MyNumberColumn125",
+                    "configAlternates": {
+                        "scrollable": "boolean"
+                    },
+                    "designerId": "5e90d48e-7dd2-4bb8-967f-c5aa1f7b1503"
+                },
+                {
+                    "type": "Ext.grid.column.Number",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "commission",
+                        "hidden": null,
+                        "menuDisabled": true,
+                        "text": "Ком",
+                        "width": 60
+                    },
+                    "name": "MyNumberColumn126",
+                    "configAlternates": {
+                        "scrollable": "boolean"
+                    },
+                    "designerId": "4a1a127f-d4b2-4fc9-bc07-0896fa38a3cf"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "prixod",
+                        "hidden": true,
+                        "text": "Prixod"
+                    },
+                    "name": "MyColumn115",
+                    "configAlternates": {
+                        "scrollable": "boolean"
+                    },
+                    "designerId": "91953fa3-c32e-45ea-9554-78dfc75bb237"
+                },
+                {
+                    "type": "Ext.grid.column.Date",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "date_in",
+                        "hidden": true,
+                        "text": "Date_in"
+                    },
+                    "name": "MyDateColumn37",
+                    "configAlternates": {
+                        "scrollable": "boolean"
+                    },
+                    "designerId": "f905c7b9-5f42-47f9-a3da-7a16d165bf67"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "chek",
+                        "hidden": true,
+                        "text": "Chek"
+                    },
+                    "name": "MyColumn116",
+                    "configAlternates": {
+                        "scrollable": "boolean"
+                    },
+                    "designerId": "46e18602-c718-44b0-ab9d-318174ea6a80"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "status",
+                        "menuDisabled": true,
+                        "text": "Статус",
+                        "width": 95
+                    },
+                    "name": "MyColumn117",
+                    "configAlternates": {
+                        "scrollable": "boolean"
+                    },
+                    "designerId": "9d79764f-a732-406f-8268-44a76923e9de"
+                },
+                {
+                    "type": "Ext.grid.column.Action",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "flex": null,
+                        "icon": "resources/css/images/ico/printer.png",
+                        "menuDisabled": true,
+                        "width": 30
+                    },
+                    "name": "MyActionColumn",
+                    "configAlternates": {
+                        "scrollable": "boolean"
+                    },
+                    "designerId": "5695d65f-1046-42b2-8839-246ea961d462",
+                    "cn": [
+                        {
+                            "type": "actioncolumnitem",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "icon": "resources/css/images/ico/printer.png"
+                            },
+                            "name": "MyActionColumnItem",
+                            "designerId": "db54da7b-d40a-4be6-989b-8824b4e0984f",
+                            "cn": [
+                                {
+                                    "type": "fixedfunction",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|params": [
+                                            "view",
+                                            "rowIndex",
+                                            "colIndex",
+                                            "item",
+                                            "e",
+                                            "record",
+                                            "row"
+                                        ],
+                                        "fn": "handler",
+                                        "implHandler": [
+                                            "var stUser = Ext.data.StoreManager.get(\"StUser\");",
+                                            "",
+                                            "//LOGIN & PASSWORD",
+                                            "",
+                                            "var values =stUser.getAt(0);",
+                                            "var store = view.getStore();",
+                                            "var rec = store.getAt(rowIndex);",
+                                            "var pay_id = rec.get('payment_id');",
+                                            "",
+                                            "",
+                                            "if (pay_id) {",
+                                            "    var myMask= Ext.Msg.show({",
+                                            "        title:'Квитанция об оплате...',",
+                                            "        msg: 'Загрузка квитанции.Ожидайте...',",
+                                            "        buttons: Ext.Msg.CANCEL,",
+                                            "        wait: true,",
+                                            "        modal: true,",
+                                            "        icon: Ext.Msg.INFO",
+                                            "    });",
+                                            "    var report = 'raspechatkaOplataMarfin';",
+                                            "    var namereport = 'Квитанция';",
+                                            "    var value = {",
+                                            "        login:values.get('login'),",
+                                            "        address_id:values.get('address_id'),",
+                                            "        raion_id:values.get('raion_id'),",
+                                            "        report:report,",
+                                            "        what:report,",
+                                            "        user_id:values.get('user_id'),",
+                                            "        payment_id:pay_id",
+                                            "",
+                                            "    };",
+                                            "    var tabPnCenter =  Ext.getCmp('tabFirstPage');//me.getTabPnCenter();",
+                                            "  //  console.log(tabPnCenter);",
+                                            "    var tab = tabPnCenter.child('#'+report);",
+                                            "        //console.log(tab);",
+                                            "",
+                                            "    if (!tab) {",
+                                            "               // console.log(tab);",
+                                            "",
+                                            "        tab  = tabPnCenter.add({",
+                                            "            xtype:'tabReport',",
+                                            "            title:namereport,",
+                                            "            itemid:''+report+''",
+                                            "        });",
+                                            "",
+                                            "       // console.log(tab);",
+                                            "",
+                                            "    }",
+                                            "    tabPnCenter.setActiveTab(tab);",
+                                            "    var reppan = tab.getComponent(0);",
+                                            "    QueryPaymentMarfin.getRaspechatka(value,function(data){",
+                                            "        if (data){",
+                                            "            reppan.update(data.content);",
+                                            "            Ext.REPORTCONTENT =data.content;",
+                                            "            Ext.REPORTSQL =data.sql;",
+                                            "            Ext.REPORTTITLE =report;",
+                                            "            myMask.close();",
+                                            "",
+                                            "        } else {",
+                                            "",
+                                            "            Ext.MessageBox.show({",
+                                            "                title: 'Ошибка ',",
+                                            "                msg: 'Документ не создан',",
+                                            "                buttons: Ext.MessageBox.OK,",
+                                            "                icon: Ext.MessageBox.ERROR",
+                                            "            });",
+                                            "            myMask.close();",
+                                            "",
+                                            "        }",
+                                            "    });",
+                                            "}"
+                                        ]
+                                    },
+                                    "name": "handler",
+                                    "designerId": "3e068106-eaf9-4bd5-91d6-f7280401860f"
+                                },
+                                {
+                                    "type": "fixedfunction",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|params": [
+                                            "v",
+                                            "metadata",
+                                            "r",
+                                            "rowIndex",
+                                            "colIndex",
+                                            "store"
+                                        ],
+                                        "fn": "getClass",
+                                        "implHandler": [
+                                            "if (r.get('chek') === 0) {",
+                                            "    metaData = 'x-grid-center-icon';",
+                                            "} else {",
+                                            "    metaData = 'x-hide-display';",
+                                            "}",
+                                            "return metaData;"
+                                        ]
+                                    },
+                                    "name": "getClass",
+                                    "designerId": "8c1b8d9a-7f57-452a-b8b3-b71d64be5d7d"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

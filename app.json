@@ -1,0 +1,88 @@
+{
+   "name": "yis",
+   "indexHtmlPath": "index.html",
+   "classpath": "${app.dir}/app,${app.dir}/resources/",
+   "overrides": "${app.dir}/overrides",
+   "framework": "ext",
+   "theme": "ext-theme-gray",
+   "requires": [],
+   "sass": {
+      "namespace": "yis"
+   },
+   "js": [
+      {
+         "path": "${framework.dir}/build/ext-all-rtl-debug.js"
+      },
+      {
+         "path": "resources/ext-locale-ru.js",
+         "x-compile": true,
+         "includeInBundle": true
+      },
+      {
+         "path": "app.js",
+         "bundle": true
+      }
+   ],
+   "css": [
+      {
+         "path": "bootstrap.css",
+         "bootstrap": true
+      },
+      {
+         "path": "resources/css/is_style.css"
+      },
+      {
+         "path": "resources/css/is_images.css"
+      },
+      {
+         "path": "resources/css/is_news.css"
+      },
+      {
+         "path": "resources/css/reports.css"
+      },
+      {
+         "path": "resources/css/appartment.css"
+      }
+   ],
+   "production": {},
+   "testing": {},
+   "development": {},
+   "bootstrap": {
+      "base": "${app.dir}",
+      "manifest": "bootstrap.json",
+      "microloader": "bootstrap.js",
+      "css": "bootstrap.css"
+   },
+   "output": {
+      "base": "${workspace.build.dir}/${build.environment}/${app.name}"
+   },
+   "appCache": {
+      "cache": [
+         "index.html"
+      ],
+      "network": [
+         "*"
+      ],
+      "fallback": []
+   },
+   "resources": [
+      "resources/css/is_style.css",
+      "resources/css/is_images.css",
+      "resources/css/is_news.css",
+      "resources/css/reports.css",
+      "resources/css/appartment.css"
+   ],
+   "ignore": [
+      "(^|/)CVS(/?$|/.*?$)"
+   ],
+   "archivePath": "archive",
+   "slicer": {
+      "js": [
+         {
+            "path": "${app.dir}/sass/example/custom.js",
+            "isWidgetManifest": true
+         }
+      ]
+   },
+   "id": "54507e29-bb03-465c-a726-ed0f68d8c3c7"
+}

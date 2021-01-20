@@ -1,0 +1,48 @@
+{
+    "type": "directstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "stTekOplata",
+        "designer|userClassName": "StTekOplata",
+        "groupDir": null,
+        "groupField": null,
+        "model": "MdOplata",
+        "storeId": "stTekOplata"
+    },
+    "designerId": "bf3e81e9-d94a-406f-ad14-a21e0f38c2f0",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Direct",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "directFn": "QueryTekNach.getResults",
+                "groupParam": null
+            },
+            "name": "MyDirectProxy",
+            "designerId": "51346387-4508-4147-83de-24a013a3d78a",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "rootProperty": "data"
+                    },
+                    "name": "MyJsonReader",
+                    "designerId": "3faa19f1-2723-463a-82e3-00d1e8590ac3"
+                }
+            ]
+        }
+    ]
+}

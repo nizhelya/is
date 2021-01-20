@@ -1,0 +1,80 @@
+{
+    "type": "Ext.window.Window",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "winEmailConfirm",
+        "designer|userClassName": "user.WinEmailConfirm",
+        "draggable": false,
+        "height": 405,
+        "id": "winEmailConfirm",
+        "itemId": "winEmailConfirm",
+        "modal": true,
+        "plain": true,
+        "title": "Почтовое уведомление",
+        "width": 593
+    },
+    "configAlternates": {
+        "scrollable": "boolean"
+    },
+    "designerId": "4aa43358-c3c6-49d6-b9f6-f71656f645b8",
+    "viewControllerInstanceId": "31b47d12-524e-413d-9467-57ee548fca06",
+    "viewModelInstanceId": "1279f071-1742-4d40-908d-7489565af133",
+    "cn": [
+        {
+            "type": "Ext.form.FieldSet",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|snapToGrid": 5,
+                "height": 367,
+                "html": "<h4 class=\"email-confirm\"><span>Продолжение регистрации</span><br><p style = \"text-align: justify;\">На Ваш электронный адрес выслано письмо с ссылкой для активации. Вам нужно в течение 3 дней перейти по ссылке для подтверждения регистрации. По истечению этого срока Ваша регистрационная запись будет удалена.<br>Спасибо за регистрацию !<brАдминистрация портала></p></h4>",
+                "layout": "absolute",
+                "margin": null,
+                "padding": 30,
+                "style": "background-color: #F1EEEE;",
+                "title": ""
+            },
+            "name": "MyFieldSet69",
+            "configAlternates": {
+                "html": "string",
+                "style": "string",
+                "scrollable": "boolean"
+            },
+            "designerId": "963d1cd4-6fff-4f2f-9b0d-1dd00f86cfe6",
+            "cn": [
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "cls": "button",
+                        "height": null,
+                        "iconCls": "icon-door-out ",
+                        "id": "btnConfirmEmailClose",
+                        "itemId": null,
+                        "layout|x": 210,
+                        "layout|y": 250,
+                        "scale": "medium",
+                        "text": "Выход",
+                        "width": 145
+                    },
+                    "name": "MyButton22",
+                    "configAlternates": {
+                        "scrollable": "boolean"
+                    },
+                    "designerId": "62fd909e-706a-4c40-bce7-3472c0b8ba44"
+                }
+            ]
+        }
+    ]
+}

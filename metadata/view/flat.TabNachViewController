@@ -1,0 +1,14 @@
+{
+    "type": "Ext.app.ViewController",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "tabnach",
+        "designer|userClassName": "flat.TabNachViewController"
+    },
+    "name": "undefinedViewController",
+    "designerId": "da383a62-3566-46fb-98f3-34060b0035a7"
+}

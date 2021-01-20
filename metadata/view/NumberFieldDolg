@@ -1,0 +1,26 @@
+{
+    "type": "Ext.form.field.Number",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "decimalSeparator": ".",
+        "designer|userAlias": "numberFieldDolg",
+        "designer|userClassName": "NumberFieldDolg",
+        "fieldLabel": "",
+        "fieldStyle": "font-size:12pt;font-weight:bold;text-align:right;",
+        "hideTrigger": true,
+        "value": [
+            "0"
+        ],
+        "width": 90
+    },
+    "configAlternates": {
+        "scrollable": "boolean"
+    },
+    "designerId": "b87ce198-0025-4a42-9775-7440a200e180",
+    "viewControllerInstanceId": "2c433286-f3f0-4059-829b-09fd2ca91aee",
+    "viewModelInstanceId": "dfea0de6-d57e-4a08-b9c6-135a424807a0"
+}

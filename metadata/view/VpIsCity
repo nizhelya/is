@@ -1,0 +1,842 @@
+{
+    "type": "Ext.container.Viewport",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "border": null,
+        "designer|initialView": true,
+        "designer|userAlias": "vpIsCity",
+        "designer|userClassName": "VpIsCity",
+        "id": "vpisCity",
+        "itemId": null,
+        "layout": "border"
+    },
+    "configAlternates": {
+        "scrollable": "boolean"
+    },
+    "designerId": "46da8d31-6bea-4c1a-8ace-60fb57617668",
+    "viewControllerInstanceId": "226ed3a2-5e6b-4e55-883f-2bd1f9da824a",
+    "viewModelInstanceId": "47813f44-d3bd-452b-814a-d3a2fe166d3c",
+    "cn": [
+        {
+            "type": "Ext.panel.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "animCollapse": null,
+                "border": false,
+                "collapseDirection": null,
+                "collapseFirst": null,
+                "collapsible": null,
+                "container|align": null,
+                "frameHeader": false,
+                "header": false,
+                "id": "leftPanel",
+                "layout": "vbox",
+                "layout|flex": null,
+                "layout|region": "west",
+                "layout|split": null,
+                "layout|splitterResize": false,
+                "maxWidth": null,
+                "minWidth": null,
+                "style": null,
+                "title": null,
+                "width": null
+            },
+            "name": "MyPanel7",
+            "configAlternates": {
+                "style": "string",
+                "scrollable": "boolean"
+            },
+            "designerId": "4bd09992-6062-46f8-90f0-638f2715ee89",
+            "cn": [
+                {
+                    "type": "Ext.container.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "логотип",
+                        "height": 73,
+                        "html": "<h6 class=\"header\"><span>Южненская<br>Коммунальная<br>Информационная<br>Система</span></h6>",
+                        "layout|flex": null,
+                        "style": "background-color: #f3f3f3;",
+                        "width": 190
+                    },
+                    "name": "MyContainer7",
+                    "configAlternates": {
+                        "html": "string",
+                        "style": "string",
+                        "scrollable": "boolean"
+                    },
+                    "designerId": "b6023eeb-3a04-4f39-93a4-6b5e51de47c3"
+                },
+                {
+                    "type": "Ext.tab.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "activeTab": 0,
+                        "border": false,
+                        "collapseFirst": false,
+                        "collapsed": null,
+                        "collapsible": null,
+                        "frameHeader": false,
+                        "height": null,
+                        "hidden": null,
+                        "id": "leftPanelMenu",
+                        "layout|flex": 1,
+                        "plain": true,
+                        "width": 190
+                    },
+                    "name": "MyTabPanel1",
+                    "configAlternates": {
+                        "scrollable": "boolean"
+                    },
+                    "designerId": "028bf872-37c0-40e8-940a-2a28b0d1e334",
+                    "cn": [
+                        {
+                            "type": "Ext.panel.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "border": false,
+                                "designer|displayName": "Инфо",
+                                "dock": null,
+                                "header": null,
+                                "height": null,
+                                "icon": "resources/css/images/ico/home_16.png",
+                                "iconCls": null,
+                                "id": "tabMenuHome",
+                                "layout": "fit",
+                                "margin": null,
+                                "padding": null,
+                                "title": " "
+                            },
+                            "name": "MyPanel8",
+                            "configAlternates": {
+                                "scrollable": "boolean"
+                            },
+                            "designerId": "4e5f1c94-5d78-4f7d-962d-7f87d14d927e",
+                            "cn": [
+                                {
+                                    "type": "Ext.tab.Tab",
+                                    "reference": {
+                                        "name": "tabConfig",
+                                        "type": "object"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout|flex": null
+                                    },
+                                    "name": "TabConfig6",
+                                    "configAlternates": {
+                                        "scrollable": "boolean"
+                                    },
+                                    "designerId": "8e4e90a7-28d7-4b09-82ad-fa4c17c1641c"
+                                },
+                                {
+                                    "type": "Ext.form.FieldSet",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "border": false,
+                                        "container|align": "stretch",
+                                        "layout": "vbox",
+                                        "style": "background-color: #DCDCDC;",
+                                        "title": ""
+                                    },
+                                    "name": "MyFieldSet59",
+                                    "configAlternates": {
+                                        "style": "string",
+                                        "scrollable": "boolean"
+                                    },
+                                    "designerId": "8122aaea-68d4-40ec-bb1a-edde54df9c09",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.form.Label",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "cls": [
+                                                    "show-login"
+                                                ],
+                                                "height": null,
+                                                "id": "showLogin",
+                                                "margin": 10,
+                                                "padding": null,
+                                                "style": null,
+                                                "text": "",
+                                                "width": 200
+                                            },
+                                            "name": "MyLabel56",
+                                            "configAlternates": {
+                                                "style": "string",
+                                                "scrollable": "boolean"
+                                            },
+                                            "designerId": "23ad038a-6413-4c71-9e42-ec2c2222c380"
+                                        },
+                                        {
+                                            "type": "Ext.button.Button",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "cls": null,
+                                                "height": null,
+                                                "href": null,
+                                                "icon": "resources/css/images/btn32/my-profile_32.png",
+                                                "iconCls": null,
+                                                "id": "btnAvtorisazia",
+                                                "itemId": null,
+                                                "layout|margins": "",
+                                                "margin": "10 20 10 20",
+                                                "padding": null,
+                                                "scale": "medium",
+                                                "text": "авторизация",
+                                                "textAlign": null,
+                                                "tooltip": null,
+                                                "tooltipType": "title",
+                                                "width": null
+                                            },
+                                            "name": "MyButton11",
+                                            "configAlternates": {
+                                                "tooltip": "string",
+                                                "scrollable": "boolean"
+                                            },
+                                            "designerId": "afa16a78-7032-447d-817e-dae460b207d3"
+                                        },
+                                        {
+                                            "type": "Ext.button.Button",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "cls": null,
+                                                "height": null,
+                                                "icon": "resources/css/images/btn32/contact_32.png",
+                                                "iconCls": null,
+                                                "id": "btnRegistration",
+                                                "itemId": null,
+                                                "margin": "10 20 10 20",
+                                                "padding": null,
+                                                "scale": "medium",
+                                                "text": " регистрация",
+                                                "textAlign": null,
+                                                "tooltip": null,
+                                                "tooltipType": "title",
+                                                "width": null
+                                            },
+                                            "name": "MyButton12",
+                                            "configAlternates": {
+                                                "tooltip": "string",
+                                                "scrollable": "boolean"
+                                            },
+                                            "designerId": "57ae3837-4cbb-4b37-8c4a-c336bd9bfdd0"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.panel.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "border": false,
+                                "container|align": "stretch",
+                                "designer|displayName": "Адрес",
+                                "frameHeader": false,
+                                "header": false,
+                                "iconCls": "icon-flat",
+                                "id": "tabMenuMyFlat",
+                                "layout": "vbox",
+                                "manageHeight": null,
+                                "margin": null,
+                                "title": "Мои квартиры"
+                            },
+                            "name": "MyPanel9",
+                            "configAlternates": {
+                                "scrollable": "boolean"
+                            },
+                            "designerId": "ef18d9a0-ef45-4fc1-b3b9-aaab4e098e59",
+                            "cn": [
+                                {
+                                    "type": "Ext.panel.Panel",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "border": false,
+                                        "designer|displayName": "Моя квартира",
+                                        "height": null,
+                                        "iconCls": null,
+                                        "id": "pnChoiceMyFlat",
+                                        "layout": "fit",
+                                        "layout|flex": 1,
+                                        "margin": null,
+                                        "title": ""
+                                    },
+                                    "name": "MyPanel10",
+                                    "configAlternates": {
+                                        "scrollable": "boolean"
+                                    },
+                                    "designerId": "5d73aaf5-92ae-48ba-9f65-7bd94db59a6e",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.form.FieldSet",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "container|align": "stretch",
+                                                "height": 279,
+                                                "layout": "vbox",
+                                                "style": "background-color: #DCDCDC;",
+                                                "title": ""
+                                            },
+                                            "name": "MyFieldSet60",
+                                            "configAlternates": {
+                                                "style": "string",
+                                                "scrollable": "boolean"
+                                            },
+                                            "designerId": "bf987c25-89de-4281-af09-cf0579e236a7",
+                                            "cn": [
+                                                {
+                                                    "type": "Ext.view.View",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "border": null,
+                                                        "cls": [
+                                                            "add-flat-list"
+                                                        ],
+                                                        "height": null,
+                                                        "id": "listMenuAddMyFlat",
+                                                        "itemSelector": ".add-flat-list-item",
+                                                        "layout|flex": 0.5,
+                                                        "layout|margins": null,
+                                                        "margin": "10 0 0 0",
+                                                        "overItemCls": "add-flat-list-item-hover",
+                                                        "padding": null,
+                                                        "store": "StAddMyFlat",
+                                                        "style": null
+                                                    },
+                                                    "name": "MyView",
+                                                    "configAlternates": {
+                                                        "style": "string",
+                                                        "scrollable": "boolean"
+                                                    },
+                                                    "designerId": "718856c5-46df-4627-84ed-462565e9a119",
+                                                    "cn": [
+                                                        {
+                                                            "type": "Ext.XTemplate",
+                                                            "reference": {
+                                                                "name": "itemTpl",
+                                                                "type": "object"
+                                                            },
+                                                            "codeClass": null,
+                                                            "userConfig": {
+                                                                "designer|displayName": "itemTpl",
+                                                                "implHandler": [
+                                                                    "<tpl for=\".\"><div class=\"add-flat-list-item\">{address}</div></tpl>"
+                                                                ]
+                                                            },
+                                                            "name": "tpl",
+                                                            "designerId": "a4cad143-e655-4f69-882b-959f67150d9b"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "Ext.view.View",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "border": "",
+                                                        "cls": [
+                                                            "flat-list"
+                                                        ],
+                                                        "id": "listMenuMyFlat",
+                                                        "itemSelector": ".flat-list-item",
+                                                        "layout|flex": 3.5,
+                                                        "layout|margins": "10 0 10 ",
+                                                        "overItemCls": "flat-list-item-hover",
+                                                        "padding": null,
+                                                        "store": "StMyFlat",
+                                                        "style": "border:0px;"
+                                                    },
+                                                    "name": "MyView1",
+                                                    "configAlternates": {
+                                                        "style": "string",
+                                                        "scrollable": "boolean"
+                                                    },
+                                                    "designerId": "f0fc0b54-2690-48e8-bdc3-39f3c37703cc",
+                                                    "cn": [
+                                                        {
+                                                            "type": "Ext.XTemplate",
+                                                            "reference": {
+                                                                "name": "itemTpl",
+                                                                "type": "object"
+                                                            },
+                                                            "codeClass": null,
+                                                            "userConfig": {
+                                                                "designer|displayName": "itemTpl",
+                                                                "implHandler": [
+                                                                    "<tpl for=\".\"><div class=\"flat-list-item\">{address}</div></tpl>"
+                                                                ]
+                                                            },
+                                                            "name": "tpl1",
+                                                            "designerId": "c5aa048b-3cc3-4071-8a9a-bc7cf0e22d15"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "Ext.form.FieldSet",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "border": null,
+                                                        "hidden": null,
+                                                        "layout|flex": 5,
+                                                        "title": "Оплатить с помощью"
+                                                    },
+                                                    "name": "MyFieldSet61",
+                                                    "configAlternates": {
+                                                        "scrollable": "boolean"
+                                                    },
+                                                    "designerId": "8723a7d5-2137-4fdf-8924-ddd47616eff5",
+                                                    "cn": [
+                                                        {
+                                                            "type": "Ext.button.Button",
+                                                            "reference": {
+                                                                "name": "items",
+                                                                "type": "array"
+                                                            },
+                                                            "codeClass": null,
+                                                            "userConfig": {
+                                                                "cls": "btn_mtb",
+                                                                "height": 60,
+                                                                "hidden": true,
+                                                                "id": "btnMarfinBank",
+                                                                "layout|anchor": "100%",
+                                                                "margin": "20 0 20 0",
+                                                                "scale": "large",
+                                                                "text": null,
+                                                                "textAlign": null,
+                                                                "width": 176
+                                                            },
+                                                            "name": "MyButton13",
+                                                            "configAlternates": {
+                                                                "scrollable": "boolean"
+                                                            },
+                                                            "designerId": "545a8c2f-ef43-4574-9e71-85ecc6b85337"
+                                                        },
+                                                        {
+                                                            "type": "Ext.button.Button",
+                                                            "reference": {
+                                                                "name": "items",
+                                                                "type": "array"
+                                                            },
+                                                            "codeClass": null,
+                                                            "userConfig": {
+                                                                "cls": "btn_visa",
+                                                                "height": 103,
+                                                                "hidden": true,
+                                                                "href": null,
+                                                                "icon": null,
+                                                                "id": "btnIpayVisa",
+                                                                "layout|anchor": "100%",
+                                                                "margin": null,
+                                                                "scale": "large",
+                                                                "text": null,
+                                                                "textAlign": null,
+                                                                "width": 168
+                                                            },
+                                                            "name": "MyButton14",
+                                                            "configAlternates": {
+                                                                "scrollable": "boolean"
+                                                            },
+                                                            "designerId": "7feea43b-d749-4810-8b5a-2d9b021693f8"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.tab.Tab",
+                                    "reference": {
+                                        "name": "tabConfig",
+                                        "type": "object"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout|flex": null,
+                                        "width": null
+                                    },
+                                    "name": "TabConfig7",
+                                    "configAlternates": {
+                                        "scrollable": "boolean"
+                                    },
+                                    "designerId": "6ea3cff8-ab34-464b-b26f-976427ee2aa0"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.panel.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "bodyStyle": null,
+                "height": 20,
+                "html": "<center><span style=\"color:#04468C;text-shadow: 2px 3px 5px #bfbfbf;position:absolute;display:block;top:3px;letter-spacing:-.05em;font-family:serif;left:0;height:60%;width:100%;background-color:#FFFFFF;filter:alpha(opacity=65);-moz-opacity: 0.65;opacity: 0.65;\">&copy;2004 -2014 Южненская коммунальная информационная система&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ITX &amp; Нижельский С.А.</span></center>",
+                "id": "mainSouth",
+                "itemId": "mainSouth",
+                "layout|region": "south",
+                "title": null
+            },
+            "name": "MyPanel11",
+            "configAlternates": {
+                "html": "string",
+                "scrollable": "boolean"
+            },
+            "designerId": "eceb028a-692c-4de6-99e8-2e02581b66a6"
+        },
+        {
+            "type": "Ext.tab.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "activeTab": 0,
+                "autoDestroy": false,
+                "bodyBorder": false,
+                "bodyPadding": null,
+                "bodyStyle": null,
+                "border": false,
+                "closeAction": "hide",
+                "frameHeader": false,
+                "html": null,
+                "id": "tabFirstPage",
+                "itemId": null,
+                "layout|region": "center",
+                "plain": true,
+                "title": null
+            },
+            "name": "MyTabPanel2",
+            "configAlternates": {
+                "scrollable": "boolean"
+            },
+            "designerId": "531807c0-9cb1-423a-92d5-645b028d9358",
+            "cn": [
+                {
+                    "type": "linkedinstance",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "border": false
+                    },
+                    "name": "flat.tablogin",
+                    "configAlternates": {
+                        "scrollable": "boolean"
+                    },
+                    "designerId": "9e26a4c1-d17e-48ce-97c5-df6f4de27037",
+                    "masterInstanceId": "8a2a2255-dc98-4e69-a7bf-e933ef51d407",
+                    "cn": [
+                        {
+                            "type": "Ext.tab.Tab",
+                            "reference": {
+                                "name": "tabConfig",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "name": "TabConfig8",
+                            "configAlternates": {
+                                "scrollable": "boolean"
+                            },
+                            "designerId": "0c4c637c-af56-4119-b0b1-f42a3abc3c0a"
+                        }
+                    ]
+                },
+                {
+                    "type": "linkedinstance",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "name": "flat.tabnach",
+                    "designerId": "af215e84-b8bb-48ff-b3f7-0cd6f2dba0cd",
+                    "masterInstanceId": "b36ac8d4-d88c-4002-9c55-f3d2e79a40b2",
+                    "cn": [
+                        {
+                            "type": "Ext.tab.Tab",
+                            "reference": {
+                                "name": "tabConfig",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "name": "TabConfig20",
+                            "designerId": "07cd8190-1d2a-4824-88fc-73cb57ad1fb4"
+                        }
+                    ]
+                },
+                {
+                    "type": "linkedinstance",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "name": "flat.tabinfoapp",
+                    "configAlternates": {
+                        "scrollable": "boolean"
+                    },
+                    "designerId": "5b20c167-9a24-4a2c-b50d-aae9ed9eb54a",
+                    "masterInstanceId": "93eab812-461e-4e01-a6e8-63eaf6e410f3",
+                    "cn": [
+                        {
+                            "type": "Ext.tab.Tab",
+                            "reference": {
+                                "name": "tabConfig",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "name": "TabConfig9",
+                            "configAlternates": {
+                                "scrollable": "boolean"
+                            },
+                            "designerId": "6cb1accf-21f4-4930-980d-3b4c44d532e3"
+                        }
+                    ]
+                },
+                {
+                    "type": "linkedinstance",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "name": "flat.tabappbti",
+                    "designerId": "884bfd5a-df74-4c25-adb2-a082be6b4982",
+                    "masterInstanceId": "70e737b0-b1c0-4090-99ec-c37f9991f959",
+                    "cn": [
+                        {
+                            "type": "Ext.tab.Tab",
+                            "reference": {
+                                "name": "tabConfig",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "name": "TabConfig10",
+                            "designerId": "25c0fbc4-e076-4257-b77f-be2a104edbeb"
+                        }
+                    ]
+                },
+                {
+                    "type": "linkedinstance",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "name": "flat.tabnachapp",
+                    "designerId": "873c0c71-def6-4d5f-8fc1-2874ac5c879d",
+                    "masterInstanceId": "7f97f113-f6a6-4047-bc67-8cd52db1da50",
+                    "cn": [
+                        {
+                            "type": "Ext.tab.Tab",
+                            "reference": {
+                                "name": "tabConfig",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "name": "TabConfig",
+                            "designerId": "63314607-e827-4203-a1c4-bc347951b3e4"
+                        }
+                    ]
+                },
+                {
+                    "type": "linkedinstance",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "name": "flat.tabappvodomer",
+                    "designerId": "2f049ac4-170c-4fbb-8c4e-26d0eb8045d1",
+                    "masterInstanceId": "c5e53079-7003-4477-ac8c-62eecb71644f",
+                    "cn": [
+                        {
+                            "type": "Ext.tab.Tab",
+                            "reference": {
+                                "name": "tabConfig",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "name": "TabConfig14",
+                            "designerId": "a540af53-a21d-4774-b292-898eac4e8c22"
+                        }
+                    ]
+                },
+                {
+                    "type": "linkedinstance",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "name": "flat.tabappteplomer",
+                    "designerId": "f4281210-78c7-4b89-a184-cd79089ed7c9",
+                    "masterInstanceId": "c0b3fd01-43c8-437b-9fb1-a6885707e045",
+                    "cn": [
+                        {
+                            "type": "Ext.tab.Tab",
+                            "reference": {
+                                "name": "tabConfig",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "name": "TabConfig11",
+                            "designerId": "04b68afb-b7d5-42ff-8919-afdf07bca7b1"
+                        }
+                    ]
+                },
+                {
+                    "type": "linkedinstance",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "name": "flat.tabappoplata",
+                    "designerId": "bc1ea33d-5546-41a8-b691-407579d694e0",
+                    "masterInstanceId": "896bca6f-af95-430e-a487-c9448d3c6219",
+                    "cn": [
+                        {
+                            "type": "Ext.tab.Tab",
+                            "reference": {
+                                "name": "tabConfig",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "name": "TabConfig21",
+                            "designerId": "a2171b6a-d977-4f1d-80a4-9cbabe20e6c5"
+                        }
+                    ]
+                },
+                {
+                    "type": "linkedinstance",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "name": "flat.tabkassa",
+                    "configAlternates": {
+                        "scrollable": "boolean"
+                    },
+                    "designerId": "5109cb87-262d-4ba7-8142-130d70d575f6",
+                    "masterInstanceId": "83fa7dd7-3117-4a62-9b3e-4ef39994d1e3",
+                    "cn": [
+                        {
+                            "type": "Ext.tab.Tab",
+                            "reference": {
+                                "name": "tabConfig",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "name": "TabConfig15",
+                            "configAlternates": {
+                                "scrollable": "boolean"
+                            },
+                            "designerId": "87d3552a-b864-463a-b467-dd796dcaac1c"
+                        }
+                    ]
+                },
+                {
+                    "type": "linkedinstance",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "name": "flat.tabmarfinbank",
+                    "configAlternates": {
+                        "scrollable": "boolean"
+                    },
+                    "designerId": "de2e16bc-f224-4753-a8b6-32352aad546b",
+                    "masterInstanceId": "1387db77-d112-4cff-9b05-258ce5fe965a",
+                    "cn": [
+                        {
+                            "type": "Ext.tab.Tab",
+                            "reference": {
+                                "name": "tabConfig",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "name": "TabConfig16",
+                            "configAlternates": {
+                                "scrollable": "boolean"
+                            },
+                            "designerId": "6fe1ed32-a761-4e35-87c7-1e1896e30591"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

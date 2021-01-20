@@ -1,0 +1,14 @@
+{
+    "type": "Ext.app.ViewController",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "tabappoplata",
+        "designer|userClassName": "flat.TabAppOplataViewController"
+    },
+    "name": "undefinedViewController",
+    "designerId": "cbf75fb9-6b13-40d5-a5d0-16966018ebdc"
+}

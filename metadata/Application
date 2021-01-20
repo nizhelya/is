@@ -1,0 +1,129 @@
+{
+    "type": "Ext.app.Application",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "controllers": [
+            "User",
+            "Vodomer",
+            "CrMyApp",
+            "CrAppNach",
+            "CrAppTeplomer"
+        ],
+        "models": [
+            "MdHouses",
+            "MdMyFlat",
+            "MdOplata",
+            "MdUser",
+            "MdTekNach",
+            "MdStreet",
+            "MdTekNachKassa",
+            "MdNachisleno",
+            "MdLoginLocal",
+            "MdAppAgreement",
+            "MdAddress",
+            "MdHVodomer",
+            "MdVodomer",
+            "MdAppartment",
+            "MdLogin",
+            "MdRaion",
+            "MdWater",
+            "MdPhoneMaska",
+            "MdAppHistory",
+            "MdTekPokVodomera",
+            "MdLgotnik",
+            "MdPriborUcheta"
+        ],
+        "name": "yis",
+        "stores": [
+            "StNachisleno",
+            "StLoginLocal",
+            "StHouses",
+            "StMyFlat",
+            "StHAppartment",
+            "StHVodomer",
+            "StOplata",
+            "StReport",
+            "StLgotnik",
+            "StStreet",
+            "StTekPokVodomera",
+            "StHTeplomer",
+            "StUser",
+            "StTekNachKassa",
+            "StAppartment",
+            "StAddress",
+            "StTeplomer",
+            "StAllPokTeplomera",
+            "StPayment",
+            "StVodomerKassa",
+            "StLogin",
+            "StVodomer",
+            "StRaion",
+            "StWater",
+            "StTekOplata",
+            "StTekPokTeplomera",
+            "StTekNachApp",
+            "StLgotaNachVoda",
+            "StAddMyFlat",
+            "StFamaly"
+        ],
+        "views": [
+            "flat.TabNach",
+            "VpIsCity",
+            "flat.TabLogin",
+            "flat.TabMarfinBank",
+            "user.WinAddMyFlat",
+            "flat.WinIpay",
+            "user.TabReport",
+            "NumberFieldDolg",
+            "user.WinActivationConfirm",
+            "NFVodomer",
+            "NFNach",
+            "user.WinRegistration",
+            "flat.PnIpay",
+            "flat.TabInfoApp",
+            "flat.TabAppOplata",
+            "user.WinEmailConfirm",
+            "FieldNach1",
+            "NFTarif1",
+            "flat.tabAppBti",
+            "flat.TabAppTeplomer",
+            "flat.TabAppVodomer",
+            "flat.TabNachApp"
+        ]
+    },
+    "name": "Application",
+    "designerId": "application",
+    "cn": [
+        {
+            "type": "fixedfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "launch",
+                "implHandler": [
+                    "var m=Ext.isObject(Ext.get('loading-mask'));",
+                    "//   console.log(m);",
+                    "",
+                    "//закрываем значок загрузка...",
+                    "if (m) {",
+                    "    setTimeout(function(){",
+                    "        Ext.get('loading').remove();",
+                    "        Ext.get('loading-mask').fadeOut({remove:true});",
+                    "    }, 250);",
+                    "}",
+                    "",
+                    ""
+                ]
+            },
+            "name": "launch",
+            "designerId": "9e4cb9a7-44c7-4ec0-ae09-9731e6634200"
+        }
+    ]
+}

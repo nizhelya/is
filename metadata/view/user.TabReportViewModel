@@ -1,0 +1,13 @@
+{
+    "type": "Ext.app.ViewModel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "tabReport",
+        "designer|userClassName": "user.TabReportViewModel"
+    },
+    "designerId": "368b3758-def0-4792-b178-46d69eb6d0bf"
+}

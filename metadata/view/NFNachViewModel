@@ -1,0 +1,13 @@
+{
+    "type": "Ext.app.ViewModel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "nFNach",
+        "designer|userClassName": "NFNachViewModel"
+    },
+    "designerId": "556f59af-08f1-4339-b00f-cc12b1d393e1"
+}

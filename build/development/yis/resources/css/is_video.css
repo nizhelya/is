@@ -1,0 +1,91 @@
+a:link, a:visited, a:active {
+    color: #0464BB;
+    text-decoration:none;
+}
+a:hover {
+    background: url("images/sample-over.gif") no-repeat scroll 0 0 #F5FDE3;
+    text-decoration: underline;
+}
+
+/* feature list */
+ul.features {
+    margin-left:15px;
+    list-style-image: url(images/c-sep-l.gif);
+}
+ul.features li {
+    margin-top:5px;
+    margin-bottom:5px;
+}
+
+a.link {
+    font-size:12px;
+    font-weight:bold;
+    line-height:19px;
+}
+    li {
+		list-style: inherit !important;
+    }
+    
+    .thumb-list {
+    padding: 2px;
+}
+.thumb-list dd {
+    cursor: pointer;
+    float: left;
+    height: 100px;
+    line-height: 1em;
+    margin: 10px;
+    width: 300px;
+}
+.thumb-list dd:hover {
+    background: url("images/sample-over.gif") no-repeat scroll 0 0 #F5FDE3;
+}
+.thumb-list dd .thumb {
+    float: left;
+    height: 90px;
+    margin: 5px 0 0 5px;
+    width: 120px;
+}
+.thumb-list dd .thumb img {
+    border: 1px solid #DDDDDD;
+    margin: auto;
+    max-height: 88px;
+    max-width: 118px;
+}
+.thumb-list dd div {
+    float: left;
+    margin-left: 10px;
+    width: 160px;
+}
+.thumb-list dd h4 {
+    color: #555555;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 3px 0;
+}
+.thumb-list dd h4 span.new-sample {
+    color: red;
+}
+.thumb-list dd h4 span.updated-sample {
+    color: blue;
+}
+.thumb-list dd p {
+    color: #777777;
+    font-size: 13px;
+}
+.thumb-list h2 {
+    border-bottom: 2px solid #99BBE8;
+    cursor: pointer;
+    padding-top: 6px;
+}
+.thumb-list h2 div {
+    background: url("../images/grid/group-expand-sprite.gif") no-repeat scroll 2px -45px transparent;
+    color: #3764A0;
+    padding: 4px 4px 4px 17px;
+}
+.thumb-list .collapsed h2 div {
+    background-position: 2px 5px;
+}
+.thumb-list .collapsed dl {
+    display: none;
+}

@@ -1,0 +1,13 @@
+{
+    "type": "Ext.app.ViewController",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "winRegistration",
+        "designer|userClassName": "user.WinRegistrationViewController"
+    },
+    "designerId": "bbe92722-21c9-410e-a5b7-6020b3f6d086"
+}

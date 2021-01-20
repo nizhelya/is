@@ -1,0 +1,27 @@
+{
+    "type": "Ext.data.Store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "stUser",
+        "designer|userClassName": "StUser",
+        "model": "MdUser",
+        "storeId": "stUser"
+    },
+    "designerId": "4ccc6322-54f3-47a5-ad7d-edc3d542f1af",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Memory",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "name": "MyMemoryProxy",
+            "designerId": "7b03ef18-c66a-460d-bb7d-a72408e15783"
+        }
+    ]
+}

@@ -1,0 +1,148 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "mdHouses",
+        "designer|userClassName": "MdHouses"
+    },
+    "designerId": "3a6ba22d-2285-4d77-b3ee-a6556df5674d",
+    "cn": [
+        {
+            "type": "Ext.data.field.Integer",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "raion_id",
+                "sortType": null
+            },
+            "name": "MyInteger79",
+            "designerId": "214be9de-4354-457b-834d-d16e48368c82"
+        },
+        {
+            "type": "Ext.data.field.Integer",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "street_id",
+                "sortType": null
+            },
+            "name": "MyInteger80",
+            "designerId": "4e0ada79-ff9b-4c07-9a1d-cd9e3c9dbcf7"
+        },
+        {
+            "type": "Ext.data.field.Integer",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "house_id",
+                "sortType": null
+            },
+            "name": "MyInteger81",
+            "designerId": "1a448567-138d-44f3-9e33-d4d3e14c593f"
+        },
+        {
+            "type": "Ext.data.field.Integer",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "address_id"
+            },
+            "name": "MyInteger82",
+            "designerId": "4c0b7fd4-313f-49bb-bde8-2b4f18d70355"
+        },
+        {
+            "type": "Ext.data.field.String",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "house"
+            },
+            "name": "MyString90",
+            "designerId": "d44f71fc-a1af-49e3-b7fd-8f328ce4115d"
+        },
+        {
+            "type": "Ext.data.field.String",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "raion"
+            },
+            "name": "MyString91",
+            "designerId": "faad6a63-a79b-4afd-bd11-c3b68aed603a"
+        },
+        {
+            "type": "Ext.data.field.String",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "street"
+            },
+            "name": "MyString92",
+            "designerId": "0a5e4de1-e894-4b68-986c-56b40f4efa3f"
+        },
+        {
+            "type": "Ext.data.field.String",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "item"
+            },
+            "name": "MyString93",
+            "designerId": "dfaf20bc-ec9f-4b61-a201-573fb7d39ac3"
+        },
+        {
+            "type": "Ext.data.field.String",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "address"
+            },
+            "name": "MyString94",
+            "designerId": "cee48fef-5736-4af5-8915-7922884f0df9"
+        },
+        {
+            "type": "Ext.data.field.String",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "appartment"
+            },
+            "name": "MyString95",
+            "designerId": "23de1f63-9168-40c3-a10b-efb30e0d7ccf"
+        }
+    ]
+}

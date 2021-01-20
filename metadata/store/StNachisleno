@@ -1,0 +1,47 @@
+{
+    "type": "directstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "stNachisleno",
+        "designer|userClassName": "StNachisleno",
+        "groupDir": "DESC",
+        "groupField": "fdate",
+        "model": "MdNachisleno",
+        "storeId": "stNachisleno"
+    },
+    "designerId": "b0393b3f-e0ac-4192-87a2-27ddda328edd",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Direct",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "directFn": "QueryAddress.getResults"
+            },
+            "name": "MyDirectProxy19",
+            "designerId": "921d7541-5c04-4d3c-b0ee-336891f20a58",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "rootProperty": "data"
+                    },
+                    "name": "MyJsonReader19",
+                    "designerId": "b57f61cf-cb73-4ac1-8f31-c78312899b6e"
+                }
+            ]
+        }
+    ]
+}

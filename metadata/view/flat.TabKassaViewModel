@@ -1,0 +1,13 @@
+{
+    "type": "Ext.app.ViewModel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "tabkassa",
+        "designer|userClassName": "flat.TabKassaViewModel"
+    },
+    "designerId": "b42ad38c-fe0a-469d-a836-c6510cb5d627"
+}

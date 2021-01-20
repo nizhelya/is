@@ -1,0 +1,48 @@
+{
+    "type": "directstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "stPayment",
+        "designer|userClassName": "StPayment",
+        "groupDir": "DESC",
+        "groupField": null,
+        "model": "MdOplata",
+        "storeId": "stPayment"
+    },
+    "designerId": "2986bd77-2a15-42c8-a409-772ddd8e25c9",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Direct",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "directFn": "QueryPaymentMarfin.getResults",
+                "groupParam": null
+            },
+            "name": "MyDirectProxy13",
+            "designerId": "26fa0fb4-89d6-4345-923d-93279995b245",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "rootProperty": "data"
+                    },
+                    "name": "MyJsonReader13",
+                    "designerId": "12381259-c6c7-4e5d-8c50-19e11265c3c8"
+                }
+            ]
+        }
+    ]
+}

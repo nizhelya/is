@@ -1,0 +1,146 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "mdAppAgreement",
+        "designer|userClassName": "MdAppAgreement",
+        "idProperty": "address_id"
+    },
+    "designerId": "048a6d60-9747-4e1e-bf42-d47826561af2",
+    "cn": [
+        {
+            "type": "Ext.data.field.Integer",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "address_id"
+            },
+            "name": "MyInteger125",
+            "designerId": "fca228e1-d867-45b7-b5c7-3846e9121349"
+        },
+        {
+            "type": "Ext.data.field.Date",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "date_change"
+            },
+            "name": "MyDate28",
+            "designerId": "4da23cdb-144d-4188-889c-96dc6e9bca7f"
+        },
+        {
+            "type": "Ext.data.field.String",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "aggr_kvartpl"
+            },
+            "name": "MyString148",
+            "designerId": "d4360b59-c556-4a1e-91aa-bc6405422f67"
+        },
+        {
+            "type": "Ext.data.field.String",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "aggr_teplo"
+            },
+            "name": "MyString149",
+            "designerId": "e775db5d-cab5-4999-b99f-76e688a6177a"
+        },
+        {
+            "type": "Ext.data.field.String",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "aggr_stoki"
+            },
+            "name": "MyString150",
+            "designerId": "5eae5277-7d8f-43bc-89c1-65d994d1ed3b"
+        },
+        {
+            "type": "Ext.data.field.String",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "aggr_voda"
+            },
+            "name": "MyString151",
+            "designerId": "5cd04409-46b9-4b1b-b38a-349be8733deb"
+        },
+        {
+            "type": "Ext.data.field.String",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "aggr_tbo"
+            },
+            "name": "MyString152",
+            "designerId": "a8b9f1df-33ff-4c52-a34c-9acbd14f7a96"
+        },
+        {
+            "type": "Ext.data.field.String",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "phone"
+            },
+            "name": "MyString153",
+            "designerId": "db2147ea-7842-45d3-98fa-8ea785985dca"
+        },
+        {
+            "type": "Ext.data.field.String",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "what_change"
+            },
+            "name": "MyString154",
+            "designerId": "c85a679d-00e2-4fa5-916a-b2b734075303"
+        },
+        {
+            "type": "Ext.data.field.String",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "operator"
+            },
+            "name": "MyString155",
+            "designerId": "a10c4d25-5dea-4aa4-8891-16bbfb353416"
+        }
+    ]
+}

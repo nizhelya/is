@@ -1,0 +1,32 @@
+{
+    "type": "Ext.data.Store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "autoSync": true,
+        "designer|userAlias": "stLoginLocal",
+        "designer|userClassName": "StLoginLocal",
+        "model": "MdLoginLocal",
+        "storeId": "stLoginLocal"
+    },
+    "designerId": "5ee13be2-b6f5-4603-8e7a-bfd9a24f641d",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.LocalStorage",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "id": "yis"
+            },
+            "name": "MyLocalStorageProxy",
+            "designerId": "ecf75ea7-86ac-4cf9-846c-3f096cca2c3c"
+        }
+    ]
+}

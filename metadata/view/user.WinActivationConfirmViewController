@@ -1,0 +1,13 @@
+{
+    "type": "Ext.app.ViewController",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "winActivationConfirm",
+        "designer|userClassName": "user.WinActivationConfirmViewController"
+    },
+    "designerId": "336ddae8-884b-498c-89f5-d5a5ac1b66cc"
+}

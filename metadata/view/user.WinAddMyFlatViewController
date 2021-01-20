@@ -1,0 +1,13 @@
+{
+    "type": "Ext.app.ViewController",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "winAddMyFlat",
+        "designer|userClassName": "user.WinAddMyFlatViewController"
+    },
+    "designerId": "16011369-8224-4a8e-88a1-15df1e38a424"
+}

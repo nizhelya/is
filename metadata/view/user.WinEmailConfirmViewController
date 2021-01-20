@@ -1,0 +1,13 @@
+{
+    "type": "Ext.app.ViewController",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "winEmailConfirm",
+        "designer|userClassName": "user.WinEmailConfirmViewController"
+    },
+    "designerId": "31b47d12-524e-413d-9467-57ee548fca06"
+}

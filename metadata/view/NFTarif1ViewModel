@@ -1,0 +1,13 @@
+{
+    "type": "Ext.app.ViewModel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "nFTarif1",
+        "designer|userClassName": "NFTarif1ViewModel"
+    },
+    "designerId": "4eb0769d-1c25-4b16-ab1c-7e45eabb31a2"
+}

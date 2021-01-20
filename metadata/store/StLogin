@@ -1,0 +1,50 @@
+{
+    "type": "directstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "stLogin",
+        "designer|userClassName": "StLogin",
+        "model": "MdLogin",
+        "storeId": "stLogin"
+    },
+    "designerId": "0355e3c0-357a-49ee-970d-a869d39ca55d",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Direct",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "api": [
+                    "{read:\"QueryUserLogin.getResults\",",
+                    "update:\"QueryUserLogin.updateUser\"",
+                    "}"
+                ],
+                "directFn": null
+            },
+            "name": "MyDirectProxy24",
+            "designerId": "9b7cdda3-3900-4332-9c4a-c4edc1412d1a",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "rootProperty": "data"
+                    },
+                    "name": "MyJsonReader24",
+                    "designerId": "bb5848af-205e-4a24-a054-36a6e707abd7"
+                }
+            ]
+        }
+    ]
+}

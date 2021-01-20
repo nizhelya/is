@@ -1,0 +1,953 @@
+{
+    "type": "Ext.window.Window",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "bodyPadding": "5 5 5 5",
+        "designer|userAlias": "winAddMyFlat",
+        "designer|userClassName": "user.WinAddMyFlat",
+        "height": 637,
+        "hidden": false,
+        "id": "winAddMyFlat",
+        "layout": "fit",
+        "modal": true,
+        "title": "Добавить мои квартиры ",
+        "width": 501
+    },
+    "configAlternates": {
+        "scrollable": "boolean"
+    },
+    "designerId": "8b6d0fd7-15e3-4dc2-9fd5-9fb1027de595",
+    "viewControllerInstanceId": "16011369-8224-4a8e-88a1-15df1e38a424",
+    "viewModelInstanceId": "ac8ea45c-00cf-4a38-8ad1-aeb7d9d780b2",
+    "cn": [
+        {
+            "type": "Ext.panel.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "bodyPadding": null,
+                "container|align": "stretch",
+                "id": "pnMyFlat",
+                "itemId": "pnMyFlat",
+                "layout": "vbox",
+                "title": "",
+                "width": 500
+            },
+            "name": "MyPanel13",
+            "configAlternates": {
+                "scrollable": "boolean"
+            },
+            "designerId": "b253a507-ff3c-4a5a-9ffe-58464255441e",
+            "cn": [
+                {
+                    "type": "Ext.panel.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "height": 244,
+                        "layout": "fit",
+                        "layout|flex": null,
+                        "title": ""
+                    },
+                    "name": "MyPanel14",
+                    "configAlternates": {
+                        "scrollable": "boolean"
+                    },
+                    "designerId": "9ad47946-84fa-41df-be35-9db9e4ee6c77",
+                    "cn": [
+                        {
+                            "type": "Ext.form.FieldSet",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|snapToGrid": 5,
+                                "height": 183,
+                                "layout": "absolute",
+                                "style": "background-color: #DCDCDC;",
+                                "title": "выбор адреса",
+                                "width": 245
+                            },
+                            "name": "MyFieldSet62",
+                            "configAlternates": {
+                                "style": "string",
+                                "scrollable": "boolean"
+                            },
+                            "designerId": "783f9e8c-8f79-44cd-8016-7e3ff71c6ee8",
+                            "cn": [
+                                {
+                                    "type": "Ext.form.field.ComboBox",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|displayName": "Выбор района",
+                                        "displayField": "raion",
+                                        "emptyText": "Выбирите район",
+                                        "fieldLabel": "район",
+                                        "frame": true,
+                                        "hideEmptyLabel": false,
+                                        "id": "cbViborRaion",
+                                        "itemId": null,
+                                        "labelPad": 3,
+                                        "labelWidth": 50,
+                                        "layout|x": 5,
+                                        "layout|y": 20,
+                                        "queryMode": "local",
+                                        "selectOnFocus": true,
+                                        "store": "StRaion",
+                                        "valueField": "raion_id",
+                                        "width": 220
+                                    },
+                                    "name": "MyComboBox3",
+                                    "configAlternates": {
+                                        "scrollable": "boolean"
+                                    },
+                                    "designerId": "dc76dbf3-5f67-4591-b25a-881edb803a69",
+                                    "cn": [
+                                        {
+                                            "type": "basiceventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onCbViborRaionSelect",
+                                                "implHandler": [
+                                                    "var StHouses = Ext.data.StoreManager.get(\"StHouses\");",
+                                                    "var StStreet = Ext.data.StoreManager.get(\"StStreet\");",
+                                                    "var StAddress = Ext.data.StoreManager.get(\"StAddress\");",
+                                                    "",
+                                                    "var store =combo.getStore();",
+                                                    "",
+                                                    "var cbStreet = Ext.getCmp(\"cbViborStreet\");",
+                                                    "var cbHouse = Ext.getCmp(\"cbViborHouse\");",
+                                                    "",
+                                                    "var selected = record;",
+                                                    "if (selected && !store.getById(selected.get(\"raion_id\"))) {",
+                                                    "    StStreet.removeAll();",
+                                                    "    StHouses.removeAll();",
+                                                    "    StAddress.removeAll();",
+                                                    "    cbStreet.clearValue();",
+                                                    "    cbHouse.clearValue();",
+                                                    "",
+                                                    "",
+                                                    "    StStreet.load({",
+                                                    "        params: {",
+                                                    "            what:\"StreetsFromRaion\",",
+                                                    "            what_id: selected.get(\"raion_id\")",
+                                                    "        },",
+                                                    "        scope: this",
+                                                    "    });",
+                                                    "    StHouses.load({",
+                                                    "        params: {",
+                                                    "            what:\"HousesFromRaion\",",
+                                                    "            what_id: selected.get(\"raion_id\")",
+                                                    "        },",
+                                                    "        scope: this",
+                                                    "    });",
+                                                    "}",
+                                                    ""
+                                                ],
+                                                "name": "select",
+                                                "scope": "me"
+                                            },
+                                            "name": "onCbViborRaionSelect",
+                                            "designerId": "3fb8dabe-f34d-4ae5-905b-92ed2b429085"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.form.field.ComboBox",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|displayName": "Выбор улицы",
+                                        "displayField": "street",
+                                        "emptyText": "Выбирите улицу",
+                                        "fieldLabel": "улица",
+                                        "frame": true,
+                                        "hideEmptyLabel": false,
+                                        "id": "cbViborStreet",
+                                        "itemId": null,
+                                        "labelPad": 3,
+                                        "labelWidth": 50,
+                                        "layout|x": 5,
+                                        "layout|y": 80,
+                                        "queryMode": "local",
+                                        "selectOnFocus": true,
+                                        "store": "StStreet",
+                                        "valueField": "street_id",
+                                        "width": 220
+                                    },
+                                    "name": "MyComboBox4",
+                                    "configAlternates": {
+                                        "scrollable": "boolean"
+                                    },
+                                    "designerId": "f157b777-2a8f-447e-826a-5cc9d33c5915",
+                                    "cn": [
+                                        {
+                                            "type": "viewcontrollereventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onCbViborStreetSelect",
+                                                "implHandler": [
+                                                    "",
+                                                    "//COMBO",
+                                                    "",
+                                                    "var cbHouse = Ext.getCmp(\"cbViborHouse\");",
+                                                    "",
+                                                    "//STORE",
+                                                    "",
+                                                    "var stHouses = Ext.data.StoreManager.get(\"StHouses\");",
+                                                    "var stAddress = Ext.data.StoreManager.get(\"StAddress\");",
+                                                    "",
+                                                    "var store =combo.getStore();",
+                                                    "",
+                                                    "var selected = record;",
+                                                    "",
+                                                    "//LOGIKA",
+                                                    "",
+                                                    "if ((selected) && !store.getById(selected.get('street_id'))) {",
+                                                    "    // console.log(selected);",
+                                                    "    cbHouse.clearValue();",
+                                                    "    stHouses.removeAll();",
+                                                    "    stAddress.removeAll();",
+                                                    "    if (selected.get('privat')) {",
+                                                    "",
+                                                    "        stAddress.load({",
+                                                    "            params: {",
+                                                    "                what:'HousesFromStreet',",
+                                                    "                privat: selected.get('privat'),",
+                                                    "                what_id: selected.get('street_id')",
+                                                    "            },",
+                                                    "            scope: this",
+                                                    "        });",
+                                                    "",
+                                                    "",
+                                                    "    }else{",
+                                                    "",
+                                                    "        stHouses.load({",
+                                                    "            params: {",
+                                                    "                what:'HousesFromStreet',",
+                                                    "                privat: selected.get('privat'),",
+                                                    "                what_id: selected.get('street_id')",
+                                                    "            },",
+                                                    "            scope: this",
+                                                    "        });",
+                                                    "",
+                                                    "    }",
+                                                    "",
+                                                    "}"
+                                                ],
+                                                "name": "select",
+                                                "scope": "me"
+                                            },
+                                            "name": "onCbViborStreetSelect",
+                                            "designerId": "a43400e5-5c06-43b0-be2e-32cffa8350f4"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.form.field.ComboBox",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|displayName": "Выбор дома",
+                                        "displayField": "house",
+                                        "emptyText": "Выбирите дом",
+                                        "fieldLabel": "дом",
+                                        "frame": true,
+                                        "hideEmptyLabel": false,
+                                        "id": "cbViborHouse",
+                                        "itemId": null,
+                                        "labelPad": 3,
+                                        "labelWidth": 50,
+                                        "layout|x": 5,
+                                        "layout|y": 140,
+                                        "queryMode": "local",
+                                        "selectOnFocus": true,
+                                        "store": "StHouses",
+                                        "valueField": "house_id",
+                                        "width": 220
+                                    },
+                                    "name": "MyComboBox5",
+                                    "configAlternates": {
+                                        "scrollable": "boolean"
+                                    },
+                                    "designerId": "d7d17ddb-a2a7-4a37-adc8-7def90db6391",
+                                    "cn": [
+                                        {
+                                            "type": "viewcontrollereventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onCbViborHouseSelect",
+                                                "implHandler": [
+                                                    "//in use",
+                                                    "",
+                                                    "//STORE",
+                                                    "var stAddress = Ext.data.StoreManager.get('StAddress');",
+                                                    "var store =combo.getStore();",
+                                                    "",
+                                                    "var selected = record;",
+                                                    "",
+                                                    "//LOGIKA",
+                                                    "",
+                                                    "if ((selected) && !store.getById(selected.get('house_id'))) {",
+                                                    "    stAddress.removeAll();",
+                                                    "    stAddress.load({",
+                                                    "        params: {",
+                                                    "            what:'AddressFromHouses',",
+                                                    "            what_id: selected.get('house_id')",
+                                                    "        },",
+                                                    "        scope: this",
+                                                    "    });",
+                                                    "",
+                                                    "}"
+                                                ],
+                                                "name": "select",
+                                                "scope": "me"
+                                            },
+                                            "name": "onCbViborHouseSelect",
+                                            "designerId": "d1b6fde1-e645-4e01-b3ac-2d3f53a71515"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.form.FieldSet",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "height": 170,
+                                        "html": "<h5><p  style = \"text-align: justify;\">Чтобы добавить квартиру в список <i> мои квартиры </i>, Вам  нужно иметь <i>секретный код</i> . <br>Код можно получить в кассах приема коммунальных платежей при оплате.Код находится в левом верхнем углу распечатки об оплате.<p></h5>",
+                                        "layout|x": 245,
+                                        "layout|y": 5,
+                                        "style": "background-color: #F1EEEE;",
+                                        "title": "",
+                                        "width": 200
+                                    },
+                                    "name": "MyFieldSet63",
+                                    "configAlternates": {
+                                        "html": "string",
+                                        "style": "string",
+                                        "scrollable": "boolean"
+                                    },
+                                    "designerId": "a5eaffe4-b054-4178-8de0-2396b22549c2"
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "height": 25,
+                                        "icon": "resources/css/images/ico/door_out.png",
+                                        "layout|x": 300,
+                                        "layout|y": 180,
+                                        "text": "Выход",
+                                        "width": 100
+                                    },
+                                    "name": "MyButton16",
+                                    "configAlternates": {
+                                        "scrollable": "boolean"
+                                    },
+                                    "designerId": "6e69a425-7b1a-456c-a00b-33c1cc90d265",
+                                    "cn": [
+                                        {
+                                            "type": "fixedfunction",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|params": [
+                                                    "button",
+                                                    "event"
+                                                ],
+                                                "fn": "handler",
+                                                "implHandler": [
+                                                    "button.up('#winAddMyFlat').close();"
+                                                ]
+                                            },
+                                            "name": "handler",
+                                            "designerId": "ec6d44c8-b369-4ef3-b7ec-d1bf41b335c0"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.panel.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": "stretch",
+                        "height": 609,
+                        "iconCls": null,
+                        "layout": "hbox",
+                        "layout|flex": 1,
+                        "title": null,
+                        "width": 993
+                    },
+                    "name": "MyPanel15",
+                    "configAlternates": {
+                        "scrollable": "boolean"
+                    },
+                    "designerId": "e9216b93-3677-4862-bc5e-ee1c13e97573",
+                    "cn": [
+                        {
+                            "type": "Ext.grid.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "enableColumnHide": false,
+                                "enableColumnMove": false,
+                                "enableColumnResize": false,
+                                "height": null,
+                                "id": "grAddress",
+                                "itemId": null,
+                                "scrollable": true,
+                                "sortableColumns": false,
+                                "store": "StAddress",
+                                "title": "Список квартир для добавления",
+                                "width": 250
+                            },
+                            "name": "MyGridPanel27",
+                            "configAlternates": {
+                                "scrollable": "boolean"
+                            },
+                            "designerId": "adba8ac9-399c-43eb-805d-4150d5c7a47e",
+                            "cn": [
+                                {
+                                    "type": "Ext.view.Table",
+                                    "reference": {
+                                        "name": "viewConfig",
+                                        "type": "object"
+                                    },
+                                    "codeClass": null,
+                                    "name": "MyGridView28",
+                                    "configAlternates": {
+                                        "scrollable": "boolean"
+                                    },
+                                    "designerId": "5a7af9a0-00c8-40f9-959a-ce0d44b8abc8"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Action",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "align": "center",
+                                        "altText": null,
+                                        "designer|displayName": "добавить квартиру",
+                                        "draggable": false,
+                                        "hideable": false,
+                                        "icon": null,
+                                        "iconCls": null,
+                                        "tooltip": "добавить квартиру в список < Мои квартиры >",
+                                        "width": 40
+                                    },
+                                    "name": "MyActionColumn1",
+                                    "configAlternates": {
+                                        "scrollable": "boolean"
+                                    },
+                                    "designerId": "c8d1b8ce-9755-4fa0-ba3e-74e616877045",
+                                    "cn": [
+                                        {
+                                            "type": "actioncolumnitem",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "altText": "добавить квартиру",
+                                                "designer|displayName": "добавить квартиру",
+                                                "icon": "resources/css/images/ico/add.png",
+                                                "iconCls": "icon-add",
+                                                "tooltip": "добавить квартиру в список < Мои квартиры >"
+                                            },
+                                            "name": "MyActionColumnItem1",
+                                            "designerId": "4856e0a6-1c66-4ca5-9a32-39ff35ec5279",
+                                            "cn": [
+                                                {
+                                                    "type": "fixedfunction",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "designer|params": [
+                                                            "view",
+                                                            "rowIndex",
+                                                            "colIndex",
+                                                            "item",
+                                                            "e"
+                                                        ],
+                                                        "fn": "handler",
+                                                        "implHandler": [
+                                                            "var stAddress = view.getStore().getAt(rowIndex);",
+                                                            "var stUser = Ext.data.StoreManager.get(\"StUser\");",
+                                                            "var stlogin =stUser.getAt(0);",
+                                                            "",
+                                                            "var stMyFlat = Ext.data.StoreManager.get(\"StMyFlat\");",
+                                                            "Ext.MessageBox.prompt(stAddress.get('address'),' Введите cекретный код квартиры:',",
+                                                            "                      function(btn,text){",
+                                                            "                          if (btn == 'ok') {",
+                                                            "                              QueryUserLogin.checkMyFlat(stAddress.data,stlogin.data,text,function(results){",
+                                                            "                                  if (results.success){",
+                                                            "                                      stMyFlat.load({",
+                                                            "                                          params: {",
+                                                            "                                              user_id:stlogin.get('user_id')",
+                                                            "                                          },",
+                                                            "                                          scope:this",
+                                                            "                                      });",
+                                                            "",
+                                                            "                                  }else if (results.nokey){",
+                                                            "                                      Ext.MessageBox.show({",
+                                                            "                                          title: 'Моя квартира',",
+                                                            "                                          msg: 'Секретный код неверный',",
+                                                            "                                          buttons: Ext.MessageBox.OK,",
+                                                            "                                          icon: Ext.MessageBox.ERROR",
+                                                            "                                      });",
+                                                            "                                  }else if (results.myflat){",
+                                                            "                                      Ext.MessageBox.show({",
+                                                            "                                          title: 'Моя квартира',",
+                                                            "                                          msg: 'Квартира уже в списке',",
+                                                            "                                          buttons: Ext.MessageBox.OK,",
+                                                            "                                          icon: Ext.MessageBox.ERROR",
+                                                            "                                      });",
+                                                            "                                  }else if (results.noid){",
+                                                            "                                      Ext.MessageBox.show({",
+                                                            "                                          title: 'Моя квартира',",
+                                                            "                                          msg: 'Ошибка при записи в базу данных',",
+                                                            "                                          buttons: Ext.MessageBox.OK,",
+                                                            "                                          icon: Ext.MessageBox.ERROR",
+                                                            "                                      });",
+                                                            "                                  }",
+                                                            "                              });",
+                                                            "                          }",
+                                                            "                      });"
+                                                        ]
+                                                    },
+                                                    "name": "handler",
+                                                    "designerId": "d5a361b0-04bb-448e-8fdb-c636169bf7f8"
+                                                },
+                                                {
+                                                    "type": "fixedfunction",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "designer|params": [
+                                                            "v",
+                                                            "metadata",
+                                                            "r",
+                                                            "rowIndex",
+                                                            "colIndex",
+                                                            "store"
+                                                        ],
+                                                        "fn": "getClass",
+                                                        "implHandler": [
+                                                            "metaData = 'x-grid-center-icon';",
+                                                            "return metaData;"
+                                                        ]
+                                                    },
+                                                    "name": "getClass",
+                                                    "designerId": "e1e08518-1240-423f-b950-af5472180bf0"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.grid.column.Column",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "address_id",
+                                        "hidden": true,
+                                        "text": "Address_id"
+                                    },
+                                    "name": "MyColumn118",
+                                    "configAlternates": {
+                                        "scrollable": "boolean"
+                                    },
+                                    "designerId": "c26ebcd7-7424-4936-b778-800a8a553879"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Number",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "raion_id",
+                                        "hidden": true,
+                                        "text": "Raion_id"
+                                    },
+                                    "name": "MyNumberColumn127",
+                                    "configAlternates": {
+                                        "scrollable": "boolean"
+                                    },
+                                    "designerId": "dcdd2c11-a8a2-422e-a818-659176de7c49"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Column",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "address",
+                                        "flex": 1,
+                                        "text": "Квартира"
+                                    },
+                                    "name": "MyColumn119",
+                                    "configAlternates": {
+                                        "scrollable": "boolean"
+                                    },
+                                    "designerId": "f2da78a5-2344-44b2-90aa-c9c40f1bc30a"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Column",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "appartment",
+                                        "hidden": true,
+                                        "text": "Appartment"
+                                    },
+                                    "name": "MyColumn120",
+                                    "configAlternates": {
+                                        "scrollable": "boolean"
+                                    },
+                                    "designerId": "bcb37d96-c9b4-4337-8e0a-961d507c22d7"
+                                },
+                                {
+                                    "type": "Ext.selection.RowModel",
+                                    "reference": {
+                                        "name": "selModel",
+                                        "type": "object"
+                                    },
+                                    "codeClass": "Ext.selection.RowModel",
+                                    "name": "MyRowSelectionModel",
+                                    "designerId": "c5868799-095b-4787-9bb5-31cc31cd7925"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.grid.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "enableColumnHide": false,
+                                "enableColumnMove": false,
+                                "enableColumnResize": false,
+                                "height": 350,
+                                "layout|flex": null,
+                                "sortableColumns": false,
+                                "store": "StMyFlat",
+                                "title": "Список мои квартиры",
+                                "width": 220
+                            },
+                            "name": "MyGridPanel28",
+                            "configAlternates": {
+                                "scrollable": "boolean"
+                            },
+                            "designerId": "a5d60f0d-29d1-4724-a74b-cca9b456008c",
+                            "cn": [
+                                {
+                                    "type": "Ext.view.Table",
+                                    "reference": {
+                                        "name": "viewConfig",
+                                        "type": "object"
+                                    },
+                                    "codeClass": null,
+                                    "name": "MyGridView29",
+                                    "configAlternates": {
+                                        "scrollable": "boolean"
+                                    },
+                                    "designerId": "8bf58224-07d0-44cb-a433-1ee2fb1a6c2f"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Action",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "align": "center",
+                                        "designer|displayName": "удалить квартиру",
+                                        "tooltip": "Удалить квартиру из списка",
+                                        "width": 40
+                                    },
+                                    "name": "MyActionColumn2",
+                                    "configAlternates": {
+                                        "scrollable": "boolean"
+                                    },
+                                    "designerId": "b5ebdc0e-a236-445d-a8e1-288d088606c2",
+                                    "cn": [
+                                        {
+                                            "type": "actioncolumnitem",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "icon": "resources/css/images/ico/delete.png",
+                                                "tooltip": "Удалить квартиру из списка"
+                                            },
+                                            "name": "MyActionColumnItem2",
+                                            "designerId": "725d1933-1f01-4fbf-8e76-1a3f38daddb1",
+                                            "cn": [
+                                                {
+                                                    "type": "fixedfunction",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "designer|params": [
+                                                            "v",
+                                                            "metadata",
+                                                            "r",
+                                                            "rowIndex",
+                                                            "colIndex",
+                                                            "store"
+                                                        ],
+                                                        "fn": "getClass",
+                                                        "implHandler": [
+                                                            "metaData = 'x-grid-center-icon';",
+                                                            "return metaData;"
+                                                        ]
+                                                    },
+                                                    "name": "getClass",
+                                                    "designerId": "ddb5d6bb-e388-49c1-bf90-99e470992ca2"
+                                                },
+                                                {
+                                                    "type": "fixedfunction",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "designer|params": [
+                                                            "view",
+                                                            "rowIndex",
+                                                            "colIndex",
+                                                            "item",
+                                                            "e",
+                                                            "record",
+                                                            "row"
+                                                        ],
+                                                        "fn": "handler",
+                                                        "implHandler": [
+                                                            "var stMyFlat = view.getStore().getAt(rowIndex);",
+                                                            "var stUser = Ext.data.StoreManager.get(\"StUser\");",
+                                                            "var stlogin =stUser.getAt(0);",
+                                                            "var store = view.getStore();",
+                                                            "",
+                                                            "Ext.MessageBox.confirm({",
+                                                            "    title: 'Удаление квартиры из списка < Мои квартиры >',",
+                                                            "    msg: 'Вы удаляете квартиру  '+ stMyFlat.get('address')+ '<br> Подтвердите или отмените свои действия.',",
+                                                            "    buttons: Ext.MessageBox.OKCANCEL,",
+                                                            "    icon: Ext.MessageBox.ERROR,",
+                                                            "    buttonText:{",
+                                                            "        ok:'подтвеждаю',",
+                                                            "        cancel:'отмена'",
+                                                            "    },",
+                                                            "    fn:function(btn,newValue){",
+                                                            "        if(btn=='ok'){",
+                                                            "             store.remove(record);",
+                                                            "             store.sync({  ",
+                                                            "                success: function(){",
+                                                            "                    Ext.MessageBox.show({title: 'Удаление записи',",
+                                                            "                        msg:'Запись удалена',",
+                                                            "                        buttons: Ext.MessageBox.OK,",
+                                                            "                        icon: Ext.MessageBox.INFO",
+                                                            "                    });",
+                                                            "                },    ",
+                                                            "                failure: function(){",
+                                                            "                    Ext.MessageBox.show({title: 'Удаление записи',",
+                                                            "                        msg:'Невозможно удалить',",
+                                                            "                        buttons: Ext.MessageBox.OK,",
+                                                            "                        icon: Ext.MessageBox.ERROR",
+                                                            "                    });",
+                                                            "",
+                                                            "                },",
+                                                            "                scope: this",
+                                                            "            });   ",
+                                                            "        }",
+                                                            "}",
+                                                            "});"
+                                                        ]
+                                                    },
+                                                    "name": "handler",
+                                                    "designerId": "4c91a7d1-2906-4b31-9d21-7e6d7fee5fd9"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.grid.column.Column",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "address_id",
+                                        "hidden": true,
+                                        "text": "Address_id"
+                                    },
+                                    "name": "MyColumn121",
+                                    "configAlternates": {
+                                        "scrollable": "boolean"
+                                    },
+                                    "designerId": "50bf1084-cb47-49fd-bd79-7492bde023c9"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Number",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "raion_id",
+                                        "hidden": true,
+                                        "text": "Raion_id"
+                                    },
+                                    "name": "MyNumberColumn128",
+                                    "configAlternates": {
+                                        "scrollable": "boolean"
+                                    },
+                                    "designerId": "56932d8a-57b1-4023-b92c-b3cc32c31819"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Number",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "house_id",
+                                        "hidden": true,
+                                        "text": "House_id"
+                                    },
+                                    "name": "MyNumberColumn129",
+                                    "configAlternates": {
+                                        "scrollable": "boolean"
+                                    },
+                                    "designerId": "1f11d4de-68b4-4ec6-a60d-12e151bd673a"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Column",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "address",
+                                        "flex": 1,
+                                        "text": "квартира"
+                                    },
+                                    "name": "MyColumn122",
+                                    "configAlternates": {
+                                        "scrollable": "boolean"
+                                    },
+                                    "designerId": "3589d618-a358-411d-bb3b-fd8210d34688"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Column",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "appartment",
+                                        "hidden": true,
+                                        "text": "Appartment"
+                                    },
+                                    "name": "MyColumn123",
+                                    "configAlternates": {
+                                        "scrollable": "boolean"
+                                    },
+                                    "designerId": "015003cb-b231-43d2-a44f-5ec008055594"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

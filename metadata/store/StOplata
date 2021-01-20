@@ -1,0 +1,48 @@
+{
+    "type": "directstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "stOplata",
+        "designer|userClassName": "StOplata",
+        "groupDir": "DESC",
+        "groupField": "god",
+        "model": "MdOplata",
+        "storeId": "stOplata"
+    },
+    "designerId": "dd5bfec1-3e96-4480-aadd-dbaae2465c9a",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Direct",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "directFn": "QueryTekNach.getResults",
+                "groupParam": null
+            },
+            "name": "MyDirectProxy12",
+            "designerId": "d6460a1b-341d-4de7-8c74-7cbf885a13a4",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "rootProperty": "data"
+                    },
+                    "name": "MyJsonReader12",
+                    "designerId": "d76f7be8-6e19-4931-bb22-125bb4b42ca3"
+                }
+            ]
+        }
+    ]
+}

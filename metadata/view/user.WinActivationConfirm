@@ -1,0 +1,282 @@
+{
+    "type": "Ext.window.Window",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "closable": false,
+        "designer|userAlias": "winActivationConfirm",
+        "designer|userClassName": "user.WinActivationConfirm",
+        "draggable": false,
+        "height": 362,
+        "html": null,
+        "id": "winActivationConfirm",
+        "itemId": null,
+        "modal": true,
+        "plain": null,
+        "title": "Системное уведомление",
+        "width": 527
+    },
+    "configAlternates": {
+        "html": "string",
+        "scrollable": "boolean"
+    },
+    "designerId": "2e032d72-b663-4a81-87cc-4af18822a541",
+    "viewControllerInstanceId": "336ddae8-884b-498c-89f5-d5a5ac1b66cc",
+    "viewModelInstanceId": "cdfc279f-0782-4308-9b90-a466c0c9250d",
+    "cn": [
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "bodyPadding": null,
+                "height": 333,
+                "html": null,
+                "id": "fmActivation",
+                "layout": "fit",
+                "title": ""
+            },
+            "name": "MyForm21",
+            "configAlternates": {
+                "scrollable": "boolean"
+            },
+            "designerId": "e1f5f10e-fac3-4d80-8c7b-281ab21f1bc0",
+            "cn": [
+                {
+                    "type": "Ext.form.FieldSet",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|snapToGrid": 5,
+                        "html": "<h3 class=\"login\"><span>Завершение регистрации</span></h3>",
+                        "layout": "absolute",
+                        "style": "background-color: #DCDCDC;",
+                        "title": null
+                    },
+                    "name": "MyFieldSet70",
+                    "configAlternates": {
+                        "style": "string",
+                        "html": "string",
+                        "scrollable": "boolean"
+                    },
+                    "designerId": "d48f50f4-b2dd-4fd3-a409-c0c2da0da5d3",
+                    "cn": [
+                        {
+                            "type": "Ext.form.field.Hidden",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fieldLabel": "Label",
+                                "layout|x": 175,
+                                "layout|y": 60,
+                                "name": "password"
+                            },
+                            "name": "MyHiddenField13",
+                            "configAlternates": {
+                                "scrollable": "boolean"
+                            },
+                            "designerId": "8e88b2ca-d4e7-4d4e-9c32-26bd8587ba64"
+                        },
+                        {
+                            "type": "Ext.form.field.Hidden",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fieldLabel": "Label",
+                                "layout|x": 180,
+                                "layout|y": 110,
+                                "name": "memorize"
+                            },
+                            "name": "MyHiddenField14",
+                            "configAlternates": {
+                                "scrollable": "boolean"
+                            },
+                            "designerId": "aa04dd79-1a2c-4753-b766-4e9c0b9fe420"
+                        },
+                        {
+                            "type": "Ext.form.field.Hidden",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fieldLabel": "Label",
+                                "name": "login"
+                            },
+                            "name": "MyHiddenField15",
+                            "configAlternates": {
+                                "scrollable": "boolean"
+                            },
+                            "designerId": "80d7d1c0-faa7-4666-aa62-74bcc2ab17b1"
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": null,
+                                "height": null,
+                                "iconCls": "icon-door-out ",
+                                "id": "btnConfirmActivationClose",
+                                "itemId": null,
+                                "layout|x": 190,
+                                "layout|y": 265,
+                                "scale": "medium",
+                                "text": "Вход",
+                                "width": 100
+                            },
+                            "name": "MyButton23",
+                            "configAlternates": {
+                                "scrollable": "boolean"
+                            },
+                            "designerId": "6b1785f3-cebd-43ed-a797-56479e34396a"
+                        },
+                        {
+                            "type": "Ext.form.FieldSet",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|snapToGrid": 5,
+                                "height": 165,
+                                "layout": "absolute",
+                                "layout|x": 60,
+                                "layout|y": 70,
+                                "style": "background-color: #F1EEEE;",
+                                "title": "",
+                                "width": 390
+                            },
+                            "name": "MyFieldSet71",
+                            "configAlternates": {
+                                "style": "string",
+                                "scrollable": "boolean"
+                            },
+                            "designerId": "f3af6464-4c9e-4608-a684-5e0c230b779f",
+                            "cn": [
+                                {
+                                    "type": "Ext.form.Label",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "html": null,
+                                        "layout|anchor": null,
+                                        "layout|x": 15,
+                                        "layout|y": 15,
+                                        "style": "font-size:150%; color: #3F742F ; font-weight:normal;letter-spacing:-.05em;position:relative; text-shadow: 2px 3px 9px #414040 ; margin:0 auto; ",
+                                        "text": "Ваша учетная запись активирована.",
+                                        "width": 333
+                                    },
+                                    "name": "MyLabel58",
+                                    "configAlternates": {
+                                        "style": "string",
+                                        "scrollable": "boolean"
+                                    },
+                                    "designerId": "5a6e038e-fd22-415b-add4-2dddd4c153a5"
+                                },
+                                {
+                                    "type": "Ext.form.field.Display",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fieldLabel": "Ваш логин",
+                                        "fieldStyle": "font-size:150%;       color: #3F742F /*#08468C  #407434 #0079b6 */;       font-weight:normal;       padding: 12px 2px 5px 5px;       letter-spacing:-.05em;       /*margin:.6em 0;*/       position:relative;       /* font-weight:bold; */           font-family:sans-serif,Tahoma, Verdana, Georgia;           text-shadow: 2px 3px 9px #414040 /* #bfbfbf */;        margin:0 auto;     behavior: url(ie-css3.htc);",
+                                        "height": null,
+                                        "labelStyle": "font-size:150%;       color: #3F742F /*#08468C  #407434 #0079b6 */;       font-weight:normal;       padding: 12px 2px 5px 5px;       letter-spacing:-.05em;       /*margin:.6em 0;*/       position:relative;       /* font-weight:bold; */           font-family:sans-serif,Tahoma, Verdana, Georgia;           text-shadow: 2px 3px 9px #414040 /* #bfbfbf */;        margin:0 auto;     behavior: url(ie-css3.htc);",
+                                        "labelWidth": 120,
+                                        "layout|anchor": null,
+                                        "layout|x": 40,
+                                        "layout|y": 40,
+                                        "name": "showLogin",
+                                        "style": null,
+                                        "value": "['Пользователь']",
+                                        "width": 320
+                                    },
+                                    "name": "MyDisplayField9",
+                                    "configAlternates": {
+                                        "style": "string",
+                                        "scrollable": "boolean"
+                                    },
+                                    "designerId": "04537a7c-34bf-4a98-a32f-b0c47a86fb19"
+                                },
+                                {
+                                    "type": "Ext.form.Label",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "height": null,
+                                        "html": null,
+                                        "layout|anchor": null,
+                                        "layout|x": 70,
+                                        "layout|y": 85,
+                                        "style": "font-size:150%;color: #3F742F ;font-weight:normal;letter-spacing:-.05em;position:relative; text-shadow: 2px 3px 9px #414040 ;margin:0 auto; ",
+                                        "text": "спасибо за регистрацию",
+                                        "width": null
+                                    },
+                                    "name": "MyLabel59",
+                                    "configAlternates": {
+                                        "style": "string",
+                                        "scrollable": "boolean"
+                                    },
+                                    "designerId": "ec961d4d-3024-4e37-8c3b-f24946f0e000"
+                                },
+                                {
+                                    "type": "Ext.form.Label",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "height": null,
+                                        "layout|anchor": null,
+                                        "layout|x": 70,
+                                        "layout|y": 125,
+                                        "style": "font-size:150%; color: #3F742F ; font-weight:normal;letter-spacing:-.05em;position:relative; text-shadow: 2px 3px 9px #414040 ; margin:0 auto; ",
+                                        "text": "Администрация портала",
+                                        "width": null
+                                    },
+                                    "name": "MyLabel60",
+                                    "configAlternates": {
+                                        "style": "string",
+                                        "scrollable": "boolean"
+                                    },
+                                    "designerId": "7dbede83-d4bb-413f-80c0-af5fe56068bc"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,40 @@
+
+
+
+
+.GrHist .x-panel-header-default { 
+  font-size: 13px;
+  border-color: #d0d0d0;
+  border-width: 1px;
+  border-style: solid;
+  background-image: none;
+  background-color: #E8F4FA;
+  
+}
+
+.GrHist .x-grid-hd-inner, .x-grid-cell-inner { white-space: normal; } /* перенос на след строку */
+
+
+
+/* Фильдсеты: */
+
+.FsTarifs .x-fieldset {
+  border: 1px solid #b5b8c8;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: block;
+  /* preserve margins in IE */
+  position: relative;
+  
+  background: no-repeat;
+  background-image: url('../images/fs/blue-business-graph.jpg');
+}
+
+/*.FsTarifs .x-fieldset-header {
+  font: 11px/14px bold tahoma, arial, verdana, sans-serif;
+  color: #73FF98;
+  padding: 0 3px 1px;
+  overflow: hidden;
+}*/
+
+

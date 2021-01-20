@@ -1,0 +1,26 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "tabInfoapp",
+        "designer|userClassName": "flat.TabInfoApp",
+        "hidden": true,
+        "id": "tabInfoApp",
+        "itemId": null,
+        "layout": "fit",
+        "overlapHeader": null,
+        "scrollable": true,
+        "title": "Інфо Сторінка",
+        "titleAlign": null
+    },
+    "configAlternates": {
+        "scrollable": "boolean"
+    },
+    "designerId": "93eab812-461e-4e01-a6e8-63eaf6e410f3",
+    "viewControllerInstanceId": "40db6a7b-1317-420a-a938-92720a6b5ca0",
+    "viewModelInstanceId": "bfa6c525-3109-4acc-9bd2-ed97e9148401"
+}

@@ -1,0 +1,13 @@
+{
+    "type": "Ext.app.ViewModel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "winActivationConfirm",
+        "designer|userClassName": "user.WinActivationConfirmViewModel"
+    },
+    "designerId": "cdfc279f-0782-4308-9b90-a466c0c9250d"
+}

@@ -1,0 +1,1078 @@
+{
+    "type": "Ext.window.Window",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "bodyPadding": null,
+        "designer|userAlias": "winRegistration",
+        "designer|userClassName": "user.WinRegistration",
+        "height": 615,
+        "hidden": false,
+        "id": "winRegistration",
+        "layout": "fit",
+        "modal": true,
+        "title": "",
+        "width": 512
+    },
+    "configAlternates": {
+        "scrollable": "boolean"
+    },
+    "designerId": "d183f311-9079-473c-9e3a-4bbd373e714e",
+    "viewControllerInstanceId": "bbe92722-21c9-410e-a5b7-6020b3f6d086",
+    "viewModelInstanceId": "382f52e7-383e-4429-be0d-ae3f987dd9a6",
+    "cn": [
+        {
+            "type": "Ext.tab.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "activeTab": 0,
+                "id": "pnTabRegistrazia",
+                "itemId": null,
+                "plain": null,
+                "width": 500
+            },
+            "name": "MyTabPanel3",
+            "configAlternates": {
+                "scrollable": "boolean"
+            },
+            "designerId": "9be5e86c-a0e2-466f-8dc7-c0cee6d5d1e0",
+            "cn": [
+                {
+                    "type": "Ext.panel.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "bodyPadding": null,
+                        "height": null,
+                        "id": "pnLogin",
+                        "itemId": null,
+                        "layout": "fit",
+                        "title": "Авторизация",
+                        "width": 490
+                    },
+                    "name": "MyPanel16",
+                    "configAlternates": {
+                        "scrollable": "boolean"
+                    },
+                    "designerId": "04033829-3349-44f4-a179-c82f45c85663",
+                    "cn": [
+                        {
+                            "type": "Ext.tab.Tab",
+                            "reference": {
+                                "name": "tabConfig",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "style": "background-color: #C2D9C9;border:0px;"
+                            },
+                            "name": "TabConfig17",
+                            "configAlternates": {
+                                "style": "string",
+                                "scrollable": "boolean"
+                            },
+                            "designerId": "3dad0122-f290-4145-9dee-8735560af4fb"
+                        },
+                        {
+                            "type": "Ext.form.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "bodyPadding": null,
+                                "bodyStyle": null,
+                                "border": null,
+                                "height": 516,
+                                "id": "fmLogin",
+                                "itemId": "fmLogin",
+                                "layout": "fit",
+                                "title": null,
+                                "width": 490
+                            },
+                            "name": "MyForm19",
+                            "configAlternates": {
+                                "scrollable": "boolean"
+                            },
+                            "designerId": "362e6055-c5ce-4417-8e91-ee377e7b4c40",
+                            "cn": [
+                                {
+                                    "type": "Ext.form.FieldSet",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "border": null,
+                                        "designer|snapToGrid": 5,
+                                        "frame": true,
+                                        "height": 332,
+                                        "hidden": null,
+                                        "html": "<h3 class=\"login\"><span>Авторизация</span></h3><h6 class=\"reg-text\"><p>Если Вы еще не зарегистрированы ? <br>Вкладка регистрация</p></h6>",
+                                        "layout": "absolute",
+                                        "padding": null,
+                                        "style": "background-color: #DCDCDC;",
+                                        "title": "",
+                                        "width": 490
+                                    },
+                                    "name": "MyFieldSet64",
+                                    "configAlternates": {
+                                        "style": "string",
+                                        "html": "string",
+                                        "scrollable": "boolean"
+                                    },
+                                    "designerId": "a03cf15c-c4b1-48a9-a18a-41d36587009a",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.form.field.Hidden",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fieldLabel": "Label",
+                                                "name": "user_id"
+                                            },
+                                            "name": "MyHiddenField12",
+                                            "configAlternates": {
+                                                "scrollable": "boolean"
+                                            },
+                                            "designerId": "1276c83e-aefa-4f19-a3a6-d74fed581d58"
+                                        },
+                                        {
+                                            "type": "Ext.form.Label",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "cls": [
+                                                    "no-login"
+                                                ],
+                                                "height": null,
+                                                "hidden": true,
+                                                "id": "chekLogin",
+                                                "layout|x": 55,
+                                                "layout|y": 390,
+                                                "overCls": null,
+                                                "style": null,
+                                                "text": "Неверный логин или пароль. Попытка №",
+                                                "width": 395
+                                            },
+                                            "name": "MyLabel57",
+                                            "configAlternates": {
+                                                "style": "string",
+                                                "scrollable": "boolean"
+                                            },
+                                            "designerId": "b1aaf162-d026-423b-8f71-1996d97718f5"
+                                        },
+                                        {
+                                            "type": "Ext.form.field.Number",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "decimalPrecision": 0,
+                                                "fieldLabel": "",
+                                                "hidden": true,
+                                                "hideTrigger": true,
+                                                "layout|x": 122,
+                                                "layout|y": 288,
+                                                "name": "attempt",
+                                                "value": [
+                                                    "0"
+                                                ],
+                                                "width": 45
+                                            },
+                                            "name": "MyNumberField61",
+                                            "configAlternates": {
+                                                "scrollable": "boolean"
+                                            },
+                                            "designerId": "a860f67f-840b-4d0e-b115-3307368a4f20"
+                                        },
+                                        {
+                                            "type": "Ext.button.Button",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "cls": "button",
+                                                "disabled": null,
+                                                "formBind": null,
+                                                "height": null,
+                                                "icon": "resources/css/images/ico/door_out.png",
+                                                "iconCls": null,
+                                                "id": "btnExitActivation",
+                                                "itemId": null,
+                                                "layout|x": 10,
+                                                "layout|y": 455,
+                                                "scale": "medium",
+                                                "text": "Отмена",
+                                                "width": 130
+                                            },
+                                            "name": "MyButton17",
+                                            "configAlternates": {
+                                                "scrollable": "boolean"
+                                            },
+                                            "designerId": "7f0d74e3-f16b-4a1a-bea4-488e4b20bc31",
+                                            "cn": [
+                                                {
+                                                    "type": "fixedfunction",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "designer|params": [
+                                                            "button",
+                                                            "event"
+                                                        ],
+                                                        "fn": "handler",
+                                                        "implHandler": [
+                                                            "button.up('#winRegistration').close();"
+                                                        ]
+                                                    },
+                                                    "name": "handler",
+                                                    "designerId": "3fa6d5b9-2e81-49c6-b4f6-a12000396fcd"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "Ext.form.FieldSet",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|snapToGrid": 5,
+                                                "height": 215,
+                                                "layout": "absolute",
+                                                "layout|x": 60,
+                                                "layout|y": 155,
+                                                "style": "background-color: #F1EEEE;",
+                                                "title": "",
+                                                "width": 355
+                                            },
+                                            "name": "MyFieldSet65",
+                                            "configAlternates": {
+                                                "style": "string",
+                                                "scrollable": "boolean"
+                                            },
+                                            "designerId": "1f7b065e-74d5-4698-a9ef-df5fdff96401",
+                                            "cn": [
+                                                {
+                                                    "type": "Ext.form.field.Text",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "allowBlank": false,
+                                                        "blankText": "Логин не введен",
+                                                        "fieldLabel": "Логин",
+                                                        "frame": true,
+                                                        "id": "login",
+                                                        "itemId": "login",
+                                                        "labelPad": 2,
+                                                        "layout|anchor": null,
+                                                        "layout|x": 10,
+                                                        "layout|y": 20,
+                                                        "maxLength": 20,
+                                                        "maxLengthText": "Не более 20 символов",
+                                                        "minLength": 4,
+                                                        "minLengthText": "Не менее 4 символов",
+                                                        "msgTarget": "under",
+                                                        "name": "login",
+                                                        "padding": null,
+                                                        "value": null,
+                                                        "vtype": "alphanum",
+                                                        "width": 285
+                                                    },
+                                                    "name": "MyTextField71",
+                                                    "configAlternates": {
+                                                        "scrollable": "boolean"
+                                                    },
+                                                    "designerId": "c0fc37a8-8a8a-4615-b33c-efeb2cec0ae5"
+                                                },
+                                                {
+                                                    "type": "Ext.form.field.Text",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "allowBlank": false,
+                                                        "blankText": "Пароль не введен",
+                                                        "fieldLabel": "Пароль",
+                                                        "id": "password",
+                                                        "inputType": "password",
+                                                        "itemId": "password",
+                                                        "labelPad": 2,
+                                                        "layout|anchor": null,
+                                                        "layout|x": 10,
+                                                        "layout|y": 70,
+                                                        "maxLength": 32,
+                                                        "maxLengthText": "Не более 32 символов",
+                                                        "minLength": 6,
+                                                        "minLengthText": "Не менее 6 символов",
+                                                        "msgTarget": "under",
+                                                        "name": "password",
+                                                        "value": null,
+                                                        "width": 285
+                                                    },
+                                                    "name": "MyTextField72",
+                                                    "configAlternates": {
+                                                        "scrollable": "boolean"
+                                                    },
+                                                    "designerId": "78fb61b8-2865-426c-9626-02e587686bd1"
+                                                },
+                                                {
+                                                    "type": "Ext.form.field.Checkbox",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "boxLabel": "Запомнить меня",
+                                                        "fieldLabel": "",
+                                                        "inputValue": "1",
+                                                        "layout|x": 145,
+                                                        "layout|y": 120,
+                                                        "name": "memorize"
+                                                    },
+                                                    "name": "MyCheckbox34",
+                                                    "configAlternates": {
+                                                        "scrollable": "boolean"
+                                                    },
+                                                    "designerId": "44fd5181-f88b-4582-9405-bf3ebadbc019"
+                                                },
+                                                {
+                                                    "type": "Ext.button.Button",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "icon": "resources/css/images/ico/information.png",
+                                                        "id": "info_remember",
+                                                        "layout|x": 85,
+                                                        "layout|y": 120,
+                                                        "text": "",
+                                                        "tooltip": "Галочка в поле <Запомнить> - сохранит Ваш Логин и пароль на компьтере, что позволит Вам не заполнять поля  при следующей авторизации."
+                                                    },
+                                                    "name": "MyButton18",
+                                                    "configAlternates": {
+                                                        "tooltip": "string",
+                                                        "scrollable": "boolean"
+                                                    },
+                                                    "designerId": "079eb4db-4ed1-4866-88b8-064179319160"
+                                                },
+                                                {
+                                                    "type": "Ext.button.Button",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "cls": "button",
+                                                        "disabled": null,
+                                                        "formBind": true,
+                                                        "height": null,
+                                                        "icon": "resources/css/images/btn32/contact_32.png",
+                                                        "iconCls": null,
+                                                        "id": "btnInput",
+                                                        "itemId": "btnInput",
+                                                        "layout|x": 120,
+                                                        "layout|y": 165,
+                                                        "scale": "medium",
+                                                        "text": "Вход",
+                                                        "width": 145
+                                                    },
+                                                    "name": "MyButton19",
+                                                    "configAlternates": {
+                                                        "scrollable": "boolean"
+                                                    },
+                                                    "designerId": "df1f656b-76f6-4713-a2dc-5974f6c286a6"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.panel.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "id": "tabRegistration",
+                        "itemId": "tabRegistration",
+                        "layout": "fit",
+                        "title": "Регистрация",
+                        "width": 500
+                    },
+                    "name": "MyPanel17",
+                    "configAlternates": {
+                        "scrollable": "boolean"
+                    },
+                    "designerId": "2e5b165b-21d6-4043-8d96-5f8e993babaf",
+                    "cn": [
+                        {
+                            "type": "Ext.tab.Tab",
+                            "reference": {
+                                "name": "tabConfig",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "name": "TabConfig18",
+                            "configAlternates": {
+                                "scrollable": "boolean"
+                            },
+                            "designerId": "f68e2450-c95f-46bf-8497-8ff50046c417"
+                        },
+                        {
+                            "type": "Ext.form.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "bodyStyle": null,
+                                "border": null,
+                                "cls": [
+                                    "login"
+                                ],
+                                "height": 476,
+                                "id": "fmRegistration",
+                                "itemId": "fmRegistration",
+                                "layout": "fit",
+                                "title": null,
+                                "width": 500
+                            },
+                            "name": "MyForm20",
+                            "configAlternates": {
+                                "scrollable": "boolean"
+                            },
+                            "designerId": "9f885b25-c71a-41e0-aaec-0b1dbf0a4001",
+                            "cn": [
+                                {
+                                    "type": "Ext.form.FieldSet",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "border": null,
+                                        "designer|snapToGrid": 5,
+                                        "height": 389,
+                                        "html": "<h3 class=\"login\"><span>Регистрация</span></h3>",
+                                        "layout": "absolute",
+                                        "style": "background-color: #DCDCDC;",
+                                        "title": ""
+                                    },
+                                    "name": "MyFieldSet66",
+                                    "configAlternates": {
+                                        "style": "string",
+                                        "html": "string",
+                                        "scrollable": "boolean"
+                                    },
+                                    "designerId": "c3c15e12-d9a5-4153-90aa-7cf551c55d7d",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.form.FieldSet",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|snapToGrid": 5,
+                                                "height": 270,
+                                                "html": "",
+                                                "layout": "absolute",
+                                                "layout|x": 50,
+                                                "layout|y": 60,
+                                                "style": "background-color: #F1EEEE;",
+                                                "title": "поля обязательные для заполнения",
+                                                "width": 360
+                                            },
+                                            "name": "MyFieldSet67",
+                                            "configAlternates": {
+                                                "style": "string",
+                                                "html": "string",
+                                                "scrollable": "boolean"
+                                            },
+                                            "designerId": "102ea612-deac-4957-b962-5624564b3056",
+                                            "cn": [
+                                                {
+                                                    "type": "Ext.form.field.Text",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "allowBlank": false,
+                                                        "blankText": "Логин не введен",
+                                                        "fieldLabel": "Логин",
+                                                        "frame": true,
+                                                        "id": "rlogin",
+                                                        "invalidText": "только латиницей",
+                                                        "itemId": "rlogin",
+                                                        "labelPad": 2,
+                                                        "labelWidth": 90,
+                                                        "layout|anchor": null,
+                                                        "layout|x": 50,
+                                                        "layout|y": 5,
+                                                        "maxLength": 20,
+                                                        "maxLengthText": "Не более 20 символов",
+                                                        "minLength": 4,
+                                                        "minLengthText": "Не менее 4 символов",
+                                                        "msgTarget": "under",
+                                                        "name": "rlogin",
+                                                        "padding": "",
+                                                        "value": null,
+                                                        "vtype": "alphanum",
+                                                        "vtypeText": "только латиницей",
+                                                        "width": 265
+                                                    },
+                                                    "name": "MyTextField73",
+                                                    "configAlternates": {
+                                                        "scrollable": "boolean"
+                                                    },
+                                                    "designerId": "c605311e-7fd5-470e-886d-2d95e464386d"
+                                                },
+                                                {
+                                                    "type": "Ext.form.field.Text",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "allowBlank": false,
+                                                        "blankText": "Пароль не введен",
+                                                        "fieldLabel": "Пароль",
+                                                        "id": "firstpassword",
+                                                        "inputType": "password",
+                                                        "itemId": null,
+                                                        "labelPad": 2,
+                                                        "labelWidth": 90,
+                                                        "layout|x": 50,
+                                                        "layout|y": 50,
+                                                        "maxLength": 32,
+                                                        "maxLengthText": "Не более 32 символов",
+                                                        "minLength": 6,
+                                                        "minLengthText": "Не менее 6 символов",
+                                                        "msgTarget": "under",
+                                                        "name": "firstpassword",
+                                                        "vtype": null,
+                                                        "width": 265
+                                                    },
+                                                    "name": "MyTextField74",
+                                                    "configAlternates": {
+                                                        "scrollable": "boolean"
+                                                    },
+                                                    "designerId": "c0b8ab6c-1e3d-4e7c-8df5-a886b1d29665"
+                                                },
+                                                {
+                                                    "type": "Ext.form.field.Text",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "allowBlank": false,
+                                                        "blankText": "Пароль не введен",
+                                                        "fieldLabel": "Повторить",
+                                                        "id": "confirmpassword",
+                                                        "initialPassField": null,
+                                                        "inputType": "password",
+                                                        "itemId": "confirmpassword",
+                                                        "labelPad": 2,
+                                                        "labelWidth": 90,
+                                                        "layout|x": 50,
+                                                        "layout|y": 95,
+                                                        "maxLength": null,
+                                                        "maxLengthText": null,
+                                                        "minLength": null,
+                                                        "minLengthText": null,
+                                                        "msgTarget": "under",
+                                                        "name": "confirm",
+                                                        "vtype": null,
+                                                        "vtypeText": "Пароли не равнозначны",
+                                                        "width": 265
+                                                    },
+                                                    "name": "MyTextField75",
+                                                    "configAlternates": {
+                                                        "scrollable": "boolean"
+                                                    },
+                                                    "designerId": "f51c4e4a-1bc6-4d49-9c23-4d6b3b18bd25",
+                                                    "customConfigs": [
+                                                        {
+                                                            "group": "(Custom Properties)",
+                                                            "name": "initialPassField",
+                                                            "type": "string"
+                                                        }
+                                                    ],
+                                                    "cn": [
+                                                        {
+                                                            "type": "fixedfunction",
+                                                            "reference": {
+                                                                "name": "items",
+                                                                "type": "array"
+                                                            },
+                                                            "codeClass": null,
+                                                            "userConfig": {
+                                                                "designer|params": [
+                                                                    "value"
+                                                                ],
+                                                                "fn": "validator",
+                                                                "implHandler": [
+                                                                    "//console.log(this);",
+                                                                    "var pwd = Ext.getCmp(\"firstpassword\").getValue();",
+                                                                    "if (value === pwd){  ",
+                                                                    "    return true;",
+                                                                    "}else{",
+                                                                    "    return this.vtypeText;",
+                                                                    "}"
+                                                                ]
+                                                            },
+                                                            "name": "validator",
+                                                            "designerId": "cc13d55f-e666-4881-96ba-ab4361ede5d5"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "Ext.form.field.Text",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "allowBlank": false,
+                                                        "blankText": "Email адрес обязателен",
+                                                        "enforceMaxLength": false,
+                                                        "fieldLabel": "Ваш Email",
+                                                        "frame": true,
+                                                        "growMax": 150,
+                                                        "growMin": null,
+                                                        "id": "remail",
+                                                        "inputType": null,
+                                                        "invalidText": "",
+                                                        "itemId": "remail",
+                                                        "labelPad": 2,
+                                                        "labelWidth": 80,
+                                                        "layout|x": 15,
+                                                        "layout|y": 145,
+                                                        "msgTarget": "under",
+                                                        "name": "remail",
+                                                        "value": null,
+                                                        "vtype": "email",
+                                                        "vtypeText": "Неправильный еmail",
+                                                        "width": 300
+                                                    },
+                                                    "name": "MyTextField76",
+                                                    "configAlternates": {
+                                                        "scrollable": "boolean"
+                                                    },
+                                                    "designerId": "d3146d81-7556-487d-94f3-8d639bfdb035"
+                                                },
+                                                {
+                                                    "type": "Ext.form.CheckboxGroup",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "allowBlank": false,
+                                                        "blankText": "Вы дожны прочитать соглашение",
+                                                        "fieldLabel": "",
+                                                        "labelWidth": 235,
+                                                        "layout|x": 0,
+                                                        "layout|y": 190,
+                                                        "width": 340
+                                                    },
+                                                    "name": "MyCheckboxGroup",
+                                                    "configAlternates": {
+                                                        "scrollable": "boolean"
+                                                    },
+                                                    "designerId": "93475663-ee8a-45ea-8c71-a3867a02cea7",
+                                                    "cn": [
+                                                        {
+                                                            "type": "Ext.form.field.Checkbox",
+                                                            "reference": {
+                                                                "name": "items",
+                                                                "type": "array"
+                                                            },
+                                                            "codeClass": null,
+                                                            "userConfig": {
+                                                                "boxLabel": "прочитать",
+                                                                "fieldLabel": "Соглашение о хранении и обработке персональных данных ",
+                                                                "inputValue": "1",
+                                                                "labelWidth": 235,
+                                                                "name": "soglasie"
+                                                            },
+                                                            "name": "MyCheckbox35",
+                                                            "configAlternates": {
+                                                                "scrollable": "boolean"
+                                                            },
+                                                            "designerId": "33afecff-db65-4c82-82dd-681890867ade",
+                                                            "cn": [
+                                                                {
+                                                                    "type": "fixedfunction",
+                                                                    "reference": {
+                                                                        "name": "items",
+                                                                        "type": "array"
+                                                                    },
+                                                                    "codeClass": null,
+                                                                    "userConfig": {
+                                                                        "designer|params": [
+                                                                            "checkbox",
+                                                                            "checked"
+                                                                        ],
+                                                                        "fn": "handler",
+                                                                        "implHandler": [
+                                                                            "var pn = Ext.getCmp('pnTabRegistrazia');",
+                                                                            "if(checked===true){",
+                                                                            "",
+                                                                            "    checkbox.setFieldLabel('Я прочитал соглашение о хранении и обработке персональных данных ');",
+                                                                            "    checkbox.setBoxLabel('согласен');",
+                                                                            "    pn.setActiveTab('pnSoglasie');",
+                                                                            "",
+                                                                            "",
+                                                                            "} else {",
+                                                                            "    checkbox.setFieldLabel('Соглашение о хранении и обработке персональных данных');",
+                                                                            "    checkbox.setBoxLabel('прочитать');",
+                                                                            "",
+                                                                            "",
+                                                                            "}"
+                                                                        ]
+                                                                    },
+                                                                    "name": "handler",
+                                                                    "designerId": "53f0c3ba-420e-4601-94b1-38f999378d5d"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "Ext.button.Button",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "cls": "button",
+                                                "formBind": true,
+                                                "height": null,
+                                                "icon": "resources/css/images/btn32/contact_32.png",
+                                                "iconCls": null,
+                                                "id": "btnRegistrationForm",
+                                                "itemId": null,
+                                                "layout|x": 225,
+                                                "layout|y": 460,
+                                                "overCls": null,
+                                                "scale": "medium",
+                                                "text": "Зарегистрироваться",
+                                                "width": 220
+                                            },
+                                            "name": "MyButton20",
+                                            "configAlternates": {
+                                                "scrollable": "boolean"
+                                            },
+                                            "designerId": "473df4c3-fe1d-4326-b6bb-b99f897d6b58"
+                                        },
+                                        {
+                                            "type": "Ext.form.field.Text",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "blankText": null,
+                                                "fieldLabel": "Отчество",
+                                                "frame": true,
+                                                "id": "rlastname",
+                                                "itemId": "rlastname",
+                                                "labelPad": 2,
+                                                "labelWidth": 90,
+                                                "layout|anchor": null,
+                                                "layout|x": 105,
+                                                "layout|y": 415,
+                                                "msgTarget": "under",
+                                                "name": "rlastname",
+                                                "padding": "",
+                                                "vtype": null,
+                                                "width": 265
+                                            },
+                                            "name": "MyTextField77",
+                                            "configAlternates": {
+                                                "scrollable": "boolean"
+                                            },
+                                            "designerId": "8bb7c0ba-0c86-475c-b4a8-08944c31abde"
+                                        },
+                                        {
+                                            "type": "Ext.form.field.Text",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "blankText": null,
+                                                "fieldLabel": "Фамилия",
+                                                "frame": true,
+                                                "id": "rsurname",
+                                                "itemId": "rsurname",
+                                                "labelPad": 2,
+                                                "labelWidth": 90,
+                                                "layout|anchor": null,
+                                                "layout|x": 105,
+                                                "layout|y": 345,
+                                                "msgTarget": "under",
+                                                "name": "rsurname",
+                                                "padding": "",
+                                                "vtype": null,
+                                                "width": 265
+                                            },
+                                            "name": "MyTextField78",
+                                            "configAlternates": {
+                                                "scrollable": "boolean"
+                                            },
+                                            "designerId": "f22ec7d4-7d14-4913-8d84-aa83a70a4a7e"
+                                        },
+                                        {
+                                            "type": "Ext.form.field.Text",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "blankText": null,
+                                                "fieldLabel": "Имя",
+                                                "frame": true,
+                                                "id": "rfirstname",
+                                                "itemId": "rfirstname",
+                                                "labelPad": 2,
+                                                "labelWidth": 90,
+                                                "layout|anchor": null,
+                                                "layout|x": 105,
+                                                "layout|y": 380,
+                                                "msgTarget": "under",
+                                                "name": "rfirstname",
+                                                "padding": "",
+                                                "vtype": null,
+                                                "width": 265
+                                            },
+                                            "name": "MyTextField79",
+                                            "configAlternates": {
+                                                "scrollable": "boolean"
+                                            },
+                                            "designerId": "574e58a4-34bd-4c53-9ca7-7b497383361d"
+                                        },
+                                        {
+                                            "type": "Ext.button.Button",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "cls": "button",
+                                                "disabled": null,
+                                                "formBind": null,
+                                                "height": null,
+                                                "icon": "resources/css/images/ico/door_out.png",
+                                                "iconCls": null,
+                                                "id": "btnExitRegistration",
+                                                "itemId": null,
+                                                "layout|x": 15,
+                                                "layout|y": 460,
+                                                "scale": "medium",
+                                                "text": "Отмена",
+                                                "width": 125
+                                            },
+                                            "name": "MyButton21",
+                                            "configAlternates": {
+                                                "scrollable": "boolean"
+                                            },
+                                            "designerId": "8d98029c-6ea2-41b8-8dd1-2f6e7616abdc",
+                                            "cn": [
+                                                {
+                                                    "type": "fixedfunction",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "designer|params": [
+                                                            "button",
+                                                            "event"
+                                                        ],
+                                                        "fn": "handler",
+                                                        "implHandler": [
+                                                            "var winRegistration = Ext.getCmp('winRegistration');",
+                                                            "winRegistration.close();"
+                                                        ]
+                                                    },
+                                                    "name": "handler",
+                                                    "designerId": "3e434044-7f85-4118-a37a-dd815b234dda"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.panel.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": "stretch",
+                        "html": null,
+                        "id": "pnSoglasie",
+                        "layout": "vbox",
+                        "scrollable": true,
+                        "title": "Соглашение"
+                    },
+                    "name": "MyPanel18",
+                    "configAlternates": {
+                        "html": "string",
+                        "scrollable": "boolean"
+                    },
+                    "designerId": "8876b87e-cff5-49e0-9485-6b70aaaad50d",
+                    "cn": [
+                        {
+                            "type": "Ext.tab.Tab",
+                            "reference": {
+                                "name": "tabConfig",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "style": null
+                            },
+                            "name": "TabConfig19",
+                            "configAlternates": {
+                                "style": "string",
+                                "scrollable": "boolean"
+                            },
+                            "designerId": "d1274401-41e4-4135-a074-f1baf4f8af92"
+                        },
+                        {
+                            "type": "Ext.form.FieldSet",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "html": "<p><IMG SRC=\"resources/css/images/logo.gif\" class=\"leftimg\" > <h4>Согласие на обработку персональных данных</h4></span>  <p style = \"text-align: justify;\">Я, клиент портала «Южненская Коммунальная Информационная Система», даю согласие на хранение и обработку моих персональных данных, а именно: фамилию, имя, отчество, местожительство, контактных телефонов, адреса электронной почты со стороны администрации портала на следующии цели:</p>   <p style = \"text-align: justify;\">предоставление клиентам данных по задолженности перед коммуннальными предприятиями , оплата коммуннальных услуг, а так же другие интернет-услуги.</p>  <p style = \"text-align: justify;\">Администрации портала «Южненская Коммунальная Информационная Система» обязуется осуществлять обработку персональных данных в соответствии с требованиями законодательства Украины по обработке персональных данных.</p> <p style = \"text-align: justify;\">Я согласен с тем, что мои персональные данные могут быть переданы третьим лицам, а именно Коммунальным предприятиям (службам) с которыми у меня заключены договора, если этого требуют условия предоставления заявленных мной услуг.</p>   <p style = \"text-align: justify;\">Я поручаю администрации портала «Южненская Коммунальная Информационная Система», в случае, если этого требуют правила или Регламенты соответствующих предприятий, служб , опубликовать мои персональные данные в базах данных,реестров соответствующих  предприятий, служб,  по форме и объемам, необходимыми для их функционирования.</p>   <p style = \"text-align: justify;\">Я согласен с тем, что отказ от предоставления согласия на обработку персональных данных или его отзыве может привести к следующему:</p>   <p style = \"text-align: justify;\">Отказ со стороны администрации портала «Южненская Коммунальная Информационная Система» в предоставлении соответствующих услуг;</p>  <p style = \"text-align: justify;\">Удаление или прекращение дальнейшего сопровождения и обработки персональных данных клиента.</p>   <p style = \"text-align: justify;\">Права клиента по отношению к его персональных данных указанные в ст. 8 Закона Украины «О защите персональных данных».</p>  <p style = \"text-align: justify;\"> Если клиент намерен отозвать свое согласие на обработку его персональных данных со стороны портала «Южненская Коммунальная Информационная Система», он совершает такой отзыв путем направления в адрес администрации соответствующего распоряжения письмом на Email  </p>  <p style = \"text-align: justify;\"><a href=\"mailto:yis@yuzhny.com?subject=Удаление персональных данных\">Удаление персональных данных</a></p></p>",
+                                "margin": null,
+                                "padding": null,
+                                "style": "background-color: #F1EEEE;",
+                                "title": ""
+                            },
+                            "name": "MyFieldSet68",
+                            "configAlternates": {
+                                "html": "string",
+                                "style": "string",
+                                "scrollable": "boolean"
+                            },
+                            "designerId": "5982290f-2085-4e0d-83aa-d719c397130c"
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "margin": "5 60 10 60",
+                                "text": "Согласен",
+                                "width": 100
+                            },
+                            "name": "MyButton",
+                            "designerId": "cd66b8b1-de73-4871-9c37-8f946932d8ea",
+                            "cn": [
+                                {
+                                    "type": "fixedfunction",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|params": [
+                                            "button",
+                                            "e"
+                                        ],
+                                        "fn": "handler",
+                                        "implHandler": [
+                                            "var pn = Ext.getCmp('pnTabRegistrazia');",
+                                            "",
+                                            "",
+                                            "    pn.setActiveTab('tabRegistration');",
+                                            ""
+                                        ]
+                                    },
+                                    "name": "handler",
+                                    "designerId": "bf0346f4-a9b7-471d-a8e2-2d8ac21fd3d6"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

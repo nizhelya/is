@@ -1,0 +1,13 @@
+{
+    "type": "Ext.app.ViewModel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "tabLogin",
+        "designer|userClassName": "flat.TabLoginViewModel"
+    },
+    "designerId": "decac3db-df23-444f-8bbf-6323766f80d9"
+}

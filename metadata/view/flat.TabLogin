@@ -1,0 +1,43 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "tabLogin",
+        "designer|userClassName": "flat.TabLogin",
+        "html": "",
+        "id": "tabLogin",
+        "layout": "fit",
+        "title": "г.Южный"
+    },
+    "configAlternates": {
+        "html": "string",
+        "scrollable": "boolean"
+    },
+    "designerId": "8a2a2255-dc98-4e69-a7bf-e933ef51d407",
+    "viewControllerInstanceId": "515c7043-a1b0-4eb9-b721-25b2b8b6ff8a",
+    "viewModelInstanceId": "decac3db-df23-444f-8bbf-6323766f80d9",
+    "cn": [
+        {
+            "type": "Ext.Img",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "height": null,
+                "src": "resources/css/images/IMG_9851.gif",
+                "width": null
+            },
+            "name": "MyImg",
+            "configAlternates": {
+                "scrollable": "boolean"
+            },
+            "designerId": "0e498aaf-295f-45ad-be9b-b3085e4c0121"
+        }
+    ]
+}

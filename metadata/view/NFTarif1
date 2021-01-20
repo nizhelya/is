@@ -1,0 +1,30 @@
+{
+    "type": "Ext.form.field.Number",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "decimalPrecision": 3,
+        "decimalSeparator": ".",
+        "designer|userAlias": "nFTarif1",
+        "designer|userClassName": "NFTarif1",
+        "fieldLabel": "тариф",
+        "fieldStyle": "background-color:#F0F8FF;font-size:10pt;text-align:right;",
+        "hideTrigger": true,
+        "labelAlign": "top",
+        "labelWidth": 50,
+        "step": 0.001,
+        "value": [
+            "0"
+        ],
+        "width": 70
+    },
+    "configAlternates": {
+        "scrollable": "boolean"
+    },
+    "designerId": "601aa17d-4d2e-4f7b-8d5b-e4eaa88f9e08",
+    "viewControllerInstanceId": "a51f35d8-314d-464c-99c6-cb84ffece938",
+    "viewModelInstanceId": "4eb0769d-1c25-4b16-ab1c-7e45eabb31a2"
+}

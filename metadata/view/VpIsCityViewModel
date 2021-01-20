@@ -1,0 +1,13 @@
+{
+    "type": "Ext.app.ViewModel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "vpIsCity",
+        "designer|userClassName": "VpIsCityViewModel"
+    },
+    "designerId": "47813f44-d3bd-452b-814a-d3a2fe166d3c"
+}

@@ -1,0 +1,13 @@
+{
+    "type": "Ext.app.ViewModel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "nFVodomer",
+        "designer|userClassName": "NFVodomerViewModel"
+    },
+    "designerId": "8febc256-0f0d-46bb-936a-643e1be082a8"
+}

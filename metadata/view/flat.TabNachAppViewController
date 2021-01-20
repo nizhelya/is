@@ -1,0 +1,13 @@
+{
+    "type": "Ext.app.ViewController",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "tabnachapp",
+        "designer|userClassName": "flat.TabNachAppViewController"
+    },
+    "designerId": "3d86e997-f27d-462d-a2dc-74a92195d141"
+}

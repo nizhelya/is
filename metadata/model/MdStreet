@@ -1,0 +1,54 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "mdStreet",
+        "designer|userClassName": "MdStreet"
+    },
+    "designerId": "15ade045-3678-4408-a5b7-e562960d27ac",
+    "cn": [
+        {
+            "type": "Ext.data.field.Integer",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "street_id"
+            },
+            "name": "MyInteger77",
+            "designerId": "2a70b854-be32-4c1f-8c57-9e75bdf6b70a"
+        },
+        {
+            "type": "Ext.data.field.String",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "street"
+            },
+            "name": "MyString89",
+            "designerId": "a3879266-c318-4236-8c6b-111a3c4d4bbe"
+        },
+        {
+            "type": "Ext.data.field.Integer",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "privat"
+            },
+            "name": "MyInteger78",
+            "designerId": "19db72f3-c18f-493d-b338-9d1b98f1b25f"
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "type": "Ext.app.ViewModel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "winAddMyFlat",
+        "designer|userClassName": "user.WinAddMyFlatViewModel"
+    },
+    "designerId": "ac8ea45c-00cf-4a38-8ad1-aeb7d9d780b2"
+}

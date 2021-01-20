@@ -1,0 +1,13 @@
+{
+    "type": "Ext.app.ViewModel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "fieldNach1",
+        "designer|userClassName": "FieldNach1ViewModel"
+    },
+    "designerId": "53c1d0cc-034b-4108-9fc6-b3993e2b775a"
+}

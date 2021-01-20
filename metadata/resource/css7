@@ -1,0 +1,13 @@
+{
+    "type": "cssresource",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "css7",
+        "url": "resources/css/is_news.css"
+    },
+    "designerId": "41efc69f-26ad-4085-933c-2f771a301c5b"
+}

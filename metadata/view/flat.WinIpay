@@ -1,0 +1,25 @@
+{
+    "type": "Ext.window.Window",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "winIpay",
+        "designer|userClassName": "flat.WinIpay",
+        "height": 61,
+        "id": "winIpay",
+        "layout": "fit",
+        "modal": true,
+        "scrollable": true,
+        "title": "Платежная система IPAY",
+        "width": 400
+    },
+    "configAlternates": {
+        "scrollable": "boolean"
+    },
+    "designerId": "006dc222-bae8-4fbf-b636-6d2df0bcc157",
+    "viewControllerInstanceId": "17e3c82e-f96b-4df1-9524-fc419af67065",
+    "viewModelInstanceId": "6d53f9b1-b632-441c-add2-d085726ed503"
+}

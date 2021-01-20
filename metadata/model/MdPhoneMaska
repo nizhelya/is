@@ -1,0 +1,41 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "mdPhoneMaska",
+        "designer|userClassName": "MdPhoneMaska"
+    },
+    "designerId": "52fbec07-35a9-4ee7-a590-7f046db9f8ad",
+    "cn": [
+        {
+            "type": "Ext.data.field.String",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "kod"
+            },
+            "name": "MyString168",
+            "designerId": "9b03c33d-f0e5-4851-9cb5-20c0eff16892"
+        },
+        {
+            "type": "Ext.data.field.String",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "display"
+            },
+            "name": "MyString169",
+            "designerId": "12cb201a-6887-4bc9-b4f9-ba55ab80cbf3"
+        }
+    ]
+}
