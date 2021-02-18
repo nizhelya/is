@@ -1,0 +1,13 @@
+{
+    "type": "Ext.app.ViewModel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "tabMarfinBank1",
+        "designer|userClassName": "flat.TabMarfinBank1ViewModel"
+    },
+    "designerId": "0d443ec5-233f-42f6-b259-24893885096a"
+}

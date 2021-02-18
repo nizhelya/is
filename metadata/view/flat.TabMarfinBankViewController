@@ -7,7 +7,9 @@
     "codeClass": null,
     "userConfig": {
         "designer|userAlias": "tabMarfinBank",
-        "designer|userClassName": "flat.TabMarfinBankViewController"
+        "designer|userClassName": "flat.TabMarfinBankViewController",
+        "id": null
     },
-    "designerId": "d14ed6ae-f963-45f1-ab98-098248a4da42"
+    "name": "flat.TabKassaViewController1",
+    "designerId": "46d4004f-65e4-4aa8-9094-3c1f11ffbf7c"
 }

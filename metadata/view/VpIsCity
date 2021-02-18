@@ -814,12 +814,12 @@
                         "type": "array"
                     },
                     "codeClass": null,
-                    "name": "flat.tabmarfinbank",
-                    "configAlternates": {
-                        "scrollable": "boolean"
+                    "userConfig": {
+                        "title": "mtb.pay"
                     },
-                    "designerId": "de2e16bc-f224-4753-a8b6-32352aad546b",
-                    "masterInstanceId": "1387db77-d112-4cff-9b05-258ce5fe965a",
+                    "name": "flat.tabmarfinbank",
+                    "designerId": "34c66592-21a7-4923-8738-7a6325a99714",
+                    "masterInstanceId": "2296dbb1-26eb-4b71-a48e-2c00e9a89a8c",
                     "cn": [
                         {
                             "type": "Ext.tab.Tab",
@@ -828,11 +828,8 @@
                                 "type": "object"
                             },
                             "codeClass": null,
-                            "name": "TabConfig16",
-                            "configAlternates": {
-                                "scrollable": "boolean"
-                            },
-                            "designerId": "6fe1ed32-a761-4e35-87c7-1e1896e30591"
+                            "name": "TabConfig13",
+                            "designerId": "73426037-a869-490c-b161-eef94de3cb77"
                         }
                     ]
                 }

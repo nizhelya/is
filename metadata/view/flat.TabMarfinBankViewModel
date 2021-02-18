@@ -9,5 +9,6 @@
         "designer|userAlias": "tabMarfinBank",
         "designer|userClassName": "flat.TabMarfinBankViewModel"
     },
-    "designerId": "0d443ec5-233f-42f6-b259-24893885096a"
+    "name": "flat.TabKassaViewModel1",
+    "designerId": "dd9320da-b52d-4ec8-b9a0-096bcf638bad"
 }
