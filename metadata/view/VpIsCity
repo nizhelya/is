@@ -454,6 +454,71 @@
                                                             },
                                                             "codeClass": null,
                                                             "userConfig": {
+                                                                "cls": "btn_privatbank",
+                                                                "frame": false,
+                                                                "height": 110,
+                                                                "hidden": true,
+                                                                "icon": null,
+                                                                "iconCls": "btn_privatbank",
+                                                                "id": "btnPrivatBank",
+                                                                "layout|anchor": "100%",
+                                                                "margin": null,
+                                                                "maxWidth": null,
+                                                                "scale": "large",
+                                                                "showEmptyMenu": null,
+                                                                "text": null,
+                                                                "textAlign": null,
+                                                                "width": 100
+                                                            },
+                                                            "name": "MyButton15",
+                                                            "configAlternates": {
+                                                                "scrollable": "boolean"
+                                                            },
+                                                            "designerId": "d747e834-13da-4e21-813d-35fb7c0843ee",
+                                                            "cn": [
+                                                                {
+                                                                    "type": "fixedfunction",
+                                                                    "reference": {
+                                                                        "name": "items",
+                                                                        "type": "array"
+                                                                    },
+                                                                    "codeClass": null,
+                                                                    "userConfig": {
+                                                                        "designer|params": [
+                                                                            "button",
+                                                                            "e"
+                                                                        ],
+                                                                        "fn": "handler",
+                                                                        "implHandler": [
+                                                                            "// in use",
+                                                                            "var me = this;",
+                                                                            "//STORE",
+                                                                            "",
+                                                                            "var stUser = Ext.data.StoreManager.get(\"StUser\");",
+                                                                            "",
+                                                                            "var values =stUser.getAt(0);",
+                                                                            "",
+                                                                            "var address_id = values.get('address_id');",
+                                                                            "var url = 'https://next.privat24.ua/payments/form/{\"token\" :\"eb6ea420aafcfed30f1e8004bad725238xp65yel\",\"personalAccount\":\"'+address_id+'\"}';",
+                                                                            "//console.log(url);",
+                                                                            "            window.open(url,'_blank');",
+                                                                            "",
+                                                                            "  "
+                                                                        ]
+                                                                    },
+                                                                    "name": "handler",
+                                                                    "designerId": "3c5374a4-5ff6-4064-9568-39682a6e6b70"
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "type": "Ext.button.Button",
+                                                            "reference": {
+                                                                "name": "items",
+                                                                "type": "array"
+                                                            },
+                                                            "codeClass": null,
+                                                            "userConfig": {
                                                                 "cls": "btn_mtb",
                                                                 "height": 60,
                                                                 "hidden": true,
@@ -589,7 +654,7 @@
                     "userConfig": {
                         "border": false
                     },
-                    "name": "flat.tablogin",
+                    "name": "flat.tablogin1",
                     "configAlternates": {
                         "scrollable": "boolean"
                     },
@@ -618,7 +683,7 @@
                         "type": "array"
                     },
                     "codeClass": null,
-                    "name": "flat.tabnach",
+                    "name": "flat.tabnach1",
                     "designerId": "af215e84-b8bb-48ff-b3f7-0cd6f2dba0cd",
                     "masterInstanceId": "b36ac8d4-d88c-4002-9c55-f3d2e79a40b2",
                     "cn": [
@@ -641,7 +706,7 @@
                         "type": "array"
                     },
                     "codeClass": null,
-                    "name": "flat.tabinfoapp",
+                    "name": "flat.tabinfoapp1",
                     "configAlternates": {
                         "scrollable": "boolean"
                     },
@@ -670,7 +735,7 @@
                         "type": "array"
                     },
                     "codeClass": null,
-                    "name": "flat.tabappbti",
+                    "name": "flat.tabappbti1",
                     "designerId": "884bfd5a-df74-4c25-adb2-a082be6b4982",
                     "masterInstanceId": "70e737b0-b1c0-4090-99ec-c37f9991f959",
                     "cn": [
@@ -693,7 +758,7 @@
                         "type": "array"
                     },
                     "codeClass": null,
-                    "name": "flat.tabnachapp",
+                    "name": "flat.tabnachapp1",
                     "designerId": "873c0c71-def6-4d5f-8fc1-2874ac5c879d",
                     "masterInstanceId": "7f97f113-f6a6-4047-bc67-8cd52db1da50",
                     "cn": [
@@ -716,7 +781,7 @@
                         "type": "array"
                     },
                     "codeClass": null,
-                    "name": "flat.tabappvodomer",
+                    "name": "flat.tabappvodomer1",
                     "designerId": "2f049ac4-170c-4fbb-8c4e-26d0eb8045d1",
                     "masterInstanceId": "c5e53079-7003-4477-ac8c-62eecb71644f",
                     "cn": [
@@ -739,7 +804,7 @@
                         "type": "array"
                     },
                     "codeClass": null,
-                    "name": "flat.tabappteplomer",
+                    "name": "flat.tabappteplomer1",
                     "designerId": "f4281210-78c7-4b89-a184-cd79089ed7c9",
                     "masterInstanceId": "c0b3fd01-43c8-437b-9fb1-a6885707e045",
                     "cn": [
@@ -762,7 +827,7 @@
                         "type": "array"
                     },
                     "codeClass": null,
-                    "name": "flat.tabappoplata",
+                    "name": "flat.tabappoplata1",
                     "designerId": "bc1ea33d-5546-41a8-b691-407579d694e0",
                     "masterInstanceId": "896bca6f-af95-430e-a487-c9448d3c6219",
                     "cn": [
@@ -785,7 +850,7 @@
                         "type": "array"
                     },
                     "codeClass": null,
-                    "name": "flat.tabkassa",
+                    "name": "flat.tabkassa1",
                     "configAlternates": {
                         "scrollable": "boolean"
                     },
@@ -817,7 +882,7 @@
                     "userConfig": {
                         "title": "mtb.pay"
                     },
-                    "name": "flat.tabmarfinbank",
+                    "name": "flat.tabmarfinbank1",
                     "designerId": "34c66592-21a7-4923-8738-7a6325a99714",
                     "masterInstanceId": "2296dbb1-26eb-4b71-a48e-2c00e9a89a8c",
                     "cn": [

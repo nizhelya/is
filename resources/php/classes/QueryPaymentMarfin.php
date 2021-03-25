@@ -149,14 +149,14 @@ if ($this->results['success'] == 1) {
  $requestData = array();
 
  
- if ($this->results['otoplenie'] >0 || $this->results['podogrev'] >0 || $this->results['ptn'] >0) { 
+ if ($this->results['teplo'] >0)  { 
 	$teplo["ServiceCode"] ="26134519";
 	$teplo["Sum"] =  $this->results['teplo'];
 	$service[] =  $teplo;
 
 
  }
- if ($this->results['kvartplata'] >0 && $this->results['ipay'] !=0 ) {
+ if ($this->results['kvartplata'] >0 ) {
 	$kvartplata["ServiceCode"] =$this->results['edrpou'];
 	$kvartplata["Sum"] =  $this->results['kvartplata'];
 	$service[] =  $kvartplata;
@@ -203,12 +203,12 @@ $curl = curl_init();
 
 curl_setopt_array($curl, array(
   CURLOPT_URL => 'https://stage-papi.xpay.com.ua/cipher',
-  CURLOPT_RETURNTRANSFER => false, 
+  CURLOPT_RETURNTRANSFER => true, 
   CURLOPT_MAXREDIRS => 10,
   CURLOPT_TIMEOUT => 0,
   CURLOPT_SSL_VERIFYPEER => 0,
   CURLOPT_SSL_VERIFYHOST => 0,
-  CURLOPT_SSLVERSION => 3,
+  //CURLOPT_SSLVERSION => 3,
   CURLOPT_FOLLOWLOCATION => true,
   CURLOPT_HTTPHEADER => array(
     'Content-Type: application/json'
@@ -219,20 +219,34 @@ curl_setopt_array($curl, array(
 //cURL Error: 35<br>cURL ErrorNo: Unknown SSL protocol error in connection to stage-papi.xpay.com.ua:443 {"type":"rpc","tid":22,"action":"QueryPaymentMarfin","method":"newOplata","result":null}
 
 $curl_result = curl_exec( $curl );
-
-if ($curl_result === FALSE) {
-    echo 'cURL Error: ' . curl_errno($curl);#curl_errno - возвращает целое число, содержащее номер последней ошибки.
-    echo '<br>cURL ErrorNo: ' . curl_error($curl);#возвращает строку содержащую номер последней ошибки для текущей сессии.
-    return;
-} else {
-print_r($curl_result);
-
-}
 curl_close( $curl );
 
-$paym = array();
-$paym = json_decode($curl_result);
-/*
+$curl_result_code = $curl_result;	
+$curl_url = curl_init();
+curl_setopt_array($curl_url, array(
+  CURLOPT_URL => 'https://stage-papi.xpay.com.ua:488/xpay',
+  CURLOPT_RETURNTRANSFER => true, 
+  CURLOPT_MAXREDIRS => 10,
+  CURLOPT_TIMEOUT => 0,
+  CURLOPT_SSL_VERIFYPEER => 0,
+  CURLOPT_SSL_VERIFYHOST => 0,
+  //CURLOPT_SSLVERSION => 3,
+  CURLOPT_FOLLOWLOCATION => true,
+  CURLOPT_HTTPHEADER => array(
+    'Content-Type: application/json'
+  ),
+  CURLOPT_CUSTOMREQUEST => "POST",
+  CURLOPT_POSTFIELDS => $curl_result_code
+));
+//cURL Error: 35<br>cURL ErrorNo: Unknown SSL protocol error in connection to stage-papi.xpay.com.ua:443 {"type":"rpc","tid":22,"action":"QueryPaymentMarfin","method":"newOplata","result":null}
+
+$curl_result_url = curl_exec( $curl_url );
+
+curl_close( $curl_url );
+$paym = json_decode($curl_result_url,true);
+
+print_r($paym['Code']);
+
 
   if(isset($paym['Code']) && ($paym['Code'])) {
     $code =  $paym['Code'];
@@ -267,7 +281,9 @@ $paym = json_decode($curl_result);
   if ($code == 200 && $status == 10 ) { 
   $this->results['success']=1;
   $this->results['url'] = $uri;
-  $this->up_stat ='UPDATE YISGRAND.MTB_PAYMENT as t1  SET t1.`status`="'.$status.'", t1.`nomer`="'.$code.'" WHERE t1.`payment_id`="'.$this->results['payment_id'].'" ';
+  //print_r($this->results['url']);
+
+  $this->up_stat ='UPDATE YISGRAND.MTB_PAYMENT as t1  SET t1.`chek`="'.$status.'", t1.`pay_id`="'.$ndoc.'" WHERE t1.`payment_id`="'.$this->results['payment_id'].'" ';
   			    //   print_r($this->up_stat); 
 
   $this->upd_status = $_db->query($this->up_stat) or die('Connect Error in '.$this->what.'(' .  $this->up_stat . ') ' . $_db->connect_error);
@@ -277,7 +293,7 @@ $paym = json_decode($curl_result);
     $this->results['success']=0;
     $this->results['msg']='Сервіс платежів Xpay<br>Платеж не сформований';
     }	
-*/
+
 
 }
 

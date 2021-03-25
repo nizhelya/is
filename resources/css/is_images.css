@@ -77,6 +77,14 @@
 
 
 }
+.btn_privatbank{
+    background-image:url(images/btn64/privatbank.png) !important;   
+    background-position: center;
+    background-repeat: no-repeat ; 
+    background-color:#ffffff;
+
+
+}
 .btn_contact64{
      background-image:url(images/btn64/contact_64.png) !important;   
       background-position: left;
