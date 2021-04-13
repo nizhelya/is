@@ -203,6 +203,7 @@ $curl = curl_init();
 
 curl_setopt_array($curl, array(
   CURLOPT_URL => 'https://stage-papi.xpay.com.ua/cipher',
+ // CURLOPT_URL => 'https://papi.xpay.com.ua:1112/cipher',
   CURLOPT_RETURNTRANSFER => true, 
   CURLOPT_MAXREDIRS => 10,
   CURLOPT_TIMEOUT => 0,
@@ -224,7 +225,9 @@ curl_close( $curl );
 $curl_result_code = $curl_result;	
 $curl_url = curl_init();
 curl_setopt_array($curl_url, array(
-  CURLOPT_URL => 'https://stage-papi.xpay.com.ua:488/xpay',
+ CURLOPT_URL => 'https://stage-papi.xpay.com.ua:488/xpay',
+ 
+//  CURLOPT_URL => 'https://papi.xpay.com.ua:488/xpay',
   CURLOPT_RETURNTRANSFER => true, 
   CURLOPT_MAXREDIRS => 10,
   CURLOPT_TIMEOUT => 0,
@@ -245,7 +248,8 @@ $curl_result_url = curl_exec( $curl_url );
 curl_close( $curl_url );
 $paym = json_decode($curl_result_url,true);
 
-print_r($paym['Code']);
+//print_r($paym);
+
 
 
   if(isset($paym['Code']) && ($paym['Code'])) {
@@ -254,8 +258,8 @@ print_r($paym['Code']);
     $code = 0;
   }
   
-   if(isset($paym['message']) && ($paym['message'])) {
-    $message =  $paym['message'];
+   if(isset($paym['Message']) && ($paym['Message'])) {
+    $message =  $paym['Message'];
   } else {
     $message = 0;
   }
@@ -278,12 +282,18 @@ print_r($paym['Code']);
     $uri = "";
   }
   
-  if ($code == 200 && $status == 10 ) { 
+   if(isset($paym['Data']['uuid']) && ($paym['Data']['uuid'])) {
+    $uuid =  $paym['Data']['uuid'];
+  } else {
+    $uuid = "";
+  }
+  
+  if ($code == "200" && $status == "10" ) { 
   $this->results['success']=1;
   $this->results['url'] = $uri;
   //print_r($this->results['url']);
 
-  $this->up_stat ='UPDATE YISGRAND.MTB_PAYMENT as t1  SET t1.`chek`="'.$status.'", t1.`pay_id`="'.$ndoc.'" WHERE t1.`payment_id`="'.$this->results['payment_id'].'" ';
+  $this->up_stat ='UPDATE YISGRAND.MTB_PAYMENT as t1  SET t1.`chek`="'.$status.'", t1.`pay_id`="'.$ndoc.'" ,t1.`uuid`="'.$uuid.'" WHERE t1.`payment_id`="'.$this->results['payment_id'].'" ';
   			    //   print_r($this->up_stat); 
 
   $this->upd_status = $_db->query($this->up_stat) or die('Connect Error in '.$this->what.'(' .  $this->up_stat . ') ' . $_db->connect_error);

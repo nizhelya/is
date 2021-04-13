@@ -19,7 +19,7 @@
         "layout": "vbox",
         "overlapHeader": null,
         "scrollable": true,
-        "title": "iIPay.ua",
+        "title": "MTB BANK",
         "titleAlign": null,
         "width": 847
     },
@@ -41,7 +41,7 @@
             "userConfig": {
                 "border": false,
                 "height": 65,
-                "html": "<h3 class=\"visa\"><span><font style=\"color:red;\">Внимание !!!</font> Оплата производится платежными картами VISA и MasterCard выданными в Украине.<br> C Вас будет снята коммиссия, установленая cервисом онлайн платежей xpay.com.ua</span></h3>",
+                "html": "<h3 class = \"visa\"> <span> <font style = \"color:red;\"> Увага !!! </font> Оплата проводиться платіжними картами VISA і MASTERCARD виданими в Україні. <br> C Вас буде знята коммиссия, установленая Сервіс онлайн платежів МТБ Банку </span> </h3>",
                 "layout": null,
                 "layout|flex": null,
                 "layout|margins": null,
@@ -305,7 +305,7 @@
                                         "negativeText": "Ошибка, сумма меньше нуля",
                                         "width": 110
                                     },
-                                    "name": "numberfielddolg18",
+                                    "name": "numberfielddolg17",
                                     "configAlternates": {
                                         "scrollable": "boolean"
                                     },
@@ -369,7 +369,7 @@
                                         "negativeText": "Ошибка, сумма меньше нуля",
                                         "width": 110
                                     },
-                                    "name": "numberfielddolg19",
+                                    "name": "numberfielddolg18",
                                     "configAlternates": {
                                         "scrollable": "boolean"
                                     },
@@ -439,7 +439,7 @@
                                         "style": null,
                                         "width": 220
                                     },
-                                    "name": "numberfielddolg20",
+                                    "name": "numberfielddolg19",
                                     "configAlternates": {
                                         "scrollable": "boolean",
                                         "style": "string"
@@ -464,7 +464,7 @@
                                         "readOnly": true,
                                         "width": 220
                                     },
-                                    "name": "numberfielddolg21",
+                                    "name": "numberfielddolg20",
                                     "configAlternates": {
                                         "scrollable": "boolean"
                                     },
@@ -490,7 +490,7 @@
                                         "readOnly": true,
                                         "width": 220
                                     },
-                                    "name": "numberfielddolg22",
+                                    "name": "numberfielddolg21",
                                     "configAlternates": {
                                         "scrollable": "boolean"
                                     },
@@ -772,7 +772,7 @@
                                         "negativeText": "Ошибка, сумма меньше нуля",
                                         "width": 110
                                     },
-                                    "name": "numberfielddolg23",
+                                    "name": "numberfielddolg22",
                                     "configAlternates": {
                                         "scrollable": "boolean"
                                     },
@@ -838,7 +838,7 @@
                                         "negativeText": "Ошибка, сумма меньше нуля",
                                         "width": 110
                                     },
-                                    "name": "numberfielddolg24",
+                                    "name": "numberfielddolg23",
                                     "configAlternates": {
                                         "scrollable": "boolean"
                                     },
@@ -903,7 +903,7 @@
                                         "negativeText": "Ошибка, сумма меньше нуля",
                                         "width": 110
                                     },
-                                    "name": "numberfielddolg25",
+                                    "name": "numberfielddolg24",
                                     "configAlternates": {
                                         "scrollable": "boolean"
                                     },
@@ -969,7 +969,7 @@
                                         "readOnly": true,
                                         "width": 220
                                     },
-                                    "name": "numberfielddolg26",
+                                    "name": "numberfielddolg25",
                                     "configAlternates": {
                                         "scrollable": "boolean"
                                     },
@@ -993,7 +993,7 @@
                                         "readOnly": true,
                                         "width": 220
                                     },
-                                    "name": "numberfielddolg27",
+                                    "name": "numberfielddolg26",
                                     "configAlternates": {
                                         "scrollable": "boolean"
                                     },
@@ -1017,7 +1017,7 @@
                                         "readOnly": true,
                                         "width": 220
                                     },
-                                    "name": "numberfielddolg28",
+                                    "name": "numberfielddolg27",
                                     "configAlternates": {
                                         "scrollable": "boolean"
                                     },
@@ -1067,7 +1067,7 @@
                                         "readOnly": true,
                                         "width": 220
                                     },
-                                    "name": "numberfielddolg29",
+                                    "name": "numberfielddolg28",
                                     "configAlternates": {
                                         "scrollable": "boolean"
                                     },
@@ -1168,7 +1168,7 @@
                                         "negativeText": "Ошибка, сумма меньше нуля",
                                         "width": 110
                                     },
-                                    "name": "numberfielddolg30",
+                                    "name": "numberfielddolg29",
                                     "configAlternates": {
                                         "scrollable": "boolean"
                                     },
@@ -1238,7 +1238,7 @@
                                         "style": null,
                                         "width": 220
                                     },
-                                    "name": "numberfielddolg31",
+                                    "name": "numberfielddolg30",
                                     "configAlternates": {
                                         "scrollable": "boolean",
                                         "style": "string"
@@ -1288,7 +1288,7 @@
                                         "readOnly": true,
                                         "width": 220
                                     },
-                                    "name": "numberfielddolg32",
+                                    "name": "numberfielddolg31",
                                     "configAlternates": {
                                         "scrollable": "boolean"
                                     },
@@ -1389,7 +1389,7 @@
                                         "negativeText": "Ошибка, сумма меньше нуля",
                                         "width": 110
                                     },
-                                    "name": "numberfielddolg33",
+                                    "name": "numberfielddolg32",
                                     "configAlternates": {
                                         "scrollable": "boolean"
                                     },
@@ -1899,7 +1899,7 @@
                                         "readOnly": true,
                                         "width": 200
                                     },
-                                    "name": "numberfielddolg34",
+                                    "name": "numberfielddolg33",
                                     "configAlternates": {
                                         "scrollable": "boolean"
                                     },

@@ -320,9 +320,8 @@
                                             },
                                             "codeClass": null,
                                             "userConfig": {
-                                                "container|align": "stretch",
                                                 "height": 279,
-                                                "layout": "vbox",
+                                                "scrollable": true,
                                                 "style": "background-color: #DCDCDC;",
                                                 "title": ""
                                             },
@@ -348,9 +347,8 @@
                                                         "height": null,
                                                         "id": "listMenuAddMyFlat",
                                                         "itemSelector": ".add-flat-list-item",
-                                                        "layout|flex": 0.5,
-                                                        "layout|margins": null,
-                                                        "margin": "10 0 0 0",
+                                                        "layout|anchor": "100%",
+                                                        "margin": "10 10 10 10",
                                                         "overItemCls": "add-flat-list-item-hover",
                                                         "padding": null,
                                                         "store": "StAddMyFlat",
@@ -393,12 +391,13 @@
                                                         "cls": [
                                                             "flat-list"
                                                         ],
+                                                        "height": null,
                                                         "id": "listMenuMyFlat",
                                                         "itemSelector": ".flat-list-item",
-                                                        "layout|flex": 3.5,
-                                                        "layout|margins": "10 0 10 ",
+                                                        "layout|anchor": "100%",
                                                         "overItemCls": "flat-list-item-hover",
                                                         "padding": null,
+                                                        "scrollable": true,
                                                         "store": "StMyFlat",
                                                         "style": "border:0px;"
                                                     },
@@ -428,142 +427,121 @@
                                                     ]
                                                 },
                                                 {
-                                                    "type": "Ext.form.FieldSet",
+                                                    "type": "Ext.button.Button",
                                                     "reference": {
                                                         "name": "items",
                                                         "type": "array"
                                                     },
                                                     "codeClass": null,
                                                     "userConfig": {
-                                                        "border": null,
-                                                        "hidden": null,
-                                                        "layout|flex": 5,
-                                                        "title": "Оплатить с помощью"
+                                                        "cls": "btn_mtb",
+                                                        "height": 90,
+                                                        "hidden": true,
+                                                        "id": "btnMarfinBank",
+                                                        "layout|anchor": "100%",
+                                                        "margin": "10 20 10 20",
+                                                        "scale": "large",
+                                                        "text": null,
+                                                        "textAlign": null,
+                                                        "width": null
                                                     },
-                                                    "name": "MyFieldSet61",
+                                                    "name": "MyButton13",
                                                     "configAlternates": {
                                                         "scrollable": "boolean"
                                                     },
-                                                    "designerId": "8723a7d5-2137-4fdf-8924-ddd47616eff5",
+                                                    "designerId": "545a8c2f-ef43-4574-9e71-85ecc6b85337"
+                                                },
+                                                {
+                                                    "type": "Ext.button.Button",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "cls": "btn_privatbank",
+                                                        "frame": false,
+                                                        "height": 75,
+                                                        "hidden": true,
+                                                        "icon": null,
+                                                        "iconCls": "btn_privatbank",
+                                                        "id": "btnPrivatBank",
+                                                        "layout|anchor": "100%",
+                                                        "margin": "10 20 10 20",
+                                                        "maxWidth": null,
+                                                        "scale": "large",
+                                                        "showEmptyMenu": null,
+                                                        "text": null,
+                                                        "textAlign": null,
+                                                        "width": 98
+                                                    },
+                                                    "name": "MyButton15",
+                                                    "configAlternates": {
+                                                        "scrollable": "boolean"
+                                                    },
+                                                    "designerId": "d747e834-13da-4e21-813d-35fb7c0843ee",
                                                     "cn": [
                                                         {
-                                                            "type": "Ext.button.Button",
+                                                            "type": "fixedfunction",
                                                             "reference": {
                                                                 "name": "items",
                                                                 "type": "array"
                                                             },
                                                             "codeClass": null,
                                                             "userConfig": {
-                                                                "cls": "btn_privatbank",
-                                                                "frame": false,
-                                                                "height": 110,
-                                                                "hidden": true,
-                                                                "icon": null,
-                                                                "iconCls": "btn_privatbank",
-                                                                "id": "btnPrivatBank",
-                                                                "layout|anchor": "100%",
-                                                                "margin": null,
-                                                                "maxWidth": null,
-                                                                "scale": "large",
-                                                                "showEmptyMenu": null,
-                                                                "text": null,
-                                                                "textAlign": null,
-                                                                "width": 100
+                                                                "designer|params": [
+                                                                    "button",
+                                                                    "e"
+                                                                ],
+                                                                "fn": "handler",
+                                                                "implHandler": [
+                                                                    "// in use",
+                                                                    "var me = this;",
+                                                                    "//STORE",
+                                                                    "",
+                                                                    "var stUser = Ext.data.StoreManager.get(\"StUser\");",
+                                                                    "",
+                                                                    "var values =stUser.getAt(0);",
+                                                                    "",
+                                                                    "var address_id = values.get('address_id');",
+                                                                    "var url = 'https://next.privat24.ua/payments/form/{\"token\" :\"607c42c1cc9d9819067cf1d0d0033830yz4bbzf4\",\"personalAccount\":\"'+address_id+'\"}';",
+                                                                    "//console.log(url);",
+                                                                    "            window.open(url,'_blank');",
+                                                                    "",
+                                                                    ""
+                                                                ]
                                                             },
-                                                            "name": "MyButton15",
-                                                            "configAlternates": {
-                                                                "scrollable": "boolean"
-                                                            },
-                                                            "designerId": "d747e834-13da-4e21-813d-35fb7c0843ee",
-                                                            "cn": [
-                                                                {
-                                                                    "type": "fixedfunction",
-                                                                    "reference": {
-                                                                        "name": "items",
-                                                                        "type": "array"
-                                                                    },
-                                                                    "codeClass": null,
-                                                                    "userConfig": {
-                                                                        "designer|params": [
-                                                                            "button",
-                                                                            "e"
-                                                                        ],
-                                                                        "fn": "handler",
-                                                                        "implHandler": [
-                                                                            "// in use",
-                                                                            "var me = this;",
-                                                                            "//STORE",
-                                                                            "",
-                                                                            "var stUser = Ext.data.StoreManager.get(\"StUser\");",
-                                                                            "",
-                                                                            "var values =stUser.getAt(0);",
-                                                                            "",
-                                                                            "var address_id = values.get('address_id');",
-                                                                            "var url = 'https://next.privat24.ua/payments/form/{\"token\" :\"eb6ea420aafcfed30f1e8004bad725238xp65yel\",\"personalAccount\":\"'+address_id+'\"}';",
-                                                                            "//console.log(url);",
-                                                                            "            window.open(url,'_blank');",
-                                                                            "",
-                                                                            "  "
-                                                                        ]
-                                                                    },
-                                                                    "name": "handler",
-                                                                    "designerId": "3c5374a4-5ff6-4064-9568-39682a6e6b70"
-                                                                }
-                                                            ]
-                                                        },
-                                                        {
-                                                            "type": "Ext.button.Button",
-                                                            "reference": {
-                                                                "name": "items",
-                                                                "type": "array"
-                                                            },
-                                                            "codeClass": null,
-                                                            "userConfig": {
-                                                                "cls": "btn_mtb",
-                                                                "height": 60,
-                                                                "hidden": true,
-                                                                "id": "btnMarfinBank",
-                                                                "layout|anchor": "100%",
-                                                                "margin": "20 0 20 0",
-                                                                "scale": "large",
-                                                                "text": null,
-                                                                "textAlign": null,
-                                                                "width": 176
-                                                            },
-                                                            "name": "MyButton13",
-                                                            "configAlternates": {
-                                                                "scrollable": "boolean"
-                                                            },
-                                                            "designerId": "545a8c2f-ef43-4574-9e71-85ecc6b85337"
-                                                        },
-                                                        {
-                                                            "type": "Ext.button.Button",
-                                                            "reference": {
-                                                                "name": "items",
-                                                                "type": "array"
-                                                            },
-                                                            "codeClass": null,
-                                                            "userConfig": {
-                                                                "cls": "btn_visa",
-                                                                "height": 103,
-                                                                "hidden": true,
-                                                                "href": null,
-                                                                "icon": null,
-                                                                "id": "btnIpayVisa",
-                                                                "layout|anchor": "100%",
-                                                                "margin": null,
-                                                                "scale": "large",
-                                                                "text": null,
-                                                                "textAlign": null,
-                                                                "width": 168
-                                                            },
-                                                            "name": "MyButton14",
-                                                            "configAlternates": {
-                                                                "scrollable": "boolean"
-                                                            },
-                                                            "designerId": "7feea43b-d749-4810-8b5a-2d9b021693f8"
+                                                            "name": "handler",
+                                                            "designerId": "3c5374a4-5ff6-4064-9568-39682a6e6b70"
                                                         }
                                                     ]
+                                                },
+                                                {
+                                                    "type": "Ext.button.Button",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "cls": "btn_visa",
+                                                        "height": 70,
+                                                        "hidden": true,
+                                                        "href": null,
+                                                        "icon": null,
+                                                        "id": "btnIpayVisa",
+                                                        "layout|anchor": "100%",
+                                                        "margin": "10 20 10 20",
+                                                        "scale": "large",
+                                                        "text": null,
+                                                        "textAlign": null,
+                                                        "width": null
+                                                    },
+                                                    "name": "MyButton14",
+                                                    "configAlternates": {
+                                                        "scrollable": "boolean"
+                                                    },
+                                                    "designerId": "7feea43b-d749-4810-8b5a-2d9b021693f8"
                                                 }
                                             ]
                                         }
@@ -654,7 +632,7 @@
                     "userConfig": {
                         "border": false
                     },
-                    "name": "flat.tablogin1",
+                    "name": "flat.tablogin",
                     "configAlternates": {
                         "scrollable": "boolean"
                     },
@@ -683,7 +661,7 @@
                         "type": "array"
                     },
                     "codeClass": null,
-                    "name": "flat.tabnach1",
+                    "name": "flat.tabnach",
                     "designerId": "af215e84-b8bb-48ff-b3f7-0cd6f2dba0cd",
                     "masterInstanceId": "b36ac8d4-d88c-4002-9c55-f3d2e79a40b2",
                     "cn": [
@@ -706,7 +684,7 @@
                         "type": "array"
                     },
                     "codeClass": null,
-                    "name": "flat.tabinfoapp1",
+                    "name": "flat.tabinfoapp",
                     "configAlternates": {
                         "scrollable": "boolean"
                     },
@@ -735,7 +713,7 @@
                         "type": "array"
                     },
                     "codeClass": null,
-                    "name": "flat.tabappbti1",
+                    "name": "flat.tabappbti",
                     "designerId": "884bfd5a-df74-4c25-adb2-a082be6b4982",
                     "masterInstanceId": "70e737b0-b1c0-4090-99ec-c37f9991f959",
                     "cn": [
@@ -758,7 +736,7 @@
                         "type": "array"
                     },
                     "codeClass": null,
-                    "name": "flat.tabnachapp1",
+                    "name": "flat.tabnachapp",
                     "designerId": "873c0c71-def6-4d5f-8fc1-2874ac5c879d",
                     "masterInstanceId": "7f97f113-f6a6-4047-bc67-8cd52db1da50",
                     "cn": [
@@ -781,7 +759,7 @@
                         "type": "array"
                     },
                     "codeClass": null,
-                    "name": "flat.tabappvodomer1",
+                    "name": "flat.tabappvodomer",
                     "designerId": "2f049ac4-170c-4fbb-8c4e-26d0eb8045d1",
                     "masterInstanceId": "c5e53079-7003-4477-ac8c-62eecb71644f",
                     "cn": [
@@ -804,7 +782,7 @@
                         "type": "array"
                     },
                     "codeClass": null,
-                    "name": "flat.tabappteplomer1",
+                    "name": "flat.tabappteplomer",
                     "designerId": "f4281210-78c7-4b89-a184-cd79089ed7c9",
                     "masterInstanceId": "c0b3fd01-43c8-437b-9fb1-a6885707e045",
                     "cn": [
@@ -827,7 +805,7 @@
                         "type": "array"
                     },
                     "codeClass": null,
-                    "name": "flat.tabappoplata1",
+                    "name": "flat.tabappoplata",
                     "designerId": "bc1ea33d-5546-41a8-b691-407579d694e0",
                     "masterInstanceId": "896bca6f-af95-430e-a487-c9448d3c6219",
                     "cn": [
@@ -850,7 +828,7 @@
                         "type": "array"
                     },
                     "codeClass": null,
-                    "name": "flat.tabkassa1",
+                    "name": "flat.tabkassa",
                     "configAlternates": {
                         "scrollable": "boolean"
                     },
@@ -882,7 +860,7 @@
                     "userConfig": {
                         "title": "mtb.pay"
                     },
-                    "name": "flat.tabmarfinbank1",
+                    "name": "flat.tabmarfinbank",
                     "designerId": "34c66592-21a7-4923-8738-7a6325a99714",
                     "masterInstanceId": "2296dbb1-26eb-4b71-a48e-2c00e9a89a8c",
                     "cn": [
